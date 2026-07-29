@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -66,10 +67,10 @@
                                 </li>
                                 <li class="rbt-breadcrumb-item active">Oracle Fusion</li>
                             </ul>
-                            <h2 class="title"><?php echo $course_details[$current_slug]['title'] ?></h2>
+                            <h1 class="title"><?php echo $course_details[$current_slug]['title'] ?></h1>
                             <p class="description"><?php echo $short_descriptions[$current_slug]; ?> </p>
 
-                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature">
+                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature mt--10">
 
                                 <div class="feature-sin best-seller-badge">
                                     <span class="rbt-badge-2">
@@ -100,7 +101,7 @@
                                 
                                 <?php include_once "demo_video_modal.php"; ?>
                             </div>
-
+              <?php include_once "claim_instant_offer.php"; ?>
                         </div>
                     </div>
                 </div>
@@ -138,91 +139,239 @@
                         </div>
 
                         <!-- Start Course Feature Box  -->
-                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30 has-show-more" id="overview">
-                            <div class="rbt-course-feature-inner has-show-more-inner-content">
-                                <div class="section-title">
-                                    <h4 class="rbt-title-style-3">About
-                                        <?php echo $course_details[$current_slug]['title'] ?></h4>
-                                </div>
+                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30" id="overview">
+                            <div class="rbt-course-feature-inner">
                                 <!-- Overview Start -->
 
-                                <h4><strong>What is Oracle Fusion </strong><strong>Technical</strong><strong>?</strong></h4>
-                                <p>Oracle Fusion Technical is a sophisticated suite of enterprise applications and technologies designed to streamline and optimize various business processes across an organization. It integrates advanced functionalities and tools to support core operations, including finance, procurement, project management, customer relationship management (CRM), and human capital management (HCM).</p>
+                                <div class="about-content">
+    <span class="about-label">About the Course</span>
 
-                                <h5><strong>Key Components</strong></h5>
-                                <ol>
-                                    <li><strong>Enterprise Resource Planning (ERP):</strong>
-                                        <ul>
-                                            <li><strong>Finance:</strong> Manages financial operations, including general ledger, accounts payable, accounts receivable, and asset management.</li>
-                                            <li><strong>Procurement:</strong> Streamlines procurement processes, from requisition to payment, ensuring efficient supply chain management.</li>
-                                            <li><strong>Project Management:</strong> Provides tools for planning, executing, and monitoring projects, ensuring they are completed on time and within budget.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Customer Relationship Management (CRM):</strong>
-                                        <ul>
-                                            <li><strong>Sales:</strong> Enhances sales processes through better lead management, sales forecasting, and pipeline tracking.</li>
-                                            <li><strong>Marketing:</strong> Enables targeted marketing campaigns and provides insights into customer behavior and preferences.</li>
-                                            <li><strong>Service:</strong> Improves customer service operations with tools for case management, service request tracking, and knowledge management.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Human Capital Management (HCM):</strong>
-                                        <ul>
-                                            <li><strong>Core HR:</strong> Manages employee records, payroll, and benefits administration.</li>
-                                            <li><strong>Talent Management:</strong> Supports recruitment, performance management, and succession planning.</li>
-                                            <li><strong>Workforce Management:</strong> Optimizes workforce scheduling, time and labor tracking, and absence management.</li>
-                                        </ul>
-                                    </li>
-                                </ol>
+    <h2 class="about-heading">
+      What is <span class="gradient-text">Oracle Fusion Technical?</span>
+    </h2>
 
-                                <h5><strong>Benefits of Oracle Fusion Technical:</strong></h5>
-                                <ul>
-                                    <li><strong>Integrated Data Model:</strong> Ensures data consistency and accuracy across various business functions, facilitating better decision-making and reporting.</li>
-                                    <li><strong>Advanced Analytics:</strong> Leverages business intelligence and data analytics to provide actionable insights and improve strategic planning.</li>
-                                    <li><strong>Automation and Efficiency:</strong> Automates routine tasks and workflows, reducing manual effort and increasing operational efficiency.</li>
-                                    <li><strong>Scalability and Flexibility:</strong> Scales with business growth and adapts to evolving needs, providing a future-proof solution.</li>
-                                    <li><strong>Enhanced Security:</strong> Incorporates robust security measures to protect sensitive data and ensure compliance with regulatory standards.</li>
-                                </ul>
-                                <h5><strong>Use Cases:</strong></h5>
-                                <ul>
-                                    <li><strong>Financial Management:</strong> A global corporation uses Oracle Fusion Technical to consolidate financial data from multiple subsidiaries, improving financial reporting and compliance.</li>
-                                    <li><strong>Supply Chain Optimization:</strong> A manufacturing company leverages procurement and project management modules to streamline its supply chain and enhance project execution.</li>
-                                    <li><strong>Customer Engagement:</strong> A retail business enhances its customer engagement strategies by integrating CRM functionalities to personalize marketing efforts and improve customer service.</li>
-                                    <li><strong>Talent Management:</strong> An enterprise optimizes its HR processes by using HCM tools for efficient talent acquisition, employee performance tracking, and workforce planning.</li>
-                                </ul>
+    <p class="about-description">
+      Oracle Fusion Technical refers to the technical framework used to customize, extend, and integrate Oracle Fusion Applications without disrupting core cloud functionality. It enables developers and technical consultants to build scalable, secure, and upgrade-safe solutions within the Oracle ERP Cloud ecosystem.
+    </p>
 
-                                <h4><strong>Why Should You Learn Oracle Fusion Technical Training from Softonlinetraining?</strong></h4>
-                                <p>Choosing the right platform for your Oracle Fusion Technical training is crucial for mastering this comprehensive suite of enterprise applications. Softonlinetraining stands out as a premier provider of Oracle Fusion Technical training for several compelling reasons.</p>
+    <p class="about-description">
+      Oracle Fusion Technical includes tools and technologies such as BI Publisher, OTBI, BIP reports, REST and SOAP integrations, Oracle Integration Cloud concepts, data migration utilities, personalization frameworks, and extension capabilities. These tools allow organizations to meet complex business requirements while maintaining compliance with Oracle Cloud standards.
+    </p>
+    <p class="about-description">Oracle Fusion Technical training equips professionals with the skills required to work on the technical layer of Oracle ERP Cloud applications. As enterprises move from legacy Oracle systems to cloud-based ERP platforms, the demand for technical consultants who understand integrations, extensions, and reporting has increased significantly.</p>
+    <p class="about-description">This training emphasizes practical learning across Oracle Fusion technical components, helping learners understand how business requirements are translated into technical solutions. The course structure supports real-world project readiness by covering development, integration, and reporting concepts aligned with modern Oracle Cloud architecture.</p>
+  </div>
+  
+  <h3 class="who-label" style="margin-top:20px;">Key Modules</h3>
+<div class="tag-container">
+  <div class="tag">VBCS</div>
+  <div class="tag">PCS</div>
+  <div class="tag">BI Publisher</div>
+  <div class="tag">Data Migration</div>
+  <div class="tag">Extensions</div>
+  <div class="tag">Integrations</div>
+  <div class="tag">APIs</div>
+  <div class="tag">Custom Applications</div>
+  <div class="tag">Process Automation</div>
+  <div class="tag">Scheduling & Migration</div>
+  <div class="tag">OTBI reports</div>
+  <div class="tag">BIP reports</div>
+  <div class="tag">REST & SOAP Integration</div>
+  <div class="tag">Oracle Integration Cloud (OIC)</div>
+</div>
 
-                                <h5><strong>Expert Instructors</strong></h5>
-                                <p>At Soft Online Training, our courses are led by industry experts with extensive experience in Oracle Fusion Technical applications. These instructors bring real-world insights and practical knowledge to the training sessions, ensuring that you gain a deep and practical understanding of the software. Their expertise covers all aspects of Oracle Fusion Technical, including ERP, CRM, and HCM modules.</p>
 
-                                <h5><strong>Comprehensive Curriculum</strong></h5>
-                                <p>Our Oracle Fusion Technical training program is designed to cover all essential topics comprehensively. From fundamental concepts to advanced functionalities, our curriculum ensures that you become proficient in using and implementing Oracle Fusion Technical solutions. The course includes detailed modules on finance, procurement, project management, CRM, and HCM, as well as hands-on exercises to reinforce your learning.</p>
+  <div class="who-header">
+    <span class="who-label">Who It's For</span>
+    <h2 class="who-heading">
+      Who Should <span class="gradient-text">Enroll </span>in This Oracle Fusion Technical Course?
+    </h2>
+    <p>This Oracle Fusion Technical training is ideal for professionals aiming to build or strengthen technical skills in Oracle Cloud ERP environments.</p>
+  </div>
 
-                                <h5><strong>Hands-On Training</strong></h5>
-                                <p>Learning by doing is a core principle at Softonlinetraining. Our training sessions include:</p>
-                                <ul>
-                                    <li>Extensive hands-on exercises.</li>
-                                    <li>Real-world projects.</li>
-                                    <li>Case studies that enable you to put your knowledge into real-world situations.</li>
-                                </ul>
-                                <p>This approach ensures that you gain practical experience and are well-prepared to handle real-life challenges in Oracle Fusion Technical environments.</p>
+  <div class="who-grid">
 
-                                <h5><strong>Flexible Learning Options</strong></h5>
-                                <p>We understand that flexibility is essential for busy professionals. Soft Online Training offers various learning formats, including live online sessions, recorded videos, and self-paced courses. This flexibility allows you to learn at your own pace and convenience, making it easier to balance your training with other commitments.</p>
+    <!-- Card 1 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Graduation Cap -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="3"></circle>
+  <path d="M12 2v2"></path>
+  <path d="M12 20v2"></path>
+  <path d="M4.93 4.93l1.41 1.41"></path>
+  <path d="M17.66 17.66l1.41 1.41"></path>
+  <path d="M2 12h2"></path>
+  <path d="M20 12h2"></path>
+  <path d="M4.93 19.07l1.41-1.41"></path>
+  <path d="M17.66 6.34l1.41-1.41"></path>
+</svg>
+      </div>
+      <h3>Technical Consultants</h3>
+      <p>Professionals working on Oracle ERP implementations who want to handle integrations, reports, and extensions confidently.</p>
+    </div>
 
-                                <h5><strong>Support and Resources</strong></h5>
-                                <p>Our dedication to your achievement goes beyond the walls of the classroom. Soft Online Training provides continuous support through dedicated mentors, discussion forums, and a rich repository of learning resources. Whether you need help with a specific topic or guidance on career advancement, our support team is always available to assist you.</p>
+    <!-- Card 2 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Building -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="23 4 23 10 17 10"></polyline>
+  <polyline points="1 20 1 14 7 14"></polyline>
+  <path d="M3.5 9a9 9 0 0 1 14-3.5"></path>
+  <path d="M20.5 15a9 9 0 0 1-14 3.5"></path>
+</svg>
+      </div>
+      <h3>Oracle EBS Technical Professionals</h3>
+      <p> Developers transitioning from legacy Oracle Applications to Oracle Fusion Cloud technologies.</p>
+    </div>
 
-                                <h5><strong>Certification and Career Advancement</strong></h5>
-                                <p>Completing the Oracle Fusion Technical training from Soft Online Training equips you with a valuable certification that is recognized in the industry. This certification not only validates your skills and knowledge but also enhances your resume, making you a more competitive candidate in the job market. With the increasing demand for Oracle Fusion Technical expertise, this training can significantly boost your career prospects.</p>
+    <!-- Card 3 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Chart -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="16 18 22 12 16 6"></polyline>
+  <polyline points="8 6 2 12 8 18"></polyline>
+</svg>
+      </div>
+      <h3>Software Developers</h3>
+      <p> Developers interested in working with enterprise ERP systems and cloud-based integration frameworks.</p>
+    </div>
 
-                                <h5><strong>Positive Track Record</strong></h5>
-                                <p>Soft Online Training has a proven track record of success, with numerous testimonials from satisfied learners who have benefited from our training programs. Our alums have gone on to achieve significant career advancements and have successfully implemented Oracle Fusion Technical solutions in their organizations.</p>
+    <!-- Card 4 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Monitor -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="3" rx="2"/>
+          <line x1="8" x2="16" y1="21" y2="21"/>
+          <line x1="12" x2="12" y1="17" y2="21"/>
+        </svg>
+      </div>
+      <h3>Integration Developers</h3>
+      <p> Developers working on OIC, REST APIs, and third-party integrations.</p>
+    </div>
 
-                                <!-- Overview End -->
-                            </div>
-                            <div class="rbt-show-more-btn">Show More</div>
+    <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <rect width="20" height="14" x="2" y="6" rx="2"/>
+        </svg>
+      </div>
+      <h3>PL/SQL & Reporting Developers</h3>
+      <p>Technical professionals expanding skills into Fusion technical components.
+</p>
+    </div>
+
+        <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 17l6-6 4 4 7-7"></path>
+  <path d="M14 8h6v6"></path>
+</svg>
+</div>
+      <h3>Oracle Careers for Career Switchers</h3>
+      <p>Ideal for professionals planning a structured move from non-IT roles into Oracle ERP and Cloud careers.</p>
+    </div>
+
+  </div>
+
+   <div class="highlights-header">
+    <span class="highlights-label">What You Get</span>
+    <h2 class="highlights-heading">
+      Oracle Fusion Technical Course <span class="gradient-text">Highlights</span>
+    </h2>
+  </div>
+
+  <div class="highlights-grid">
+
+  <!-- Card 1 -->
+  <div class="highlight-card">
+    <div class="icon-wrapper">
+      <!-- Live Class (Video Camera - Simple) -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="6" width="12" height="12" rx="2"></rect>
+        <path d="M15 10l6-3v10l-6-3z"></path>
+      </svg>
+    </div>
+    <h3>Live Classes with 2-year Recording Access</h3>
+    <p>Learn through interactive live training backed by one-year LMS recordings for revision and continuous practice.</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="highlight-card">
+    <div class="icon-wrapper">
+      <!-- Hands-on (Code Brackets - Light) -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="8 6 2 12 8 18"></polyline>
+        <polyline points="16 6 22 12 16 18"></polyline>
+      </svg>
+    </div>
+    <h3>Hands-On Real-Time Technical Scenarios</h3>
+    <p>Learn through practical technical tasks such as reports, integrations, role setups, and extensions based on real Oracle Fusion project requirements.</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="highlight-card">
+    <div class="icon-wrapper">
+      <!-- Cloud Lab (Cloud - Minimal) -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 17a4 4 0 0 0-2-7.5 5 5 0 0 0-9.5-1.5A4 4 0 0 0 4 17h16z"></path>
+      </svg>
+    </div>
+    <h3>6 Months Oracle Cloud Lab Access</h3>
+    <p>Work directly in Oracle Fusion Cloud environments to practice setups, configurations, and technical activities like integrations, security, and data management.
+</p>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="highlight-card">
+    <div class="icon-wrapper">
+      <!-- Structured Path (Layers - Clean) -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+        <polyline points="2 17 12 22 22 17"></polyline>
+        <polyline points="2 12 12 17 22 12"></polyline>
+      </svg>
+    </div>
+    <h3>Mobile App Study Access</h3>
+    <p>Learn Oracle Fusion Technical and Integration Cloud anytime using a mobile app with recorded content and LMS support.
+</p>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="highlight-card">
+    <div class="icon-wrapper">
+      <!-- Career Support (Target - Minimal) -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"></circle>
+        <circle cx="12" cy="12" r="4"></circle>
+      </svg>
+    </div>
+    <h3>Interview & Career Support</h3>
+    <p>Get technical interview preparation, resume guidance, and job-oriented mentoring aligned with current Oracle Fusion Technical hiring needs.</p>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="highlight-card">
+    <div class="icon-wrapper">
+      <!-- Certificate (Badge - Simple) -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="6"></circle>
+        <path d="M9 14l-1 7 4-2 4 2-1-7"></path>
+      </svg>
+    </div>
+    <h3>Course Completion Certification</h3>
+    <p>Receive a course completion certificate that confirms your Oracle Fusion Technical skills and helps strengthen your profile for technical consultant roles.</p>
+  </div>
+
+</div>
+</div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -233,11 +382,12 @@
 
                         <!-- Start Course Feature Box  -->
                         <div class="rbt-course-feature-box rbt-border-with-box details-wrapper mt--30" id="details">
+                            <h2 class="rbt-title-style-3">Course Details</h2>
                             <div class="row g-5">
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Requirements</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">Requirements</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($requirements[$current_slug] as $requirement) : ?>
@@ -250,7 +400,7 @@
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">What Will You Learn</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">What Will You Learn</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($learnings[$current_slug] as $learn) : ?>
@@ -260,6 +410,190 @@
                                 </div>
                                 <!-- End Feture Box  -->
                             </div>
+                            <div class="why-header">
+    <span class="why-label">Why Us</span>
+    <h2 class="why-heading">
+      Why Choose <span class="gradient-text">Soft Online Training?</span>
+    </h2>
+  </div>
+
+  <div class="why-container">
+
+    <!-- LEFT TRAINER CARD -->
+    <div class="trainer-card">
+      <div class="trainer-header">
+        <div class="trainer-avatar">K</div>
+        <div>
+          <h2>Mr. Vijay </h2>
+          <p>Oracle Technical Industry Expert</p>
+        </div>
+      </div>
+
+      <ul class="trainer-points">
+        <li><h3>Oracle-certified technical expert with 16+ years of ERP experience</h3></li>
+        <li><h3>Expertise in Fusion architecture, BI reports, integrations, and extensions</h3></li>
+        <li><h3>Hands-on training using real implementation scenarios</h3></li>
+        <li><h3>Ideal for non-IT to IT technical career transitions
+</h3></li>
+      </ul>
+
+    </div>
+
+    <!-- RIGHT FEATURES LIST -->
+    <div class="why-features">
+
+      <div class="feature-item">
+  <div class="feature-icon">
+    <!-- Real Project (Briefcase - Simple) -->
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="7" width="18" height="14" rx="2"></rect>
+      <path d="M8 7V5h8v2"></path>
+    </svg>
+  </div>
+  <div>
+    <h3>Real Project–Focused Technical Training</h3>
+    <p>The training goes beyond theory and screens, helping you understand how Oracle Fusion technical components work in real implementation and support projects.</p>
+  </div>
+</div>
+
+
+<div class="feature-item">
+  <div class="feature-icon">
+    <!-- Trainer (User - Clean) -->
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="8" r="4"></circle>
+      <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+    </svg>
+  </div>
+  <div>
+    <h3>Experienced Oracle Fusion Technical Trainer</h3>
+    <p>Learn from a trainer with hands-on experience in Oracle Fusion technical areas like reports, integrations, security, and extensions used in live environments.</p>
+  </div>
+</div>
+
+
+<div class="feature-item">
+  <div class="feature-icon">
+    <!-- Skill Coverage (Check Circle - Simple) -->
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"></circle>
+      <path d="M9 12l2 2 4-4"></path>
+    </svg>
+  </div>
+  <div>
+    <h3>Complete Technical Skill Coverage</h3>
+    <p>Covers key technical areas including BI reports, BIP, OTBI basics, integrations, security roles, data migration concepts, and Fusion architecture understanding.</p>
+  </div>
+</div>
+
+
+<div class="feature-item">
+  <div class="feature-icon">
+    <!-- Single Trainer (Link - Minimal) -->
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"></path>
+      <path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"></path>
+    </svg>
+  </div>
+  <div>
+    <h3>Single-Trainer Learning Experience</h3>
+    <p>One dedicated trainer handles the full course, ensuring consistency, clarity, and smooth progression across all technical topics.</p>
+  </div>
+</div>
+
+
+<div class="feature-item">
+  <div class="feature-icon">
+    <!-- Modern Tools (Wrench - Minimal) -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="3"></circle>
+  <path d="M12 2v2"></path>
+  <path d="M12 20v2"></path>
+  <path d="M4.93 4.93l1.41 1.41"></path>
+  <path d="M17.66 17.66l1.41 1.41"></path>
+  <path d="M2 12h2"></path>
+  <path d="M20 12h2"></path>
+  <path d="M4.93 19.07l1.41-1.41"></path>
+  <path d="M17.66 6.34l1.41-1.41"></path>
+</svg>
+  </div>
+  <div>
+    <h3>Modern Fusion Tools & Concepts</h3>
+    <p>Get exposure to current Oracle Fusion technical features, tools, and frameworks relevant to today’s cloud ERP projects.</p>
+  </div>
+</div>
+
+  </div>
+                                        </div>
+
+                               <div class="career-header">
+    <span class="career-label">Career Impact</span>
+    <h2 class="career-heading">
+      Career Outcomes & <span class="gradient-text">Salary Data</span>
+    </h2>
+  </div>
+
+  <div class="career-table-wrapper">
+    <div class="table-scroll">
+<table class="career-table">
+
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>India</th>
+      <th>USA</th>
+      <th>UK</th>
+    </tr>
+  </thead>
+
+  <tbody class="Career-Outcomes">
+    <tr class="career-Outcome">
+      <td><h3>Technical Functional Consultant</h3></td>
+      <td>₹8-18 LPA</td>
+      <td>$85-130K</td>
+      <td>£50-80K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Procurement Lead</h3></td>
+      <td>₹12-25 LPA</td>
+      <td>$95-145K</td>
+      <td>£60-95K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Technical Technical Consultant</h3></td>
+      <td>₹10-22 LPA</td>
+      <td>$90-140K</td>
+      <td>£55-90K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Inventory/WMS Analyst</h3></td>
+      <td>₹7-15 LPA</td>
+      <td>$75-115K</td>
+      <td>£45-75K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Supply Chain Manager</h3></td>
+      <td>₹15-35 LPA</td>
+      <td>$110-170K</td>
+      <td>£70-110K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Cloud Architect</h3></td>
+      <td>₹20-45 LPA</td>
+      <td>$130-200K</td>
+      <td>£85-140K</td>
+    </tr>
+
+  </tbody>
+
+</table>
+    </div>
+  </div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -272,6 +606,8 @@
                         <!-- End Edu Review List  -->
 
                         <?php include_once "reviews.php"; ?>
+
+<?php include_once "faq.php";  ?>
 
 
 

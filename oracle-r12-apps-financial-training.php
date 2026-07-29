@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -63,10 +64,10 @@ ol li {
                                 </li>
                                 <li class="rbt-breadcrumb-item active">Oracle Fusion</li>
                             </ul>
-                            <h2 class="title"><?php echo $course_details[$current_slug]['title'] ?></h2>
+                            <h1 class="title"><?php echo $course_details[$current_slug]['title'] ?></h1>
                             <p class="description"><?php echo $short_descriptions[$current_slug]; ?> </p>
 
-                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature">
+                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature mt--10">
 
                                 <div class="feature-sin best-seller-badge">
                                     <span class="rbt-badge-2">
@@ -100,7 +101,7 @@ ol li {
                                 
                                 <?php include_once "demo_video_modal.php"; ?>
                             </div>
-
+              <?php include_once "claim_instant_offer.php"; ?>
                         </div>
                     </div>
                 </div>
@@ -138,54 +139,231 @@ ol li {
                         </div>
 
                         <!-- Start Course Feature Box  -->
-                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30 has-show-more"
+                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30"
                             id="overview">
-                            <div class="rbt-course-feature-inner has-show-more-inner-content">
-                                <div class="section-title">
-                                    <h4 class="rbt-title-style-3">About
-                                        <?php echo $course_details[$current_slug]['title'] ?></h4>
-                                </div>
+                            <div class="rbt-course-feature-inner">
                                 <!-- Overview Start -->
                                
-<h4><strong>What is Oracle EBS R12 Financials?</strong></h4>
-<p>Oracle E-Business Suite (EBS) R12 Financials is a comprehensive enterprise software solution designed to streamline and optimize financial management processes for organizations. It encompasses modules such as General Ledger, Accounts Payable, Accounts Receivable, Cash Management, and Fixed Assets, offering integrated functionalities that facilitate efficient financial reporting, compliance, and decision-making. Oracle EBS R12 Financials enables businesses to automate transaction processing, enhance financial controls, and gain real-time insights into their financial performance. With its robust features for managing financial data across multiple currencies and legal entities, Oracle EBS R12 Financials supports organizations in achieving greater operational efficiency and strategic financial management.</p>
+<div class="about-content">
+    <span class="about-label">About the Course</span>
 
-<h5><strong>Key Features:</strong></h5>
-<ol>
-<li><strong>General Ledger:</strong> Centralizes financial information and supports multi-currency transactions, enabling accurate financial reporting.</li>
-<li><strong>Accounts Payable:</strong> Automated invoice processing, payment generation, and vendor management to optimize cash flow and improve payment accuracy.</li>
-<li><strong>Accounts Receivable:</strong> Manages customer invoices, receipts, and collections, enhancing cash flow management and customer relationships.</li>
-<li><strong>Cash Management:</strong> Provides real-time visibility into cash positions, forecasts cash requirements, and facilitates bank reconciliation to ensure optimal liquidity management.</li>
-<li><strong>Fixed Assets:</strong> Tracks and manages fixed assets throughout their lifecycle, ensuring compliance with accounting standards and optimizing asset utilization.</li>
-</ol>
+    <h2 class="about-heading">
+      What is <span class="gradient-text">Oracle Fusion Financial?</span>
+    </h2>
 
-<h5><strong>Benefits:</strong></h5>
-<ul>
-<li><strong>Operational Efficiency:</strong> Automates financial processes, reduces manual errors, and enhances productivity.</li>
-<li><strong>Financial Control:</strong> Strengthens internal controls, ensures compliance with regulatory requirements, and minimizes financial risks.</li>
-<li><strong>Real-time Insights:</strong> Provides actionable insights into financial performance, supporting informed decision-making.</li>
-<li><strong>Global Capabilities:</strong> Supports multi-national operations with capabilities for managing diverse currencies, legal entities, and regulatory environments.</li>
-<li><strong>Scalability:</strong> Adapts to organizational growth and evolving business needs, maintaining performance and reliability.</li>
-</ul>
-<p>Oracle EBS R12 Financials empowers organizations to achieve greater financial transparency, operational agility, and strategic alignment, thereby enabling sustained growth and competitiveness in a dynamic business environment.</p>
+    <p class="about-description">
+      Oracle E-Business Suite R12 Financials is an on-premise ERP solution designed to manage end-to-end financial operations within an enterprise. It supports core accounting and finance functions such as General Ledger, Accounts Payable, Accounts Receivable, Fixed Assets, Cash Management, and Financial Reporting.
+    </p>
 
-<h4><strong>Why Should You Learn Oracle EBS R12 Financials Training from Soft Online Training?</strong></h4>
-<p>Embarking on Oracle EBS R12 Financials training with Soft Online Training offers a transformative learning experience tailored to professionals aiming to master enterprise financial management. Our comprehensive training program is meticulously crafted to impart practical skills and in-depth knowledge essential for leveraging Oracle EBS R12 Financials effectively in real-world scenarios.</p>
+    <p class="about-description">
+      Oracle EBS Financials enables organizations to maintain accurate financial records, comply with regulatory requirements, and manage period-end closing efficiently. The platform is widely used in industries that require stable, highly controlled financial systems with deep accounting functionality and customization flexibility.
+    </p>
+    <p class="about-description">Oracle EBS R12 Financials training prepares finance and accounting professionals to work effectively with on-premise ERP systems used by many large and stable enterprises. Despite the growth of cloud ERP, Oracle E-Business Suite Financials remains widely adopted for its control, customization, and reliability in managing complex financial operations.</p>
+    <p class="about-description">This training focuses on real accounting workflows executed within Oracle EBS R12. Learners gain hands-on exposure to how financial transactions are processed, validated, and reported across modules, helping them build strong functional knowledge and long-term career relevance in legacy ERP environments.</p>
+  </div>
 
-<h5><strong>Key Benefits of Choosing Soft Online Training:</strong></h5>
-<ol>
-<li><strong>Expert-Led Instruction:</strong> Learn from certified Oracle EBS instructors with extensive industry experience, ensuring high-quality education and practical insights.</li>
-<li><strong>Comprehensive Curriculum:</strong> Gain proficiency in all facets of Oracle EBS R12 Financials, including General Ledger, Accounts Payable, Accounts Receivable, Cash Management, and Fixed Assets.</li>
-<li><strong>Hands-On Experience:</strong> Engage in hands-on labs and real-world simulations that reinforce theoretical concepts and build confidence in using Oracle EBS R12 Financials.</li>
-<li><strong>Flexible Learning Options:</strong> Access flexible learning schedules with self-paced modules and interactive live sessions, accommodating diverse learning preferences and busy professional schedules.</li>
-<li><strong>Career Advancement:</strong> Enhance your career prospects with a globally recognized certification in Oracle EBS R12 Financials, validating your expertise and opening doors to new opportunities.</li>
-</ol>
-<p>At Soft Online Training, we are committed to empowering individuals with the skills and knowledge needed to excel in Oracle EBS R12 Financials. Whether you are starting your career in finance or aiming to advance in your current role, our training equips you with the competencies to drive organizational success and innovation.</p>
-                                
-                                
-                                <!-- Overview End -->
-                            </div>
-                            <div class="rbt-show-more-btn">Show More</div>
+  <h3 class="who-label" style="margin-top:20px;">Key Modules</h3>
+<div class="tag-container">
+  <div class="tag"></div>
+  <div class="tag"></div>
+  <div class="tag"></div>
+  <div class="tag"></div>
+  <div class="tag"></div>
+  <div class="tag"></div>
+  <div class="tag"></div>
+  <div class="tag"></div>
+  <div class="tag"></div>
+  <div class="tag"></div>
+  <div class="tag"></div>
+</div>
+
+  <div class="who-header">
+    <span class="who-label">Who It's For</span>
+    <h2 class="who-heading">
+      Who Should <span class="gradient-text">Enroll </span>in This Oracle Fusion Financial Course?
+    </h2>
+    <p>This Oracle EBS R12 Financials training is ideal for professionals working in finance, accounting, and ERP support roles.</p>
+  </div>
+
+  <div class="who-grid">
+
+    <!-- Card 1 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Graduation Cap -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+          <path d="M22 10v6"/>
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+        </svg>
+      </div>
+      <h3>Graduates & Career Starters</h3>
+      <p>Candidates interested in building a strong foundation in enterprise financial ERP systems.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Building -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+          <path d="M10 6h4"/>
+          <path d="M10 10h4"/>
+          <path d="M10 14h4"/>
+          <path d="M10 18h4"/>
+        </svg>
+      </div>
+      <h3>Finance & Accounting Professionals</h3>
+      <p>Accountants, finance executives, and auditors seeking system-level expertise in Oracle Financials.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Chart -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+          <path d="M18 17V9"/>
+          <path d="M13 17V5"/>
+          <path d="M8 17v-3"/>
+        </svg>
+      </div>
+      <h3>Oracle EBS Financials Users</h3>
+      <p>Professionals currently working on Oracle E-Business Suite Financials modules who want deeper functional clarity.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Monitor -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="3" rx="2"/>
+          <line x1="8" x2="16" y1="21" y2="21"/>
+          <line x1="12" x2="12" y1="17" y2="21"/>
+        </svg>
+      </div>
+      <h3>ERP Support & Functional Consultants</h3>
+      <p>Consultants and support engineers responsible for maintaining and enhancing EBS Financials systems.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <rect width="20" height="14" x="2" y="6" rx="2"/>
+        </svg>
+      </div>
+      <h3>Oracle EBS SCM or Technical Professionals</h3>
+      <p> Professionals looking to expand their functional skill set into financial modules.</p>
+    </div>
+
+        <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 17l6-6 4 4 7-7"></path>
+  <path d="M14 8h6v6"></path>
+</svg>
+</div>
+      <h3>Non-IT to IT Career Switchers</h3>
+      <p>Structured training that helps non-IT professionals confidently transition into Oracle ERP and Cloud roles.</p>
+    </div>
+
+  </div>
+
+   <div class="highlights-header">
+    <span class="highlights-label">What You Get</span>
+    <h2 class="highlights-heading">
+      Oracle Fusion Financial Course <span class="gradient-text">Highlights</span>
+    </h2>
+    <p>This Oracle EBS R12 Financials training is designed to help learners understand core accounting processes and financial operations using Oracle E-Business Suite.</p>
+  </div>
+
+  <div class="highlights-grid">
+
+    <!-- Card 1 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+          <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+        </svg>
+      </div>
+      <h3>Live Classes with 2-year Recording Access</h3>
+      <p>Attend instructor-led live sessions and access recorded classes for one year to revise accounting flows, setups, and reporting concepts.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polygon points="6 3 20 12 6 21 6 3"></polygon>
+        </svg>
+      </div>
+      <h3>Hands-On Financials Use Cases</h3>
+      <p>Learn through practical scenarios covering GL, AP, AR, Assets, and Cash Management used in real enterprise finance operations.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <rect width="20" height="8" x="2" y="2" rx="2"></rect>
+          <rect width="20" height="8" x="2" y="14" rx="2"></rect>
+          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+        </svg>
+      </div>
+      <h3>6 Months Oracle EBS Lab Access</h3>
+      <p>Gain hands-on practice in Oracle EBS R12 Financials environments, working on real-time transactions and module configurations.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+          <circle cx="12" cy="8" r="6"></circle>
+        </svg>
+      </div>
+      <h3>Course Completion Certificate</h3>
+      <p>Earn a course completion certificate that validates your Oracle EBS R12 Financials skills and professional readiness.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+          <polyline points="16 7 22 7 22 13"></polyline>
+        </svg>
+      </div>
+      <h3>Structured Learning Path</h3>
+      <p>Start with financial fundamentals and progress step-by-step to advanced Oracle EBS Financials configurations and integrations.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="M6 3h12"></path>
+          <path d="M6 8h12"></path>
+          <path d="m6 13 8.5 8"></path>
+          <path d="M6 13h3"></path>
+          <path d="M9 13c6.667 0 6.667-10 0-10"></path>
+        </svg>
+      </div>
+      <h3>Interview & Career Support</h3>
+      <p>Receive interview preparation, resume guidance, and role-based support aligned with Oracle EBS Financials job roles.</p>
+    </div>
+
+  </div>
+</div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -196,11 +374,12 @@ ol li {
 
                         <!-- Start Course Feature Box  -->
                         <div class="rbt-course-feature-box rbt-border-with-box details-wrapper mt--30" id="details">
+                            <h2 class="rbt-title-style-3">Course Details</h2>
                             <div class="row g-5">
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Requirements</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">Requirements</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($requirements[$current_slug] as $requirement): ?>
@@ -213,7 +392,7 @@ ol li {
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">What Will You Learn</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">What Will You Learn</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($learnings[$current_slug] as $learn): ?>
@@ -223,6 +402,182 @@ ol li {
                                 </div>
                                 <!-- End Feture Box  -->
                             </div>
+                            <div class="why-header">
+    <span class="why-label">Why Us</span>
+    <h2 class="why-heading">
+      Why Choose <span class="gradient-text">Soft Online Training?</span>
+    </h2>
+    <p>This Oracle EBS R12 Financials online training focuses on real accounting workflows and system usage followed by organizations.
+</p>
+  </div>
+
+  <div class="why-container">
+
+    <!-- LEFT TRAINER CARD -->
+    <div class="trainer-card">
+      <div class="trainer-header">
+        <div class="trainer-avatar">K</div>
+        <div>
+          <h2>Mr. Krishna</h2>
+          <p>Lead Trainer & Oracle Financial Expert</p>
+        </div>
+      </div>
+
+      <ul class="trainer-points">
+        <li><h3>20+ years of real-world Oracle Financial implementation experience</h3></li>
+        <li><h3>Trained 23000+ students across 70+ batches globally</h3></li>
+        <li><h3>End-to-end Financial + Procurement specialist (rare combination)</h3></li>
+        <li><h3>Project-based, hands-on training with real scenarios</h3></li>
+      </ul>
+
+    </div>
+
+    <!-- RIGHT FEATURES LIST -->
+    <div class="why-features">
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Shield SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Finance Process–Focused Training</h3>
+          <p>Learn how Oracle EBS Financials modules support real accounting, reporting, and compliance requirements in enterprises.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- User SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Trainer with EBS Financials Project Experience</h3>
+          <p>Training is delivered by professionals with hands-on experience in Oracle EBS Financials implementations and support projects.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Brain SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+            <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+          </svg>
+        </div>
+        <div>
+          <h3>End-to-End Financials Coverage</h3>
+          <p>Covers GL, AP, AR, Fixed Assets, Cash Management, and integration with Financial modules.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Layers SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+            <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Structured Learning & Learner Support</h3>
+          <p>Soft Online Training provides clear explanations, practical guidance, and continuous support throughout the learning journey.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Award SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+            <circle cx="12" cy="8" r="6"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Aligned with Industry EBS Practices</h3>
+          <p>Content reflects standard Oracle EBS R12 financial workflows widely used in enterprises.
+</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+                               <div class="career-header">
+    <span class="career-label">Career Impact</span>
+    <h2 class="career-heading">
+      Career Outcomes & <span class="gradient-text">Salary Data</span>
+    </h2>
+  </div>
+
+  <div class="career-table-wrapper">
+    <div class="table-scroll">
+<table class="career-table">
+
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>India</th>
+      <th>USA</th>
+      <th>UK</th>
+    </tr>
+  </thead>
+
+  <tbody class="Career-Outcomes">
+    <tr class="career-Outcome">
+      <td><h3>Financial Functional Consultant</h3></td>
+      <td>₹8-18 LPA</td>
+      <td>$85-130K</td>
+      <td>£50-80K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Procurement Lead</h3></td>
+      <td>₹12-25 LPA</td>
+      <td>$95-145K</td>
+      <td>£60-95K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Financial Technical Consultant</h3></td>
+      <td>₹10-22 LPA</td>
+      <td>$90-140K</td>
+      <td>£55-90K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Inventory/WMS Analyst</h3></td>
+      <td>₹7-15 LPA</td>
+      <td>$75-115K</td>
+      <td>£45-75K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Supply Chain Manager</h3></td>
+      <td>₹15-35 LPA</td>
+      <td>$110-170K</td>
+      <td>£70-110K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Cloud Architect</h3></td>
+      <td>₹20-45 LPA</td>
+      <td>$130-200K</td>
+      <td>£85-140K</td>
+    </tr>
+
+  </tbody>
+
+</table>
+    </div>
+  </div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -235,6 +590,8 @@ ol li {
                         <!-- End Edu Review List  -->
 
                         <?php include_once "reviews.php"; ?>
+
+                        <?php include_once "faq.php";  ?>
 
 
 

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -67,10 +68,10 @@
                                 </li>
                                 <li class="rbt-breadcrumb-item active">Oracle Fusion</li>
                             </ul>
-                            <h2 class="title"><?php echo $course_details[$current_slug]['title'] ?></h2>
+                            <h1 class="title"><?php echo $course_details[$current_slug]['title'] ?></h1>
                             <p class="description"><?php echo $short_descriptions[$current_slug]; ?> </p>
 
-                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature">
+                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature mt--10">
 
                                 <div class="feature-sin best-seller-badge">
                                     <span class="rbt-badge-2">
@@ -101,7 +102,7 @@
 
                                 <?php include_once "demo_video_modal.php"; ?>
                             </div>
-
+              <?php include_once "claim_instant_offer.php"; ?>
                         </div>
                     </div>
                 </div>
@@ -139,47 +140,221 @@
                         </div>
 
                         <!-- Start Course Feature Box  -->
-                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30 has-show-more" id="overview">
-                            <div class="rbt-course-feature-inner has-show-more-inner-content">
-                                <div class="section-title">
-                                    <h4 class="rbt-title-style-3">About
-                                        <?php echo $course_details[$current_slug]['title'] ?></h4>
-                                </div>
+                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30" id="overview">
+                            <div class="rbt-course-feature-inner">
                                 <!-- Overview Start -->
-                                <h3><strong>What is Oracle EBS R12 SCM?</strong></h3>
-                                <p>Oracle E-Business Suite (EBS) R12 Supply Chain Management (SCM) is a comprehensive suite of integrated applications designed to streamline and optimize critical supply chain processes across organizations. Key features of Oracle EBS R12 SCM include:</p>
-                                <ol>
-                                    <li><strong>Inventory Management</strong>: Provides real-time visibility into inventory levels, locations, and transactions, facilitating effective inventory planning and control.</li>
-                                    <li><strong>Order Management:</strong> It manages the entire order lifecycle from capture to fulfillment, enabling efficient order processing and improved customer satisfaction.</li>
-                                    <li><strong>Purchasing</strong>: Automates and streamlines procurement processes, ensuring timely procurement of goods and services while controlling costs and maintaining supplier relationships.</li>
-                                    <li><strong>Manufacturing</strong>: Supports various manufacturing processes, from discrete to process manufacturing, enabling efficient production planning, scheduling, and execution.</li>
-                                    <li><strong>Logistics</strong>: Optimizes transportation and logistics operations, reducing transportation costs and improving delivery accuracy and reliability.</li>
-                                </ol>
-                                <h5><strong>Benefits of Oracle EBS R12 SCM include:</strong></h5>
-                                <ul>
-                                    <li><strong>Operational Efficiency</strong>: Streamlines supply chain operations, reduces manual efforts, and improves process efficiency.</li>
-                                    <li><strong>Cost Control</strong>: Enables better cost management through optimized inventory levels, procurement processes, and transportation logistics.</li>
-                                    <li><strong>Improved Customer Service</strong>: Enhances order fulfillment accuracy and speed, leading to improved customer satisfaction and loyalty.</li>
-                                    <li><strong>Real-Time Insights</strong>: Provides actionable insights through robust reporting and analytics capabilities, supporting informed decision-making.</li>
-                                    <li><strong>Scalability and Integration</strong>: Scales with business growth and integrates seamlessly with other enterprise systems, ensuring continuity and adaptability.</li>
-                                </ul>
-                                <p>Oracle EBS R12 SCM empowers organizations to achieve operational excellence, drive cost savings, and gain a competitive edge in today's dynamic business environment.</p>
+                                <div class="about-content">
+    <span class="about-label">About the Course</span>
 
-                                <h3><strong>Why Should You Learn Oracle EBS R12 SCM Training from Soft Online Training?</strong></h3>
-                                <p>When considering Oracle EBS R12 Supply Chain Management (SCM) training, Soft Online Training stands out as a premier choice for several compelling reasons. Our specialized training program offers comprehensive coverage of Oracle EBS R12 SCM, equipping learners with essential skills and knowledge to effectively navigate and utilize this powerful suite of applications. Here&rsquo;s why you should choose Soft Online Training:</p>
-                                <ol>
-                                    <li><strong>Expert Faculty</strong>: Our instructors are seasoned professionals with extensive industry experience and deep expertise in Oracle EBS R12 SCM. They provide practical insights and real-world examples, ensuring a thorough understanding of concepts.</li>
-                                    <li><strong>Comprehensive Curriculum</strong>: The training curriculum is meticulously crafted to cover all aspects of Oracle EBS R12 SCM, including Inventory Management, Order Management, Purchasing, Manufacturing, and Logistics. Each module is designed to build proficiency and readiness in handling SCM challenges.</li>
-                                    <li><strong>Hands-on Experience</strong>: We emphasize hands-on learning through practical exercises, case studies, and projects. This approach allows learners to gain practical experience in using Oracle EBS R12 SCM applications, preparing them for real-world scenarios.</li>
-                                    <li><strong>Flexible Learning Options</strong>: Soft Online Training offers flexible learning options such as self-paced learning and instructor-led sessions. This flexibility accommodates diverse learning preferences and schedules, allowing professionals to balance learning with their professional commitments.</li>
-                                    <li><strong>Certification Preparation</strong>: Our training includes comprehensive preparation for Oracle EBS R12 SCM certification exams. We equip learners with the knowledge and confidence to successfully clear certification exams, validating their expertise in Oracle SCM.</li>
-                                    <li><strong>Career Advancement</strong>: By acquiring skills in Oracle EBS R12 SCM through Soft Online Training, learners enhance their career prospects&mdash;the in-demand skills and certification in Oracle SCM open doors to lucrative job opportunities and career advancement.</li>
-                                    <li><strong>Support and Resources</strong>: We provide ongoing support to our learners, including access to study materials, recorded sessions, and a dedicated support team to address queries and facilitate a smooth learning experience.</li>
-                                </ol>
-                                <p>Choosing Soft Online Training for Oracle EBS R12 SCM ensures not only comprehensive learning but also practical skills development that translates into tangible career benefits and professional growth opportunities in the competitive global marketplace.</p>
-                                <!-- Overview End -->
-                            </div>
-                            <div class="rbt-show-more-btn">Show More</div>
+    <h2 class="about-heading">
+      What is <span class="gradient-text">Oracle Fusion EBS SCM?</span>
+    </h2>
+
+    <p class="about-description">
+      Oracle EBS R12 SCM is widely used in manufacturing, distribution, and large-scale enterprises where system stability, customization, and control are critical. The platform enables organizations to manage complex supply chain processes, ensure data integrity, and maintain operational continuity across procurement, production, and fulfillment cycles.
+    </p>
+
+    <p class="about-description">
+      Built on Oracle Cloud Infrastructure with the modern Redwood UX, it replaces 
+      legacy Oracle EBS and offers real-time analytics, IoT integration, blockchain, 
+      and machine learning capabilities that today's enterprises demand.
+    </p>
+
+    <p class="about-description">Oracle EBS R12 SCM training prepares professionals to work confidently with on-premise supply chain systems that continue to power large and stable enterprise operations. Despite the growth of cloud ERP, many organizations still rely on Oracle E-Business Suite R12 for critical SCM functions, creating sustained demand for skilled professionals who understand these systems deeply.</p>
+    <p class="about-description">This training focuses on real business workflows executed within Oracle EBS SCM modules. Learners gain practical exposure to how supply chain processes are configured, executed, and supported in live environments, helping them build strong functional understanding and long-term career stability in legacy ERP ecosystems.</p>
+  </div>
+
+  <div class="who-header">
+    <span class="who-label">Who It's For</span>
+    <h2 class="who-heading">
+      Who Should <span class="gradient-text">Enroll </span>in This Oracle Fusion SCM Course?
+    </h2>
+    <p>This Oracle EBS R12 SCM training is ideal for professionals working with or planning to work in legacy Oracle ERP environments.
+</p>
+  </div>
+
+  <div class="who-grid">
+
+    <!-- Card 1 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Graduation Cap -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+          <path d="M22 10v6"/>
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+        </svg>
+      </div>
+      <h3>Graduates & Career Starters</h3>
+      <p> Candidates interested in building a foundation in enterprise ERP systems are still widely used across industries.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Building -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+          <path d="M10 6h4"/>
+          <path d="M10 10h4"/>
+          <path d="M10 14h4"/>
+          <path d="M10 18h4"/>
+        </svg>
+      </div>
+      <h3>Oracle EBS SCM Professionals</h3>
+      <p>Functional users and consultants currently working on Oracle E-Business Suite SCM modules.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Chart -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+          <path d="M18 17V9"/>
+          <path d="M13 17V5"/>
+          <path d="M8 17v-3"/>
+        </svg>
+      </div>
+      <h3>Supply Chain & Operations Professionals</h3>
+      <p> Professionals involved in procurement, inventory, manufacturing, or order management within EBS-based systems.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Monitor -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="3" rx="2"/>
+          <line x1="8" x2="16" y1="21" y2="21"/>
+          <line x1="12" x2="12" y1="17" y2="21"/>
+        </svg>
+      </div>
+      <h3>ERP Support & Maintenance Teams</h3>
+      <p> Support engineers responsible for day-to-day operations, issue resolution, and system enhancements.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <rect width="20" height="14" x="2" y="6" rx="2"/>
+        </svg>
+      </div>
+      <h3>Oracle EBS Financials or Technical Professionals</h3>
+      <p>Professionals looking to expand their functional knowledge into SCM modules.</p>
+    </div>
+
+        <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 17l6-6 4 4 7-7"></path>
+  <path d="M14 8h6v6"></path>
+</svg>
+</div>
+      <h3>Non-IT to IT Career Switchers</h3>
+      <p>Structured training that helps non-IT professionals confidently transition into Oracle ERP and Cloud roles.
+</p>
+    </div>
+
+  </div>
+
+   <div class="highlights-header">
+    <span class="highlights-label">What You Get</span>
+    <h2 class="highlights-heading">
+      Oracle Fusion SCM Course <span class="gradient-text">Highlights</span>
+    </h2>
+    <p>This Oracle EBS R12 SCM training is designed to help learners gain strong functional knowledge of traditional Oracle Supply Chain modules used by many enterprises.
+</p>
+  </div>
+
+  <div class="highlights-grid">
+
+    <!-- Card 1 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+          <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+        </svg>
+      </div>
+      <h3>Live Classes with 2-year Recording Access</h3>
+      <p>Attend instructor-led live sessions and access recorded classes for one year to revise concepts, flows, and module-specific configurations.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polygon points="6 3 20 12 6 21 6 3"></polygon>
+        </svg>
+      </div>
+      <h3>Hands-On EBS SCM Use Cases</h3>
+      <p>Learn through practical scenarios covering procurement, inventory, BOM, WIP, and order management used in real EBS projects.
+</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <rect width="20" height="8" x="2" y="2" rx="2"></rect>
+          <rect width="20" height="8" x="2" y="14" rx="2"></rect>
+          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+        </svg>
+      </div>
+      <h3>6 Months Oracle EBS Lab Access</h3>
+      <p>Get hands-on practice in Oracle E-Business Suite R12 environments, working on real SCM setups and transactional flows.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+          <circle cx="12" cy="8" r="6"></circle>
+        </svg>
+      </div>
+      <h3>Structured Learning Path</h3>
+      <p>Start with EBS SCM fundamentals and progress step-by-step toward advanced module configurations and cross-module integration.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+          <polyline points="16 7 22 7 22 13"></polyline>
+        </svg>
+      </div>
+      <h3>Interview & Career Support</h3>
+      <p>Receive interview preparation, resume guidance, and role-specific support aligned with Oracle EBS SCM job requirements.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="M6 3h12"></path>
+          <path d="M6 8h12"></path>
+          <path d="m6 13 8.5 8"></path>
+          <path d="M6 13h3"></path>
+          <path d="M9 13c6.667 0 6.667-10 0-10"></path>
+        </svg>
+      </div>
+      <h3>Course Completion Certificate</h3>
+      <p>Earn a course completion certificate that validates your Oracle EBS R12 SCM functional skills and industry readiness.</p>
+    </div>
+
+  </div>
+</div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -190,11 +365,12 @@
 
                         <!-- Start Course Feature Box  -->
                         <div class="rbt-course-feature-box rbt-border-with-box details-wrapper mt--30" id="details">
+                            <h2 class="rbt-title-style-3">Course Details</h2>
                             <div class="row g-5">
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Requirements</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">Requirements</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($requirements[$current_slug] as $requirement) : ?>
@@ -207,7 +383,7 @@
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">What Will You Learn</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">What Will You Learn</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($learnings[$current_slug] as $learn) : ?>
@@ -217,6 +393,181 @@
                                 </div>
                                 <!-- End Feture Box  -->
                             </div>
+                            <div class="why-header">
+    <span class="why-label">Why Us</span>
+    <h2 class="why-heading">
+      Why Choose <span class="gradient-text">Soft Online Training?</span>
+    </h2>
+    <p>This Oracle EBS R12 SCM online training focuses on practical system usage and real business processes still widely used across industries.</p>
+  </div>
+
+  <div class="why-container">
+
+    <!-- LEFT TRAINER CARD -->
+    <div class="trainer-card">
+      <div class="trainer-header">
+        <div class="trainer-avatar">K</div>
+        <div>
+          <h2>Mr. Krishna</h2>
+          <p>Lead Trainer & Oracle SCM Expert</p>
+        </div>
+      </div>
+
+      <ul class="trainer-points">
+        <li><h3>20+ years of real-world Oracle SCM implementation experience</h3></li>
+        <li><h3>Trained 23000+ students across 70+ batches globally</h3></li>
+        <li><h3>End-to-end SCM + Procurement specialist (rare combination)</h3></li>
+        <li><h3>Project-based, hands-on training with real scenarios</h3></li>
+      </ul>
+
+    </div>
+
+    <!-- RIGHT FEATURES LIST -->
+    <div class="why-features">
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Shield SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>EBS Process–Focused Training</h3>
+          <p>Learn how Oracle EBS SCM modules are configured and used in real organizational environments, not just theoretical navigation.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- User SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Trainer with Oracle EBS Project Experience</h3>
+          <p>Training is delivered by professionals with hands-on experience in Oracle EBS implementation, support, and upgrade projects.
+</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Brain SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+            <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+          </svg>
+        </div>
+        <div>
+          <h3>End-to-End EBS SCM Coverage</h3>
+          <p>Covers Purchasing, Inventory, BOM, WIP, Order Management, and basic integrations with Financials.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Layers SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+            <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Aligned with Industry EBS Practices</h3>
+          <p>Content reflects real-world Oracle EBS R12 workflows and common business practices followed by enterprises.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Award SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+            <circle cx="12" cy="8" r="6"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Structured Learning & Ongoing Support</h3>
+          <p>Soft Online Training provides clear explanations, practical guidance, and continuous learner support throughout the course.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+                               <div class="career-header">
+    <span class="career-label">Career Impact</span>
+    <h2 class="career-heading">
+      Career Outcomes & <span class="gradient-text">Salary Data</span>
+    </h2>
+  </div>
+
+  <div class="career-table-wrapper">
+    <div class="table-scroll">
+<table class="career-table">
+
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>India</th>
+      <th>USA</th>
+      <th>UK</th>
+    </tr>
+  </thead>
+
+  <tbody class="Career-Outcomes">
+    <tr class="career-Outcome">
+      <td><h3>SCM Functional Consultant</h3></td>
+      <td>₹8-18 LPA</td>
+      <td>$85-130K</td>
+      <td>£50-80K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Procurement Lead</h3></td>
+      <td>₹12-25 LPA</td>
+      <td>$95-145K</td>
+      <td>£60-95K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>SCM Technical Consultant</h3></td>
+      <td>₹10-22 LPA</td>
+      <td>$90-140K</td>
+      <td>£55-90K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Inventory/WMS Analyst</h3></td>
+      <td>₹7-15 LPA</td>
+      <td>$75-115K</td>
+      <td>£45-75K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Supply Chain Manager</h3></td>
+      <td>₹15-35 LPA</td>
+      <td>$110-170K</td>
+      <td>£70-110K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Cloud Architect</h3></td>
+      <td>₹20-45 LPA</td>
+      <td>$130-200K</td>
+      <td>£85-140K</td>
+    </tr>
+
+  </tbody>
+
+</table>
+    </div>
+  </div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -229,6 +580,8 @@
                         <!-- End Edu Review List  -->
 
                         <?php include_once "reviews.php"; ?>
+
+                        <?php include_once "faq.php";  ?>
 
 
 

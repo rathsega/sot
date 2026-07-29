@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -27,7 +28,7 @@
                 <div class="col-lg-12">
                     <div class="section-title text-center mb--60">
                         <span class="subtitle bg-secondary-opacity">Contact Us</span>
-                        <h2 class="title">Get in Touch with Soft Online Training</h2>
+                        <h1 class="title">Get in Touch with Soft Online Training</h1>
                     </div>
                 </div>
             </div>
@@ -38,7 +39,7 @@
                             <i class="feather-headphones"></i>
                         </div>
                         <div class="inner">
-                            <h4 class="title">Contact Phone Number</h4>
+                            <p style="font-weight:800; font-size:20px; color:#000;">Contact Phone Number</p>
                             <p><a href="tel:+917995883556">&nbsp;+91-799-588-3556</a></p>
                         </div>
                     </div>
@@ -49,7 +50,7 @@
                             <i class="feather-mail"></i>
                         </div>
                         <div class="inner">
-                            <h4 class="title">Our Email Address</h4>
+                            <p style="font-weight:800; font-size:20px; color:#000;">Our Email Address</p>
                             <p><a href="mailto:info@softonlinetraining.com">info@softonlinetraining.com</a></p>
                         </div>
                     </div>
@@ -60,7 +61,7 @@
                             <i class="feather-map-pin"></i>
                         </div>
                         <div class="inner">
-                            <h4 class="title">Our Location</h4>
+                            <p style="font-weight:800; font-size:20px; color:#000;">Our Location</p>
                             <p>HIG 302/303,
                                 HARSHINI ELITE APARTMENT,
                                 402, KPHB 6 th PHASE,
@@ -86,7 +87,7 @@
                         <div class="section-title text-start">
                             <span class="subtitle bg-primary-opacity">EDUCATION FOR EVERYONE</span>
                         </div>
-                        <h3 class="title">Expert Assistance, Just a Message Away!</h3>
+                        <h2 class="title">Expert Assistance, Just a Message Away!</h2>
                         <form id="contact_us_form" method="POST" class="rainbow-dynamic-form max-width-auto">
                             <div class="form-group">
                                 <input name="contact_us_name" required id="contact_us_name" type="text">
@@ -145,15 +146,17 @@
 </body>
 
 <script>
-    const phoneInputContactUs = document.querySelector("#contact_us_phone");
-    const contactUsPhoneField = window.intlTelInput(phoneInputContactUs, {
-        preferredCountries: ["in"],
-        hiddenInput: "full",
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
+    var contactUsPhoneField;
     $(document).ready(function() {
-
-
+        // Initialize intl-tel-input
+        const phoneInputContactUs = document.querySelector("#contact_us_phone");
+        if (phoneInputContactUs && window.intlTelInput) {
+            contactUsPhoneField = window.intlTelInput(phoneInputContactUs, {
+                preferredCountries: ["in"],
+                hiddenInput: "full",
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+        }
 
         $("#contact_us_form").on("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission
@@ -161,7 +164,7 @@
             // Validate the form
             let isValid = true;
             let message = "";
-            let phonenumber = contactUsPhoneField.getNumber(intlTelInputUtils.numberFormat.E164);
+            let phonenumber = contactUsPhoneField ? contactUsPhoneField.getNumber(intlTelInputUtils.numberFormat.E164) : '';
             console.log(phonenumber);
 
             if ($("#contact_us_name").val().trim() === "") {
@@ -189,9 +192,7 @@
                     type: "POST",
                     data: formData,
                     success: function(response) {
-                        alert("Thank You For Contacting Us.");
-                        $("#contact_us_form")[0].reset(); // Reset the form
-                        $("#contact_form_cls_btn").click();
+                        window.location.href = SOT_BASE + '/thank-you.php';
                     },
                     error: function(xhr, status, error) {
                         alert("An error occurred. Please try again.");

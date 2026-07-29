@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -63,10 +64,10 @@ ol li {
                                 </li>
                                 <li class="rbt-breadcrumb-item active">Oracle Fusion</li>
                             </ul>
-                            <h2 class="title"><?php echo $course_details[$current_slug]['title'] ?></h2>
+                            <h1 class="title"><?php echo $course_details[$current_slug]['title'] ?></h1>
                             <p class="description"><?php echo $short_descriptions[$current_slug]; ?> </p>
 
-                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature">
+                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature mt--10">
 
                                 <div class="feature-sin best-seller-badge">
                                     <span class="rbt-badge-2">
@@ -99,7 +100,7 @@ ol li {
                                 
                                 <?php include_once "demo_video_modal.php"; ?>
                             </div>
-
+              <?php include_once "claim_instant_offer.php"; ?>
                         </div>
                     </div>
                 </div>
@@ -137,61 +138,230 @@ ol li {
                         </div>
 
                         <!-- Start Course Feature Box  -->
-                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30 has-show-more"
+                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30"
                             id="overview">
-                            <div class="rbt-course-feature-inner has-show-more-inner-content">
-                                <div class="section-title">
-                                    <h4 class="rbt-title-style-3">About
-                                        <?php echo $course_details[$current_slug]['title'] ?></h4>
-                                </div>
+                            <div class="rbt-course-feature-inner">
                                 <!-- Overview Start -->
-                                <p>&nbsp;</p>
-<h4 ><strong>What is Oracle Integration Cloud?</strong></h4>
-<p>Oracle Integration Cloud (OIC) stands out as a comprehensive, cloud-based integration platform that excels in streamlining and simplifying the process of connecting different applications, data sources, and business processes across both cloud and on-premises environments. Its robust suite of tools and features, including pre-built adapters, low-code development environments, and real-time analytics, sets it apart, enabling businesses to create seamless, automated workflows with minimal coding effort. By leveraging OIC, organizations can significantly enhance operational efficiency, accelerate digital transformation, and ensure secure, reliable data exchange, ultimately driving innovation and improved business outcomes.</p>
+                               <div class="about-content">
+    <span class="about-label">About the Course</span>
 
-<h5><strong>Key Features of Oracle Integration Cloud:</strong></h5>
-<ol>
-<li><strong>Pre-Built Adapters</strong>: OIC includes a vast library of pre-built adapters for popular enterprise applications such as Oracle ERP, Salesforce, SAP, and others. These adapters simplify the integration process, allowing for quick and easy connections between different systems.</li>
-<li><strong>Low-Code Development</strong>: The platform offers a visual, low-code development interface that empowers users to create integrations with minimal coding. This feature accelerates the development process, making it accessible to both technical and non-technical users.</li>
-<li><strong>Real-Time Analytics</strong>: OIC provides real-time analytics and monitoring tools that enable organizations to track integration performance, identify issues promptly, and optimize processes for better efficiency.</li>
-<li><strong>API Management</strong>: With comprehensive API management capabilities, OIC allows businesses to create, manage, and secure APIs efficiently. This facilitates better governance and enhances overall integration strategies.</li>
-<li><strong>Security and Compliance</strong>: The platform prioritizes security with features such as data encryption, secure connectivity, and compliance with industry standards and regulations. This ensures that data is protected throughout the integration lifecycle.</li>
-<li><strong>Scalability</strong>: Designed to scale with business needs, OIC can handle integrations of varying complexity, from simple connections to complex enterprise-wide workflows, ensuring consistent performance as the organization grows.</li>
-</ol>
-<h5><strong>Benefits of Using Oracle Integration Cloud:</strong></h5>
-<ul>
-<li><strong>Enhanced Operational Efficiency</strong>: OIC automates and streamlines integration processes, reducing manual effort, minimizing errors, and speeding up the deployment of new initiatives.</li>
-<li><strong>Improved Business Agility</strong>: The platform allows organizations to quickly adapt to changing business requirements, integrating new applications and data sources without significant delays.</li>
-<li><strong>Cost Savings</strong>: By reducing the need for extensive custom coding and leveraging pre-built adapters, OIC lowers development costs and resource requirements.</li>
-<li><strong>Future-Proof Integration</strong>: Oracle continuously updates OIC with the latest technologies and best practices, ensuring that businesses stay ahead of integration challenges.</li>
-</ul>
-<p>Oracle Integration Cloud is an essential tool for modern enterprises aiming to achieve seamless connectivity, improve data accuracy, and drive innovation through efficient and secure integrations.</p>
+    <h2 class="about-heading">
+      What is <span class="gradient-text">Oracle Fusion OIC?</span>
+    </h2>
 
-<h4 ><strong>Why Should You Learn Oracle Integration Cloud Training from Soft Online Training?</strong></h4>
-<p>In today&rsquo;s rapidly evolving technological landscape, mastering integration tools like Oracle Integration Cloud (OIC) is crucial for IT professionals who want to enhance their skills and career prospects. Soft Online Training offers a comprehensive and well-designed Oracle Integration Cloud training program that stands out for several reasons.</p>
+    <p class="about-description">
+Oracle Integration Cloud is a cloud-based integration platform that enables organizations to connect Oracle applications with third-party systems using prebuilt adapters, orchestration flows, and secure integration patterns. It supports application integration, data synchronization, and process automation across cloud and on-premise environments.
+    </p>
 
-<h5><strong>Expert-Led Training</strong></h5>
-<p>At Soft Online Training, our courses are led by industry experts with extensive experience in Oracle Integration Cloud. These instructors bring real-world insights and practical knowledge, ensuring that learners gain a deep understanding of both fundamental concepts and advanced features of OIC. Their expertise helps bridge the gap between theoretical learning and practical application, preparing students for real-world challenges.</p>
+    <p class="about-description">
+      Oracle Integration Cloud provides tools for building integrations using visual designers, handling REST and SOAP services, managing file servers, scheduling integrations, and monitoring runtime activity. With built-in security and scalability, OIC helps organizations simplify complex integration landscapes while maintaining performance and reliability.
+    </p>
 
-<h5><strong>Comprehensive Curriculum</strong></h5>
-<p>Our Oracle Integration Cloud training covers a wide range of topics, from basic integration concepts to advanced use cases and best practices. The curriculum includes hands-on exercises, case studies, and project work, enabling learners to apply their knowledge in practical scenarios. This holistic approach ensures that students are well-versed in all aspects of OIC, including pre-built adapters, low-code development, real-time analytics, API management, and security features.</p>
+    <p class="about-description">Oracle Integration Cloud training equips professionals with the knowledge required to handle modern cloud integrations across ERP, HCM, SCM, and external applications. As enterprises adopt multiple cloud platforms and SaaS applications, seamless data flow and system connectivity have become critical business requirements.</p>
+    <p class="about-description">This training focuses on real integration use cases, enabling learners to understand how data is exchanged, transformed, and monitored using Oracle Integration Cloud. By combining integration concepts with practical implementation, the course prepares participants to work on real-time integration projects and supports career growth aligned with certification and industry needs.
+</p>
+  </div>
 
-<h5><strong>Flexible Learning Options</strong></h5>
-<p>Understanding the diverse needs of our learners, Soft Online Training offers flexible learning options, including self-paced online courses and live instructor-led sessions. This flexibility allows students to learn at their own pace and convenience, making it easier to balance training with other professional and personal commitments.</p>
+  <h3 class="who-label" style="margin-top:20px;">Key Modules</h3>
+<div class="tag-container">
+  <div class="tag">Integration Lifecycle</div>
+  <div class="tag">Integration Fundamentals</div>
+  <div class="tag">Connections</div>
+  <div class="tag">Data Mapping</div>
+  <div class="tag">Orchestration</div>
+  <div class="tag">Fault Handling</div>
+  <div class="tag">File Handling</div>
+  <div class="tag">Integration Capabilities</div>
+</div>
 
-<h5><strong>Practical Hands-On Experience</strong></h5>
-<p>Our training program emphasizes hands-on experience, allowing learners to work on real-life projects and simulations. This practical approach helps students build confidence in using Oracle Integration Cloud in actual work environments. By working through real-world scenarios, learners gain valuable skills that are immediately applicable to their jobs.</p>
 
-<h5><strong>Ongoing Support and Resources</strong></h5>
-<p>At Soft Online Training, we provide continuous support to our learners. Our students have access to a wealth of resources, including recorded sessions, reference materials, and forums where they can interact with instructors and peers. This ongoing support ensures that learners can continually build on their skills and stay updated with the latest developments in Oracle Integration Cloud.</p>
-<p>&nbsp;</p>
-<h5><strong>Career Advancement Opportunities</strong></h5>
-<p>Learning Oracle Integration Cloud from Soft Online Training can open up numerous career opportunities. With businesses increasingly relying on integration platforms to streamline operations and drive innovation, professionals skilled in OIC are in high demand. Our training program not only enhances your technical skills but also boosts your employability, positioning you for advanced roles in IT and business integration.</p>
-<p>Choosing Soft Online Training for your Oracle Integration Cloud training ensures that you receive high-quality education, practical experience, and the support needed to excel in your career. Whether you are an IT professional looking to upskill or a business aiming to improve your integration capabilities, our training program provides the tools and knowledge to achieve your goals.</p>
+  <div class="who-header">
+    <span class="who-label">Who It's For</span>
+    <h2 class="who-heading">
+      Who Should <span class="gradient-text">Enroll </span>in This Oracle Fusion OIC Course?
+    </h2>
+    <p>This Oracle Integration Cloud training is ideal for professionals looking to build or advance a career in cloud integration and middleware technologies.</p>
+  </div>
 
-                                <!-- Overview End -->
-                            </div>
-                            <div class="rbt-show-more-btn">Show More</div>
+  <div class="who-grid">
+
+    <!-- Card 1 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Graduation Cap -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+          <path d="M22 10v6"/>
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+        </svg>
+      </div>
+      <h3>Graduates & IT Professionals</h3>
+      <p> Candidates looking to enter cloud integration roles with strong foundational and practical exposure.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Building -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+          <path d="M10 6h4"/>
+          <path d="M10 10h4"/>
+          <path d="M10 14h4"/>
+          <path d="M10 18h4"/>
+        </svg>
+      </div>
+      <h3>Integration & Technical Consultants</h3>
+      <p>Professionals working on Oracle Cloud implementations who want to specialize in application integration.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Chart -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+          <path d="M18 17V9"/>
+          <path d="M13 17V5"/>
+          <path d="M8 17v-3"/>
+        </svg>
+      </div>
+      <h3>Oracle Fusion Technical Professionals</h3>
+      <p>Developers and consultants aiming to extend their skills into integration design and execution using OIC.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Monitor -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="3" rx="2"/>
+          <line x1="8" x2="16" y1="21" y2="21"/>
+          <line x1="12" x2="12" y1="17" y2="21"/>
+        </svg>
+      </div>
+      <h3>Middleware & API Developers</h3>
+      <p>Professionals interested in building and managing REST and SOAP-based integrations in enterprise environments.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <rect width="20" height="14" x="2" y="6" rx="2"/>
+        </svg>
+      </div>
+      <h3>ERP & IT Support Engineers</h3>
+      <p> Support professionals responsible for maintaining data flow and connectivity between business systems.</p>
+    </div>
+
+        <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 17l6-6 4 4 7-7"></path>
+  <path d="M14 8h6v6"></path>
+</svg>
+</div>
+      <h3>Career Switchers / Non-IT Professionals</h3>
+      <p>Build a strong foundation and confidently switch your career path.</p>
+    </div>
+
+  </div>
+
+   <div class="highlights-header">
+    <span class="highlights-label">What You Get</span>
+    <h2 class="highlights-heading">
+      Oracle Fusion OIC Course <span class="gradient-text">Highlights</span>
+    </h2>
+    <p>This Oracle Integration Cloud course is designed to build strong integration skills for real-world cloud and enterprise system connectivity.</p>
+  </div>
+
+  <div class="highlights-grid">
+
+    <!-- Card 1 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+          <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+        </svg>
+      </div>
+      <h3>Live Classes with 2-year Recording Access</h3>
+      <p>Attend live instructor-led sessions and revisit recorded classes anytime for revision and better understanding of complex integration flows.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polygon points="6 3 20 12 6 21 6 3"></polygon>
+        </svg>
+      </div>
+      <h3>Hands-On Integration Use Cases</h3>
+      <p>Work on practical scenarios such as ERP-to-ERP, ERP-to-third-party, REST/SOAP integrations, and scheduled integrations.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <rect width="20" height="8" x="2" y="2" rx="2"></rect>
+          <rect width="20" height="8" x="2" y="14" rx="2"></rect>
+          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+        </svg>
+      </div>
+      <h3>6 Months Oracle Cloud Lab Access</h3>
+      <p>Practice integrations using Oracle Integration Cloud environments, including adapters, integrations, and activation processes.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+          <circle cx="12" cy="8" r="6"></circle>
+        </svg>
+      </div>
+      <h3>Structured Learning Path</h3>
+      <p>Learn step-by-step from OIC fundamentals to advanced integrations, fault handling, tracking, and orchestration concepts.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+          <polyline points="16 7 22 7 22 13"></polyline>
+        </svg>
+      </div>
+      <h3>Interview & Career Support</h3>
+      <p>Get guidance on integration-related interview questions, real project discussions, and role-specific career preparation.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="M6 3h12"></path>
+          <path d="M6 8h12"></path>
+          <path d="m6 13 8.5 8"></path>
+          <path d="M6 13h3"></path>
+          <path d="M9 13c6.667 0 6.667-10 0-10"></path>
+        </svg>
+      </div>
+      <h3>Course Completion Certificate</h3>
+      <p>Receive a course completion certificate that validates your Oracle Integration Cloud knowledge and practical skills.</p>
+    </div>
+
+  </div>
+</div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -202,11 +372,12 @@ ol li {
 
                         <!-- Start Course Feature Box  -->
                         <div class="rbt-course-feature-box rbt-border-with-box details-wrapper mt--30" id="details">
+                            <h2 class="rbt-title-style-3">Course Details</h2>
                             <div class="row g-5">
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Requirements</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">Requirements</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($requirements[$current_slug] as $requirement): ?>
@@ -219,7 +390,7 @@ ol li {
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">What Will You Learn</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">What Will You Learn</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($learnings[$current_slug] as $learn): ?>
@@ -229,6 +400,182 @@ ol li {
                                 </div>
                                 <!-- End Feture Box  -->
                             </div>
+                            <div class="why-header">
+    <span class="why-label">Why Us</span>
+    <h2 class="why-heading">
+      Why Choose <span class="gradient-text">Soft Online Training?</span>
+    </h2>
+    <p>This Oracle Integration Cloud training focuses on practical integration design rather than tool-level navigation alone.</p>
+  </div>
+
+  <div class="why-container">
+
+    <!-- LEFT TRAINER CARD -->
+    <div class="trainer-card">
+      <div class="trainer-header">
+        <div class="trainer-avatar">K</div>
+        <div>
+          <h2>Mr. Vijay</h2>
+          <p> Lead Trainer & Oracle Fusion Technical and OIC Expert</p>
+        </div>
+      </div>
+
+      <ul class="trainer-points">
+        <li><h3>16+ years of experience in Oracle ERP, Fusion Technical, and Cloud integrations</h3></li>
+        <li><h3>Strong expertise in Oracle Integration Cloud, REST/SOAP services, and automation</h3></li>
+        <li><h3>Trained professionals using real-time integration and enterprise use cases</h3></li>
+        <li><h3>Focuses on hands-on, project-based learning for practical implementation readiness</h3></li>
+      </ul>
+
+    </div>
+
+    <!-- RIGHT FEATURES LIST -->
+    <div class="why-features">
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Shield SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Real-Time Integration Training Approach</h3>
+          <p>Training explains how integrations are designed, built, tested, and deployed in real enterprise environments.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- User SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Trainer with Integration Project Experience</h3>
+          <p>Learn from trainers who have implemented OIC integrations across Oracle ERP, HCM, SCM, and external systems.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Brain SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+            <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+          </svg>
+        </div>
+        <div>
+          <h3>End-to-End Integration Coverage
+</h3>
+          <p>Covers connections, adapters, lookups, packages, security, tracking, and error handling in a single program.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Layers SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+            <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Aligned with Current Oracle Cloud Practices
+</h3>
+          <p>Content is aligned with current Oracle Integration Cloud features and commonly followed implementation standards.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Award SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+            <circle cx="12" cy="8" r="6"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Reliable Learning & Support Model</h3>
+          <p>Soft Online Training provides structured sessions, clear explanations, and continuous support throughout the course duration.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+                               <div class="career-header">
+    <span class="career-label">Career Impact</span>
+    <h2 class="career-heading">
+      Career Outcomes & <span class="gradient-text">Salary Data</span>
+    </h2>
+  </div>
+
+  <div class="career-table-wrapper">
+    <div class="table-scroll">
+<table class="career-table">
+
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>India</th>
+      <th>USA</th>
+      <th>UK</th>
+    </tr>
+  </thead>
+
+  <tbody class="Career-Outcomes">
+    <tr class="career-Outcome">
+      <td><h3>OIC Functional Consultant</h3></td>
+      <td>₹8-18 LPA</td>
+      <td>$85-130K</td>
+      <td>£50-80K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Procurement Lead</h3></td>
+      <td>₹12-25 LPA</td>
+      <td>$95-145K</td>
+      <td>£60-95K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>OIC Technical Consultant</h3></td>
+      <td>₹10-22 LPA</td>
+      <td>$90-140K</td>
+      <td>£55-90K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Inventory/WMS Analyst</h3></td>
+      <td>₹7-15 LPA</td>
+      <td>$75-115K</td>
+      <td>£45-75K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Supply Chain Manager</h3></td>
+      <td>₹15-35 LPA</td>
+      <td>$110-170K</td>
+      <td>£70-110K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Cloud Architect</h3></td>
+      <td>₹20-45 LPA</td>
+      <td>$130-200K</td>
+      <td>£85-140K</td>
+    </tr>
+
+  </tbody>
+
+</table>
+    </div>
+  </div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -241,6 +588,8 @@ ol li {
                         <!-- End Edu Review List  -->
 
                         <?php include_once "reviews.php"; ?>
+
+                        <?php include_once "faq.php";  ?>
 
 
 

@@ -36,17 +36,17 @@ $similar_courses = $similar_courses_list[$current_slug];
     <div class="container">
         <div class="section-title mb--30">
             <span class="subtitle bg-primary-opacity">More Similar Courses</span>
-            <h4 class="title">Related Courses</h4>
+            <h2 class="about-heading">Related Oracle Fusion Cloud Training Courses</h2>
         </div>
         <div class="row g-5">
             <?php foreach ($similar_courses as $similar_course_slug) : ?>
                 <?php $similar_course_details = $course_details[$similar_course_slug]; ?>
                 <!-- Start Single Course  -->
-                <div class="col-lg-3 col-md-4 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <div class="rbt-card variation-01 rbt-hover">
                         <div class="rbt-card-img">
                             <a href="<?php echo $old_slug[$similar_course_slug]; ?>">
-                                <img src="assets/images/course/custom/<?php echo $similar_course_details['thumbnail']; ?>" alt="<?php echo $similar_course_details['title']; ?>">
+                                <img src="assets/images/course/custom/<?php echo $similar_course_details['thumbnail']; ?>" alt="<?php echo $similar_course_details['title']; ?>" width="270" height="180" loading="lazy" decoding="async">
                             </a>
                         </div>
                         <div class="rbt-card-body">
@@ -63,8 +63,8 @@ $similar_courses = $similar_courses_list[$current_slug];
                                 </div>
                             </div>
 
-                            <h4 class="rbt-card-title"><a href="<?php echo $old_slug[$similar_course_slug]; ?>"><?php echo $similar_course_details['title']; ?></a>
-                            </h4>
+                            <h3 class="rbt-card-title"><a href="<?php echo $old_slug[$similar_course_slug]; ?>"><?php echo $similar_course_details['title']; ?></a>
+                            </h3>
 
                             <ul class="rbt-meta">
                                 <li><i class="feather-book"></i><?php echo $similar_course_details['lessons']; ?> Lessons</li>

@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
+        
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
     <?php include_once "databaseconnection.php"; ?>
+
 </head>
 
 <body class="rbt-header-sticky">
@@ -22,7 +24,7 @@
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <?php require_once "schema_home.php"; ?>
-    
+
     <!-- Start Banner Area -->
     <div class="rbt-banner-area rbt-banner-1 variation-2 height-600">
         <div class="container">
@@ -33,14 +35,13 @@
                             <div class="rbt-new-badge rbt-new-badge-one">
                                 <span class="rbt-new-badge-icon">🏆</span> The Leader in Online Learning
                             </div>
-                            <h1 class="title">The Largest <span class="color-primary">Online Learning</span> Platform
-                                for Drive Your Career.</h1>
-                            <p class="description">Empower Your Future, Learn Online Today. Unlock your potential with expert-led courses anytime, anywhere.
+                            <h1 class="title">Top-Rated <span class="color-primary">Oracle Fusion & EBS Online Training </span>in India.</h1>
+                            <p class="description">Learn from real-time Oracle-certified experts — Oracle Fusion SCM, HCM, Financials, Technical & more. Live online classes | Flexible batches | Placement support included.
                             </p>
                             <div class="slider-btn">
                                 <a class="rbt-btn btn-gradient hover-icon-reverse" href="courses.php">
                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">View Courses</span>
+                                        <span class="btn-text">Explore Oracle Courses</span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
@@ -53,14 +54,23 @@
                     <div class="content">
                         <div class="banner-card pb--60 swiper rbt-dot-bottom-center banner-swiper-active">
                             <div class="swiper-wrapper">
-                                <?php foreach ($home_page_cards as $hc) : ?>
+                                <?php $card_index = 0; foreach ($home_page_cards as $hc) : ?>
                                     <!-- Start Single Card  -->
                                     <div class="swiper-slide">
                                         <div class="rbt-card variation-01 rbt-hover">
                                             <div class="rbt-card-img">
                                                 <a href="<?php echo $old_slug[$hc]; ?>">
-                                                    <img src="assets/images/course/custom/<?php echo $course_details[$hc]['thumbnail'] ?>" alt="<?php echo $course_details[$hc]['title'] ?>">
-
+                                                    <?php if ($card_index === 0): ?>
+                                                    <img src="assets/images/course/custom/<?php echo $course_details[$hc]['thumbnail'] ?>" 
+                                                         alt="<?php echo $course_details[$hc]['title'] ?>"
+                                                         width="370" height="208"
+                                                         fetchpriority="high" loading="eager" decoding="sync">
+                                                    <?php else: ?>
+                                                    <img src="assets/images/course/custom/<?php echo $course_details[$hc]['thumbnail'] ?>" 
+                                                         alt="<?php echo $course_details[$hc]['title'] ?>"
+                                                         width="370" height="208"
+                                                         loading="lazy" decoding="async">
+                                                    <?php endif; ?>
                                                 </a>
                                             </div>
                                             <div class="rbt-card-body">
@@ -68,8 +78,8 @@
                                                     <li><i class="feather-book"></i><?php echo $course_details[$hc]['lessons'] ?> Lessons</li>
                                                     <li><i class="feather-users"></i><?php echo $course_details[$hc]['students'] ?> Students</li>
                                                 </ul>
-                                                <h4 class="rbt-card-title"><a href="<?php echo $old_slug[$hc]; ?>"><?php echo $course_details[$hc]['title'] ?></a>
-                                                </h4>
+                                                <p class="rbt-card-title fw-bold"><a href="<?php echo $old_slug[$hc]; ?>"><?php echo $course_details[$hc]['title'] ?></a>
+                                                </p>
                                                 <div class="rbt-review">
                                                     <div class="rating">
                                                         <i class="fas fa-star"></i>
@@ -94,16 +104,22 @@
                                         </div>
                                     </div>
                                     <!-- End Single Card  -->
-                                <?php endforeach; ?>
+                                <?php $card_index++; endforeach; ?>
                             </div>
                             <div class="rbt-swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
     <!-- End Banner Area -->
+
+    <div class="Home-hero-form">
+        <?php include_once "claim_instant_offer.php"; ?>
+    </div>
 
 
     <!-- Start Service Area -->
@@ -115,7 +131,7 @@
             <div class="row row--15 mt_dec--30">
                 <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="section-title text-start">
-                        <h2 class="title">Explore Our Categories</h2>
+                        <h2 class="title">Explore Our Oracle Fusion & ERP Training Categories</h2>
                         <p class="description mt--20">Explore our full catalog of courses to find the perfect fit for your career growth.</p>
                         <div class="read-more-btn">
                             <a class="rbt-btn btn-gradient radius rbt-marquee-btn marquee-text-y" href="courses.php">
@@ -132,11 +148,11 @@
                     <div class="service-card service-card-6 bg-color bg-card-color-1">
                         <div class="inner">
                             <div class="icon">
-                                <img src="assets/images/category/fusion.png" alt="Oracle Fusion">
-                                <img class="opacity_image" src="assets/images/category/fusion.png" alt="Oracle Fusion">
+                                <img src="assets/images/category/fusion.png" alt="Oracle Fusion" width="60" height="60" loading="lazy" decoding="async">
+                                <img class="opacity_image" src="assets/images/category/fusion.png" alt="Oracle Fusion" width="60" height="60" loading="lazy" decoding="async">
                             </div>
                             <div class="content">
-                                <h6 class="title"><a href="courses.php?category=fusion">Oracle Fusion</a></h6>
+                                <h3 class="title"><a href="courses.php?category=fusion">Oracle Fusion Cloud Specialized Training</a></h3>
                                 <p class="description">Master Oracle Fusion with comprehensive courses covering implementation, administration, and customization for enterprise success.</p>
                             </div>
                         </div>
@@ -149,11 +165,11 @@
                     <div class="service-card service-card-6 bg-color bg-card-color-2">
                         <div class="inner">
                             <div class="icon">
-                                <img src="assets/images/category/erp.png" alt="Oracle EBS">
-                                <img class="opacity_image" src="assets/images/category/erp.png" alt="Oracle EBS">
+                                <img src="assets/images/category/erp.png" alt="Oracle EBS" width="60" height="60" loading="lazy" decoding="async">
+                                <img class="opacity_image" src="assets/images/category/erp.png" alt="Oracle EBS" width="60" height="60" loading="lazy" decoding="async">
                             </div>
                             <div class="content">
-                                <h6 class="title"><a href="courses.php?category=ebs">Oracle EBS</a></h6>
+                                <h3 class="title"><a href="courses.php?category=ebs">Oracle EBS R12 Functional & Technical Training</a></h3>
                                 <p class="description">Dive into Oracle E-Business Suite with expert-led courses covering implementation, modules, and administration for effective enterprise management.</p>
                             </div>
                         </div>
@@ -175,7 +191,7 @@
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="section-title text-start">
                         <span class="subtitle bg-pink-opacity">Popular Courses</span>
-                        <h2 class="title">Most Popular <span class="color-primary">Courses</span></h2>
+                        <h2 class="title">Most Popular <span class="color-primary">Oracle Fusion Online Courses</span></h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
@@ -187,14 +203,17 @@
                 </div>
             </div>
             <!-- Start Card Area -->
-            <div class="row g-5">
+            <div class="row g-5 mb--40">
                 <?php foreach ($popular_courses as $pc) : ?>
                     <!-- Start Single Course  -->
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                         <div class="rbt-card variation-01 rbt-hover">
                             <div class="rbt-card-img">
                                 <a href="<?php echo $old_slug[$pc]; ?>">
-                                    <img src="assets/images/course/custom/<?php echo $course_details[$pc]['thumbnail'] ?>" alt="<?php echo $course_details[$pc]['title'] ?>">
+                                    <img src="assets/images/course/custom/<?php echo $course_details[$pc]['thumbnail'] ?>" 
+                                         alt="<?php echo $course_details[$pc]['title'] ?>"
+                                         width="370" height="208"
+                                         loading="lazy" decoding="async">
                                 </a>
                             </div>
                             <div class="rbt-card-body">
@@ -214,8 +233,8 @@
                                     </div> -->
                                 </div>
 
-                                <h4 class="rbt-card-title"><a href="<?php echo $old_slug[$pc]; ?>"><?php echo $course_details[$pc]['title'] ?></a>
-                                </h4>
+                                <h3 class="rbt-card-title"><a href="<?php echo $old_slug[$pc]; ?>"><?php echo $course_details[$pc]['title'] ?></a>
+                                </h3>
 
                                 <ul class="rbt-meta">
                                     <li><i class="feather-book"></i><?php echo $course_details[$pc]['lessons'] ?> Lessons</li>
@@ -253,23 +272,23 @@
                 <div class="col-lg-12">
                     <div class="section-title text-center">
                         <span class="subtitle bg-pink-opacity">Soft Online Training Feature</span>
-                        <h2 class="title">Why Opt for Soft Online Training?</h2>
+                        <h2 class="title">Why Choose SOT for Your Oracle Career Growth?</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="row row--15 mt_dec--30">
+                    <div class="row row--15 mt_dec--30" style="align-items: stretch;">
                         <!-- Start Single Card  -->
-                        <div class="col-xl-3 col-md-6 col-sm-6 col-12 mt--30 why-opt">
-                            <div class="">
-                                <div class="rbt-flipbox-wrap rbt-service rbt-service-1 card-bg-1">
+                        <div class="col-xl-3 col-md-6 col-sm-6 col-12 mt--30 why-opt" style="display:flex;">
+                            <div style="display:flex;flex:1;">
+                                <div class="rbt-flipbox-wrap rbt-service rbt-service-1 card-bg-1" style="flex:1;">
                                     <div class="rbt-flipbox-front rbt-flipbox-face inner">
                                         <div class="icon">
-                                            <img src="assets/images/icons/tutor.png" alt="Expert-Led Guidance Icon">
+                                            <img src="assets/images/icons/tutor.png" alt="Expert-Led Guidance Icon" width="60" height="60" loading="lazy" decoding="async">
                                         </div>
                                         <div class="content">
-                                            <h5 class="title"><a href="javascript:void(0);">Expert-Led Guidance</a></h5>
+                                            <h3 class="title"><a href="javascript:void(0);">Expert-Led Guidance</a></h3>
                                             <p>Learn from industry professionals and certified trainers who bring real-world experience to every course.
                                             </p>
                                         </div>
@@ -281,15 +300,15 @@
                         <!-- End Single Card  -->
 
                         <!-- Start Single Card  -->
-                        <div class="col-xl-3 col-md-6 col-sm-6 col-12 mt--30 why-opt">
-                            <div class="">
-                                <div class="rbt-flipbox-wrap rbt-service rbt-service-1 card-bg-2">
+                        <div class="col-xl-3 col-md-6 col-sm-6 col-12 mt--30 why-opt" style="display:flex;">
+                            <div style="display:flex;flex:1;">
+                                <div class="rbt-flipbox-wrap rbt-service rbt-service-1 card-bg-2" style="flex:1;">
                                     <div class="rbt-flipbox-front rbt-flipbox-face inner">
                                         <div class="icon">
-                                            <img src="assets/images/icons/tutorial.png" alt="Flexible Learning Icon">
+                                            <img src="assets/images/icons/tutorial.png" alt="Flexible Learning Icon" width="60" height="60" loading="lazy" decoding="async">
                                         </div>
                                         <div class="content">
-                                            <h5 class="title"><a href="javascript:void(0);">Flexible Learning</a></h5>
+                                            <h3 class="title"><a href="javascript:void(0);">Flexible Learning</a></h3>
                                             <p>Access courses anytime, anywhere, with 24/7 availability to fit your schedule and learning pace.
                                             </p>
                                         </div>
@@ -302,15 +321,15 @@
                         <!-- End Single Card  -->
 
                         <!-- Start Single Card  -->
-                        <div class="col-xl-3 col-md-6 col-sm-6 col-12 mt--30 why-opt">
-                            <div class="">
-                                <div class="rbt-flipbox-wrap rbt-service rbt-service-1 card-bg-3">
+                        <div class="col-xl-3 col-md-6 col-sm-6 col-12 mt--30 why-opt" style="display:flex;">
+                            <div style="display:flex;flex:1;">
+                                <div class="rbt-flipbox-wrap rbt-service rbt-service-1 card-bg-3" style="flex:1;">
                                     <div class="rbt-flipbox-front rbt-flipbox-face inner">
                                         <div class="icon">
-                                            <img src="assets/images/icons/document.png" alt="Up-to-date Curriculum Icon">
+                                            <img src="assets/images/icons/document.png" alt="Up-to-date Curriculum Icon" width="60" height="60" loading="lazy" decoding="async">
                                         </div>
                                         <div class="content">
-                                            <h5 class="title"><a href="javascript:void(0);">Up-to-date Curriculum</a></h5>
+                                            <h3 class="title"><a href="javascript:void(0);">Up-to-date Curriculum</a></h3>
                                             <p>Gain in-depth knowledge with a wide range of courses covering the latest technologies and trends.</p>
                                         </div>
                                     </div>
@@ -321,15 +340,15 @@
                         <!-- End Single Card  -->
 
                         <!-- Start Single Card  -->
-                        <div class="col-xl-3 col-md-6 col-sm-6 col-12 mt--30 why-opt">
-                            <div class="">
-                                <div class="rbt-flipbox-wrap rbt-service rbt-service-1 card-bg-4">
+                        <div class="col-xl-3 col-md-6 col-sm-6 col-12 mt--30 why-opt" style="display:flex;">
+                            <div style="display:flex;flex:1;">
+                                <div class="rbt-flipbox-wrap rbt-service rbt-service-1 card-bg-4" style="flex:1;">
                                     <div class="rbt-flipbox-front rbt-flipbox-face inner">
                                         <div class="icon">
-                                            <img src="assets/images/icons/career.png" alt="Career Advancement Icon">
+                                            <img src="assets/images/icons/career.png" alt="Career Advancement Icon" width="60" height="60" loading="lazy" decoding="async">
                                         </div>
                                         <div class="content">
-                                            <h5 class="title"><a href="javascript:void(0);">Career Advancement</a></h5>
+                                            <h3 class="title"><a href="javascript:void(0);">Career Advancement</a></h3>
                                             <p>Equip yourself with skills that are in high demand, enhancing your career prospects.</p>
                                         </div>
                                     </div>
@@ -358,7 +377,7 @@
                     <div class="col-lg-12">
                         <div class="section-title text-center mb--10">
                             <span class="subtitle bg-primary-opacity">Empowering Your Path to Career Growth</span>
-                            <h2 class="title">Student Reviews: <br />Hear What Our Learners Have to Say
+                            <h2 class="title">Student Reviews: <br />Hear from Our Successful Oracle Learners
                             </h2>
                         </div>
                     </div>
@@ -380,10 +399,10 @@
                                         <p class="subtitle-3"><?php echo $value["description"]; ?></p>
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="<?php echo $value["image"] ? $value["image"] : "assets/images/reviews/client-02.png"; ?>" alt="<?php echo $key; ?>">
+                                                <img src="<?php echo $value["image"] ? $value["image"] : "assets/images/reviews/client-02.png"; ?>" alt="<?php echo $key; ?>" width="50" height="50" loading="lazy" decoding="async">
                                             </div>
                                             <div class="client-info">
-                                                <h5 class="title"><?php echo $key; ?></h5>
+                                                <p class="title fw-bold"><?php echo $key; ?></p>
                                             </div>
                                         </div>
                                     </div>
@@ -412,10 +431,10 @@
                                         <p class="subtitle-3"><?php echo $value["description"]; ?></p>
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="<?php echo $value["image"] ? $value["image"] : "assets/images/reviews/client-02.png"; ?>" alt="<?php echo $key; ?>">
+                                                <img src="<?php echo $value["image"] ? $value["image"] : "assets/images/reviews/client-02.png"; ?>" alt="<?php echo $key; ?>" width="50" height="50" loading="lazy" decoding="async">
                                             </div>
                                             <div class="client-info">
-                                                <h5 class="title"><?php echo $key; ?></h5>
+                                                <p class="title fw-bold"><?php echo $key; ?></p>
                                             </div>
                                         </div>
                                     </div>
@@ -445,11 +464,11 @@
                                 <div class="rbt-counterup rbt-hover-03">
                                     <div class="inner">
                                         <div class="icon">
-                                            <img src="assets/images/icons/counter-01.png" alt="Icons Images">
+                                            <img src="assets/images/icons/counter-01.png" alt="Icons Images" width="50" height="50" loading="lazy" class="mx-auto" decoding="async">
                                         </div>
                                         <div class="content">
-                                            <h3 class="counter"><span class="odometer" data-count="18747">00</span>
-                                            </h3>
+                                            <p class="counter"><span class="odometer" data-count="18747">00</span>
+                                            </p>
                                             <span class="subtitle">Learners &amp; counting</span>
                                         </div>
                                     </div>
@@ -462,11 +481,11 @@
                                 <div class="rbt-counterup rbt-hover-03">
                                     <div class="inner">
                                         <div class="icon">
-                                            <img src="assets/images/icons/counter-02.png" alt="Icons Images">
+                                            <img src="assets/images/icons/counter-02.png" alt="Icons Images" width="50" height="50" loading="lazy" class="mx-auto" decoding="async">
                                         </div>
                                         <div class="content">
-                                            <h3 class="counter"><span class="odometer" data-count="16">00</span>
-                                            </h3>
+                                            <p class="counter"><span class="odometer" data-count="16">00</span>
+                                            </p>
                                             <span class="subtitle">Courses & Video</span>
                                         </div>
                                     </div>
@@ -479,11 +498,11 @@
                                 <div class="rbt-counterup rbt-hover-03 transform-sm-none" data-parallax='{"x": 0, "y": -60}'>
                                     <div class="inner">
                                         <div class="icon">
-                                            <img src="assets/images/icons/counter-03.png" alt="Icons Images">
+                                            <img src="assets/images/icons/counter-03.png" alt="Icons Images" width="50" height="50" loading="lazy" class="mx-auto" decoding="async">
                                         </div>
                                         <div class="content">
-                                            <h3 class="counter"><span class="odometer" data-count="15439">00</span>
-                                            </h3>
+                                            <p class="counter"><span class="odometer" data-count="15439">00</span>
+                                            </p>
                                             <span class="subtitle">Certified Students</span>
                                         </div>
                                     </div>
@@ -496,11 +515,11 @@
                                 <div class="rbt-counterup rbt-hover-03 transform-sm-none" data-parallax='{"x": 0, "y": 60}'>
                                     <div class="inner">
                                         <div class="icon">
-                                            <img src="assets/images/icons/counter-04.png" alt="Icons Images">
+                                            <img src="assets/images/icons/counter-04.png" alt="Icons Images" width="50" height="50" loading="lazy" class="mx-auto" decoding="async">
                                         </div>
                                         <div class="content">
-                                            <h3 class="counter"><span class="odometer" data-count="20">00</span>
-                                            </h3>
+                                            <p class="counter"><span class="odometer" data-count="20">00</span>
+                                            </p>
                                             <span class="subtitle">Expert Trainers</span>
                                         </div>
                                     </div>
@@ -513,7 +532,7 @@
                         <div class="inner pl--50 pl_sm--0 pl_md--0">
                             <div class="section-title text-start">
                                 <span class="subtitle bg-pink-opacity">Why Choose Us</span>
-                                <h2 class="title">Transform Your Learning Experience with Soft Online Training</h2>
+                                <h2 class="title"> Transform Your Career with Professional Certification</h2>
                                 <p class="description has-medium-font-size mt--20 mb--0">Choose SOT for our commitment to expert-led instruction, flexible learning options, comprehensive course offerings, career-focused results, and supportive community, all designed to empower your professional growth and success.</p>
                             </div>
 
@@ -524,7 +543,7 @@
                                         <i class="feather-heart"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h6 class="feature-title">Career Support Services</h6>
+                                        <h3 class="feature-title">Career Support Services</h3>
                                     </div>
                                 </div>
 
@@ -533,7 +552,7 @@
                                         <i class="feather-book"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h6 class="feature-title">Learn From Anywhere</h6>
+                                        <h3 class="feature-title">Learn From Anywhere</h3>
                                     </div>
                                 </div>
 
@@ -542,7 +561,7 @@
                                         <i class="feather-aperture"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h6 class="feature-title">Industry-Expert Instructors</h6>
+                                        <h3 class="feature-title">Industry-Expert Instructors</h3>
                                     </div>
                                 </div>
 
@@ -577,7 +596,7 @@
                 <div class="col-lg-12">
                     <div class="section-title text-center">
                         <span class="subtitle bg-pink-opacity">Our Posts</span>
-                        <h2 class="title">Latest Blogs</h2>
+                        <h2 class="title">Latest Oracle Fusion Industry Insights & Technical Blogs</h2>
                     </div>
                 </div>
             </div>
@@ -586,14 +605,14 @@
 
                 <!-- Start Single Card  -->
                 <?php foreach ($blogs as $blog) : ?>
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="rbt-card variation-02 rbt-hover">
                             <div class="rbt-card-img">
                                 <a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>">
-                                    <img src="<?php echo 'https://admin.softonlinetraining.com/uploads/blog/thumbnail/' . $blog['thumbnail']; ?>" alt="<?php echo $blog['title']; ?>"> </a>
+                                    <img src="<?php echo 'https://admin.softonlinetraining.com/uploads/blog/thumbnail/' . $blog['thumbnail']; ?>" alt="<?php echo $blog['title']; ?>" width="370" height="208" loading="lazy" decoding="async"> </a>
                             </div>
                             <div class="rbt-card-body">
-                                <h5 class="rbt-card-title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a></h5>
+                                <h3 class="rbt-card-title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a></h3>
                                 <div class="rbt-card-bottom">
                                     <a class="transparent-button" href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>">Learn
                                         More<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
@@ -628,20 +647,22 @@
 ============================================ -->
     <?php include_once "common_js.php"; ?>
     <script>
-        const swiper = document.querySelector('.swiper').swiper;
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiperEl = document.querySelector('.swiper');
+            if (swiperEl && swiperEl.swiper) {
+                var swiper = swiperEl.swiper;
+                var counter = 0;
 
-        // Now you can use all slider methods like
-        let counter = 0;
-
-        const interval = setInterval(() => {
-            if (counter < 3) {
-                swiper.slideNext();
-            } else if (counter < 6) {
-                swiper.slidePrev();
+                setInterval(function() {
+                    if (counter < 3) {
+                        swiper.slideNext();
+                    } else if (counter < 6) {
+                        swiper.slidePrev();
+                    }
+                    counter = (counter + 1) % 6;
+                }, 1500);
             }
-
-            counter = (counter + 1) % 6; // Reset counter after every six intervals
-        }, 1500);
+        });
     </script>
 </body>
 

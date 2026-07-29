@@ -30,8 +30,9 @@
                         <div class="section-title mb--20">
                             <span class="subtitle bg-coral-opacity">How We Work</span>
                         </div>
-                        <h1 class="title display-one text-white">Take Challenge for Build Your Life. <br>The World Most
-                            Lessons for Back to Your Life.</h1>
+                        <h1 class="text-white about-us-h1"><span class="gradient-text">Soft Online Training </span> – Leading Online IT Training Institute</h1>
+                        <h2 class="title display-one text-white">Take Challenge for Build Your Life. <br>The World Most
+                            Lessons for Back to Your Life.</h2>
                     </div>
                 </div>
             </div>
@@ -71,7 +72,7 @@
                                     <i class="feather-heart"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h6 class="feature-title">Flexible Classes</h6>
+                                    <h3 class="feature-title">Flexible Classes</h3>
                                     <p class="feature-description">With our 24/7 course access, you can tailor your learning to fit your lifestyle. Anywhere, at any time, you can learn at your own pace.</p>
                                 </div>
                             </div>
@@ -81,7 +82,7 @@
                                     <i class="feather-book"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h6 class="feature-title">Learn From Anywhere</h6>
+                                    <h3 class="feature-title">Learn From Anywhere</h3>
                                     <p class="feature-description">Say goodbye to the traditional classroom. With Soft Online Training, you can learn from your laptop, tablet, or smartphone—no matter where your busy life takes you.
                                     </p>
                                 </div>
@@ -92,7 +93,7 @@
                                     <i class="feather-monitor"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h6 class="feature-title">Industry Experts</h6>
+                                    <h3 class="feature-title">Industry Experts</h3>
                                     <p class="feature-description">Gain insights and skills from top professionals in your field. Our courses are designed and taught by experienced industry experts, ensuring you get the most relevant and up-to-date education.</p>
                                 </div>
                             </div>
@@ -142,7 +143,7 @@
                                                                 <img src="<?php echo $value["image"] ? $value["image"] : "assets/images/reviews/client-02.png"; ?>" alt="<?php echo $key; ?>">
                                                             </div>
                                                             <div class="client-info">
-                                                                <h5 class="title"><?php echo $key; ?></h5>
+                                                                <p class="title fw-bold"><?php echo $key; ?></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -173,7 +174,7 @@
                                                                 <img src="<?php echo $value["image"] ? $value["image"] : "assets/images/reviews/client-02.png"; ?>" alt="<?php echo $key; ?>">
                                                             </div>
                                                             <div class="client-info">
-                                                                <h5 class="title"><?php echo $key; ?></h5>
+                                                                <p class="title fw-bold"><?php echo $key; ?></p>
                                                             </div>
                                                         </div>
                                                     </div>

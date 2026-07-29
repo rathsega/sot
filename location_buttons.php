@@ -75,24 +75,24 @@ if(isset($other_locations_list[$current_slug])){
 <?php if(count($other_locations) > 0): ?>
 <div class="rbt-related-course-area bg-color-white pt--10 pb--35">
     <div class="container">
-        <div class="section-title mb--20">
+        <div class="section-title">
             <span class="subtitle bg-primary-opacity">Locations</span>
-            <h4 class="title">Explore this course in the following cities</h4>
+            <h2 class="about-heading">Explore this course in the following cities</h2>
         </div>
-        <div class="row g-5">
+        <div class="row g-5 mt--10">
             <?php foreach ($other_locations as $key => $other_location_slug) : ?>
                 <?php $other_location_details = $course_details[$other_location_slug]; ?>
                 <!-- Start Single Course  -->
-                <div class="col-lg-3 col-md-4 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                    <div class="rbt-card variation-01 rbt-hover" style="box-shadow: none !important;">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 mt--0" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="rbt-card variation-01 rbt-hover" style="box-shadow: none !important; min-height:unset !important;">
                         <div class="rbt-card-img text-center">
                             <a href="<?php echo $old_slug[$other_location_slug]; ?>">
-                                <img src="assets/images/locations/<?php echo $key; ?>.png" style="width:25% !important" alt="<?php echo $other_location_details['title']; ?>">
+                                <img src="assets/images/locations/<?php echo $key; ?>.png" style="width:25% !important; aspect-ratio: 1 / 1;" alt="<?php echo $other_location_details['title']; ?>">
                             </a>
                         </div>
                         <div class="rbt-card-body text-center" style="padding-top: 5px !important;">
-                            <h6><a href="<?php echo $old_slug[$other_location_slug]; ?>"><span style="color:#62656b;"><?php echo  ucwords($key); ?></span></a>
-                            </h6>
+                            <h3 class="mb--0"><a href="<?php echo $old_slug[$other_location_slug]; ?>"><span style="color:#62656b;"><?php echo  ucwords($key); ?></span></a>
+                            </h3>
                         </div>
                     </div>
                 </div>

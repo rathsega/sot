@@ -60,20 +60,21 @@ foreach($curriculum as $module_name => $topics){
 echo '<div class="course-content rbt-border-with-box coursecontent-wrapper mt--30" id="coursecontent">
                             <div class="rbt-course-feature-inner">
                                 <div class="section-title">
-                                    <h4 class="rbt-title-style-3">Course Content</h4>
+                                    <h2 class="rbt-title-style-3">Course Content</h2>
                                 </div>
                                 <div class="rbt-accordion-style rbt-accordion-02 accordion">
-                                    <div class="accordion" id="accordionExampleb2">'. $modules_html .' </div> </div> </div> </div>';
+                                <div class="course-timeline">
+                                    <div class="accordion" id="accordionExampleb2">'. $modules_html .' </div> </div> </div> </div> </div>';
 
 function getModuleHtml($module_name, $module_duration, $id, $data_bs_target, $aria_controls, $topics_html, $aria_expanded, $module_button){
     return '<div class="accordion-item card">
-                                            <h2 class="accordion-header card-header" id="headingTwo1">
+                                            <h3 class="accordion-header card-header" id="headingTwo1">
                                                 <button class="accordion-button '. $module_button .'" type="button" data-bs-toggle="collapse"
                                                     data-bs-target="'. $data_bs_target .'" aria-expanded="'. $aria_expanded .'"
                                                     aria-controls="'. $aria_controls .'">
                                                     '. $module_name .' 
                                                 </button>
-                                            </h2>'. $topics_html .'</div>';
+                                            </h3>'. $topics_html .'</div>';
 }
 
 function getTopicsHtml($id, $aria_labelledby, $topics, $expnad_topics){

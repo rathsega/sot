@@ -1,4 +1,3 @@
 User-agent: *
 Disallow:
 Disallow: /cgi-bin/
-Allow: https://www.softonlinetraining.com/sitemap.xml

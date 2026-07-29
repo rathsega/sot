@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -67,10 +68,10 @@
                                 </li>
                                 <li class="rbt-breadcrumb-item active">Oracle Fusion</li>
                             </ul>
-                            <h2 class="title"><?php echo $course_details[$current_slug]['title'] ?></h2>
+                            <h1 class="title"><?php echo $course_details[$current_slug]['title'] ?></h1>
                             <p class="description"><?php echo $short_descriptions[$current_slug]; ?> </p>
 
-                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature">
+                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature mt--10">
 
                                 <div class="feature-sin best-seller-badge">
                                     <span class="rbt-badge-2">
@@ -101,7 +102,7 @@
                                 
                                 <?php include_once "demo_video_modal.php"; ?>
                             </div>
-
+              <?php include_once "claim_instant_offer.php"; ?>
                         </div>
                     </div>
                 </div>
@@ -139,42 +140,232 @@
                         </div>
 
                         <!-- Start Course Feature Box  -->
-                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30 has-show-more" id="overview">
-                            <div class="rbt-course-feature-inner has-show-more-inner-content">
-                                <div class="section-title">
-                                    <h4 class="rbt-title-style-3">About
-                                        <?php echo $course_details[$current_slug]['title'] ?></h4>
-                                </div>
+                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30" id="overview">
+                            <div class="rbt-course-feature-inner">
                                 <!-- Overview Start -->
-                                <h4><strong>What is Oracle Recruiting Cloud?</strong></h4>
-                                <p>Oracle Recruiting Cloud is a cutting-edge recruiting platform that integrates with the Oracle Cloud suite to offer a comprehensive, intelligent solution for modern talent acquisition needs. This robust system is designed to simplify and enhance the entire recruiting lifecycle, from job posting and candidate sourcing to interviewing and onboarding. By leveraging advanced technologies such as artificial intelligence and machine learning, Oracle Recruiting Cloud helps organizations identify and engage top talent more effectively and efficiently.</p>
+                                <div class="about-content">
+    <span class="about-label">About the Course</span>
 
-                                <p>At its core, Oracle Recruiting Cloud provides a centralized hub for managing all recruitment activities. What sets it apart is its user-friendly interface, which allows recruiters to create job requisitions, track applications, and communicate with candidates seamlessly. The platform&rsquo;s AI capabilities can automatically screen resumes, rank candidates based on their qualifications, and even predict candidate success within the organization. This ensures that recruiters can focus on high-value tasks, such as building relationships with potential hires and making strategic hiring decisions.</p>
+    <h2 class="about-heading">
+      What is <span class="gradient-text">Oracle Fusion ORC?</span>
+    </h2>
 
-                                <p>One of the standout features of Oracle Recruiting Cloud is its ability to integrate with other Oracle HCM (Human Capital Management) applications. This integration allows for a smooth flow of data across the HR ecosystem, enabling better workforce planning and analytics. But what truly sets it apart is its support for mobile recruiting. This feature gives hiring managers and recruiters the flexibility to manage their tasks on the go, making the platform even more convenient and adaptable.</p>
+    <p class="about-description">
+      Oracle Recruiting Cloud is a cloud-based talent acquisition solution designed to manage the complete recruitment lifecycle within Oracle HCM Cloud. It supports job requisitions, candidate sourcing, applications, interviews, offers, and recruitment analytics in a single unified platform.
+    </p>
 
-                                <p>Oracle Recruiting Cloud also prioritizes the candidate experience, providing a streamlined and engaging application process. Candidates can easily apply for jobs through a branded career site, track their application status, and receive timely communications. This positive candidate experience not only enhances the employer&rsquo;s brand but also increases the likelihood of attracting high-quality applicants.</p>
-                                <p><strong>&nbsp;</strong></p>
-                                <h4><strong>Why Should You Learn Oracle Recruiting Cloud Training from Soft Online Training?</strong></h4>
-                                <p>Learning Oracle Recruiting Cloud from Soft Online Training offers a strategic advantage for professionals looking to master this leading-edge recruitment platform. Soft Online Training provides a comprehensive and structured curriculum that covers all aspects of Oracle Recruiting Cloud, from basic functionalities to advanced features.</p>
+    <p class="about-description">
+      Oracle Recruiting Cloud helps organizations streamline hiring processes, improve collaboration between recruiters and hiring managers, and enhance candidate engagement. With configurable workflows, approval structures, and reporting capabilities, the platform enables enterprises to manage recruitment efficiently while maintaining compliance and visibility.
+    </p>
+    <p class="about-description">Oracle Recruiting Cloud training prepares professionals to manage cloud-based recruitment operations efficiently and strategically. As organizations adopt Oracle Recruiting Cloud to improve hiring speed, candidate experience, and recruiter productivity, there is a growing demand for professionals who understand both recruitment processes and system execution.</p>
+    <p class="about-description">This training focuses on real recruitment workflows, enabling learners to understand how hiring processes are configured and managed within Oracle Recruiting Cloud. By combining functional recruitment concepts with system-level execution, the course supports career growth and prepares learners for certification and real-world implementation roles.</p>
+  </div>
 
-                                <p><strong>Expert Instructors:</strong> Soft Online Training boasts a team of seasoned professionals who bring extensive industry experience and in-depth knowledge of Oracle Recruiting Cloud. Their practical insights and real-world examples help learners understand complex concepts and apply them effectively in their roles.</p>
+  <h3 class="who-label" style="margin-top:20px;">Key Modules</h3>
+<div class="tag-container">
+  <div class="tag">Core HR</div>
+  <div class="tag">Security</div>
+  <div class="tag">Recruiting</div>
+  <div class="tag">Candidate Management</div>
+  <div class="tag">Career Sites</div>
+  <div class="tag">Candidate Selection</div>
+  <div class="tag">Interview Management</div>
+  <div class="tag">Job Requisitions</div>
+  <div class="tag">Third-Party Integration</div>
+  <div class="tag">Onboarding Administration</div>
+</div>
 
-                                <p><strong>Hands-On Learning:</strong> Our training program is all about hands-on learning. You'll have the opportunity to work directly with Oracle Recruiting Cloud, gaining practical experience that will allow you to navigate the platform confidently and efficiently. Interactive sessions and practical exercises are key components of this approach.</p>
 
-                                <p><strong>Comprehensive Curriculum:</strong> Our course is meticulously designed to cover every aspect of Oracle Recruiting Cloud. You&rsquo;ll start with the basics, such as setting up job requisitions and managing candidate applications, and progress to advanced topics like AI-driven candidate screening, integration with other Oracle HCM modules, and analytics. This comprehensive approach ensures that you gain a thorough understanding of the platform.</p>
+  <div class="who-header">
+    <span class="who-label">Who It's For</span>
+    <h2 class="who-heading">
+      Who Should <span class="gradient-text">Enroll </span>in This Oracle Fusion ORC Course?
+    </h2>
+    <p>This Oracle Recruiting Cloud training is ideal for professionals looking to build or enhance careers in recruitment, talent acquisition, and HR technology.</p>
+  </div>
 
-                                <p><strong>Flexible Learning Options:</strong> Understanding the diverse needs of learners, Soft Online Training offers flexible learning options, including live instructor-led sessions and self-paced modules. This flexibility ensures that you can fit the training into your busy schedule without compromising on the quality of learning.</p>
+  <div class="who-grid">
 
-                                <p><strong>Certification and Career Support:</strong> Upon completion of the training, you&rsquo;ll receive a certification that validates your expertise in Oracle Recruiting Cloud. Additionally, Soft Online Training provides career support services, including resume building, interview preparation, and job placement assistance, helping you to advance your career in HR and recruitment.</p>
+    <!-- Card 1 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Graduation Cap -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+          <path d="M22 10v6"/>
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+        </svg>
+      </div>
+      <h3>Graduates & Career Starters</h3>
+      <p> Candidates interested in building a career in recruitment systems and HR technology platforms.</p>
+    </div>
 
-                                <p><strong>Updated Content:</strong> The world of technology is constantly evolving, and Soft Online Training ensures that its course content is regularly updated to reflect the latest features and best practices of Oracle Recruiting Cloud. This commitment to current, relevant content keeps you at the forefront of the industry.</p>
+    <!-- Card 2 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Building -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+          <path d="M10 6h4"/>
+          <path d="M10 10h4"/>
+          <path d="M10 14h4"/>
+          <path d="M10 18h4"/>
+        </svg>
+      </div>
+      <h3>Talent Acquisition & Recruitment Leaders</h3>
+      <p>Recruiters, HR managers, and hiring professionals seeking deeper system-level exposure to cloud-enabled recruitment processes.
+</p>
+    </div>
 
-                                <p><strong>Community and Networking:</strong> Enrolling in Soft Online Training connects you with a community of like-minded professionals. This network can be invaluable for sharing knowledge, discussing challenges, and exploring new opportunities in the field of talent acquisition.</p>
+    <!-- Card 3 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Chart -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+          <path d="M18 17V9"/>
+          <path d="M13 17V5"/>
+          <path d="M8 17v-3"/>
+        </svg>
+      </div>
+      <h3>HR & HCM Professionals</h3>
+      <p> HR professionals who want to specialize in recruitment operations within Oracle HCM Cloud.</p>
+    </div>
 
-                                <!-- Overview End -->
-                            </div>
-                            <div class="rbt-show-more-btn">Show More</div>
+    <!-- Card 4 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Monitor -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="3" rx="2"/>
+          <line x1="8" x2="16" y1="21" y2="21"/>
+          <line x1="12" x2="12" y1="17" y2="21"/>
+        </svg>
+      </div>
+      <h3>Oracle HCM Consultants</h3>
+      <p> Functional consultants aiming to expand their expertise into Oracle Recruiting Cloud implementation and support projects.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <rect width="20" height="14" x="2" y="6" rx="2"/>
+        </svg>
+      </div>
+      <h3>HR Operations & Support Teams</h3>
+      <p>Professionals responsible for supporting recruitment systems and workflows within organizations.</p>
+    </div>
+
+        <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 17l6-6 4 4 7-7"></path>
+  <path d="M14 8h6v6"></path>
+</svg>
+</div>
+      <h3>From Domain Roles to IT Systems</h3>
+      <p>Designed to help domain professionals move into Oracle ERP and Cloud roles with practical system exposure.</p>
+    </div>
+
+  </div>
+
+   <div class="highlights-header">
+    <span class="highlights-label">What You Get</span>
+    <h2 class="highlights-heading">
+      Oracle Fusion ORC Course <span class="gradient-text">Highlights</span>
+    </h2>
+    <p>This Oracle Recruiting Cloud course is designed to help learners master modern recruitment processes using Oracle Fusion HCM.
+</p>
+  </div>
+
+  <div class="highlights-grid">
+
+    <!-- Card 1 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+          <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+        </svg>
+      </div>
+      <h3>Live Classes with 2-year Recording Access
+</h3>
+      <p>Join live instructor-led sessions and access recorded classes for one year to revise hiring workflows, configurations, and functional logic.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polygon points="6 3 20 12 6 21 6 3"></polygon>
+        </svg>
+      </div>
+      <h3>Hands-On ORC Use Cases</h3>
+      <p>Learn through real-world recruitment scenarios such as job creation, candidate tracking, offer management, and onboarding integration.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <rect width="20" height="8" x="2" y="2" rx="2"></rect>
+          <rect width="20" height="8" x="2" y="14" rx="2"></rect>
+          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+        </svg>
+      </div>
+      <h3>6 Months Oracle Cloud Lab Access</h3>
+      <p>Practice Oracle Recruiting Cloud configurations in a cloud environment, including requisitions, candidate flows, and approvals.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+          <circle cx="12" cy="8" r="6"></circle>
+        </svg>
+      </div>
+      <h3>Structured Learning Path</h3>
+      <p>Progress step-by-step from ORC fundamentals to advanced recruiting configurations and end-to-end hiring lifecycle management.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+          <polyline points="16 7 22 7 22 13"></polyline>
+        </svg>
+      </div>
+      <h3>Interview & Career Support</h3>
+      <p>Get interview-focused guidance, real project discussion points, and career preparation aligned with Oracle HCM recruitment roles.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="M6 3h12"></path>
+          <path d="M6 8h12"></path>
+          <path d="m6 13 8.5 8"></path>
+          <path d="M6 13h3"></path>
+          <path d="M9 13c6.667 0 6.667-10 0-10"></path>
+        </svg>
+      </div>
+      <h3>Course Completion Certificate</h3>
+      <p>Earn a course completion certificate that validates your Oracle Recruiting Cloud functional knowledge and readiness.</p>
+    </div>
+
+  </div>
+</div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -185,11 +376,12 @@
 
                         <!-- Start Course Feature Box  -->
                         <div class="rbt-course-feature-box rbt-border-with-box details-wrapper mt--30" id="details">
+                            <h2 class="rbt-title-style-3">Course Details</h2>
                             <div class="row g-5">
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Requirements</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">Requirements</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($requirements[$current_slug] as $requirement) : ?>
@@ -202,7 +394,7 @@
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">What Will You Learn</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">What Will You Learn</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($learnings[$current_slug] as $learn) : ?>
@@ -212,6 +404,182 @@
                                 </div>
                                 <!-- End Feture Box  -->
                             </div>
+                            <div class="why-header">
+    <span class="why-label">Why Us</span>
+    <h2 class="why-heading">
+      Why Choose <span class="gradient-text">Soft Online Training?</span>
+    </h2>
+    <p>This Oracle Recruiting Cloud training focuses on practical recruitment system usage aligned with real organizational hiring needs.</p>
+  </div>
+
+  <div class="why-container">
+
+    <!-- LEFT TRAINER CARD -->
+    <div class="trainer-card">
+      <div class="trainer-header">
+        <div class="trainer-avatar">K</div>
+        <div>
+          <h2>Mr. Sumesh</h2>
+          <p>Oracle Recruiting Expert</p>
+        </div>
+      </div>
+
+      <ul class="trainer-points">
+        <li><h3>Certified Oracle ORC expert with 20+ years of recruitment system experience</h3></li>
+        <li><h3>Specialized in hiring, onboarding, and candidate lifecycle management</h3></li>
+        <li><h3>Trained HR and recruitment professionals globally</h3></li>
+        <li><h3>Practical approach aligned with real hiring workflows</h3></li>
+      </ul>
+
+    </div>
+
+    <!-- RIGHT FEATURES LIST -->
+    <div class="why-features">
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Shield SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Recruitment Process–Focused Training</h3>
+          <p>Learn how Oracle Recruiting Cloud is used by HR and talent acquisition teams in real enterprise environments.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- User SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Trainer with Hiring Module Experience
+</h3>
+          <p>Training is delivered by experts who have worked on live Oracle HCM recruitment and talent implementation projects.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Brain SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+            <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+          </svg>
+        </div>
+        <div>
+          <h3>End-to-End Hiring Coverage</h3>
+          <p>Covers requisitions, candidate management, approvals, offers, onboarding touchpoints, and reporting within ORC.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Layers SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+            <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Aligned with Modern Oracle HCM Practices</h3>
+          <p>Content reflects current Oracle Recruiting Cloud features and recruitment workflows followed by organizations.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Award SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+            <circle cx="12" cy="8" r="6"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Learner-Centric Support Model
+</h3>
+          <p>Soft Online Training provides structured guidance, clear explanations, and continuous learner support throughout the course.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+                               <div class="career-header">
+    <span class="career-label">Career Impact</span>
+    <h2 class="career-heading">
+      Career Outcomes & <span class="gradient-text">Salary Data</span>
+    </h2>
+  </div>
+
+  <div class="career-table-wrapper">
+    <div class="table-scroll">
+<table class="career-table">
+
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>India</th>
+      <th>USA</th>
+      <th>UK</th>
+    </tr>
+  </thead>
+
+  <tbody class="Career-Outcomes">
+    <tr class="career-Outcome">
+      <td><h3>ORC Functional Consultant</h3></td>
+      <td>₹8-18 LPA</td>
+      <td>$85-130K</td>
+      <td>£50-80K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Procurement Lead</h3></td>
+      <td>₹12-25 LPA</td>
+      <td>$95-145K</td>
+      <td>£60-95K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>ORC Technical Consultant</h3></td>
+      <td>₹10-22 LPA</td>
+      <td>$90-140K</td>
+      <td>£55-90K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Inventory/WMS Analyst</h3></td>
+      <td>₹7-15 LPA</td>
+      <td>$75-115K</td>
+      <td>£45-75K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Supply Chain Manager</h3></td>
+      <td>₹15-35 LPA</td>
+      <td>$110-170K</td>
+      <td>£70-110K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Cloud Architect</h3></td>
+      <td>₹20-45 LPA</td>
+      <td>$130-200K</td>
+      <td>£85-140K</td>
+    </tr>
+
+  </tbody>
+
+</table>
+    </div>
+  </div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -224,6 +592,8 @@
                         <!-- End Edu Review List  -->
 
                         <?php include_once "reviews.php"; ?>
+
+                        <?php include_once "faq.php";  ?>
 
 
 

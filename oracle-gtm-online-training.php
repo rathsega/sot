@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -62,10 +63,10 @@ ol li {
                                 </li>
                                 <li class="rbt-breadcrumb-item active">Oracle Fusion</li>
                             </ul>
-                            <h2 class="title"><?php echo $course_details[$current_slug]['title'] ?></h2>
+                            <h1 class="title"><?php echo $course_details[$current_slug]['title'] ?></h1>
                             <p class="description"><?php echo $short_descriptions[$current_slug]; ?> </p>
 
-                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature">
+                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature mt--10">
 
                                 <div class="feature-sin best-seller-badge">
                                     <span class="rbt-badge-2">
@@ -99,7 +100,7 @@ ol li {
                                 
                                 <?php include_once "demo_video_modal.php"; ?>
                             </div>
-
+              <?php include_once "claim_instant_offer.php"; ?>
                         </div>
                     </div>
                 </div>
@@ -137,68 +138,232 @@ ol li {
                         </div>
 
                         <!-- Start Course Feature Box  -->
-                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30 has-show-more"
+                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30"
                             id="overview">
-                            <div class="rbt-course-feature-inner has-show-more-inner-content">
-                                <div class="section-title">
-                                    <h4 class="rbt-title-style-3">About
-                                        <?php echo $course_details[$current_slug]['title'] ?></h4>
-                                </div>
+                            <div class="rbt-course-feature-inner">
                                 <!-- Overview Start -->
- <h4 ><strong>What is Oracle Global Trade Management?</strong></h4>
-<p>Oracle Global Trade Management (GTM) is a refined software solution designed to help businesses efficiently manage and streamline their global trade operations. It provides a comprehensive platform to handle the complexities of international trade, including regulatory compliance, customs management, and trade documentation. Oracle GTM ensures that organizations can navigate the diverse regulatory landscape, reducing risks and enhancing supply chain efficiency.</p>
+ <div class="about-content">
+    <span class="about-label">About the Course</span>
 
-<h5><strong>Key Features:</strong></h5>
-<ul>
-<li><strong>Trade Compliance</strong>: This system automates the process of screening trade transactions and partners against global trade regulations and sanctions lists to ensure compliance.</li>
-<li><strong>Customs Management</strong>: Manages customs declarations, classifications, and submissions, streamlining the clearance process and reducing delays.</li>
-<li><strong>Trade Documentation</strong>: Generates and manages all necessary trade documents, ensuring accuracy and compliance with international standards.</li>
-<li><strong>Supply Chain Visibility</strong>: Provides real-time visibility into global trade operations, enabling better decision-making and risk management.</li>
-<li><strong>Integration Capabilities</strong>: Seamlessly integrates with other Oracle applications and third-party systems for a unified trade management solution.</li>
-<li><strong>Analytics and Reporting</strong>: Offers robust reporting and analytics tools to monitor trade activities and performance, helping to identify trends and areas for improvement.</li>
-</ul>
-<h5><strong>Benefits:</strong></h5>
-<ul>
-<li><strong>Regulatory Compliance</strong>: Ensures compliance with international trade regulations, reducing the risk of penalties and fines.</li>
-<li><strong>Cost Reduction</strong>: Automates manual processes and optimizes trade operations, leading to lower operational costs.</li>
-<li><strong>Improved Efficiency</strong>: Streamlines global trade processes, enhancing the overall efficiency of the supply chain.</li>
-<li><strong>Enhanced Visibility</strong>: Provides comprehensive visibility into trade activities, enabling proactive management and decision-making.</li>
-<li><strong>Risk Mitigation</strong>: Reduces the risk of non-compliance and operational disruptions by automating and standardizing trade processes.</li>
-<li><strong>Scalability</strong>: Supports growing business needs with scalable solutions that can handle increasing trade volumes and complexity.</li>
-</ul>
-<p>By leveraging Oracle GTM, businesses can achieve a more efficient, compliant, and cost-effective approach to managing their global trade operations, ensuring smooth and successful cross-border transactions.</p>
+    <h2 class="about-heading">
+      What is <span class="gradient-text">Oracle Fusion GTM?</span>
+    </h2>
 
-<h4 ><strong>Why Should You Learn Oracle Global Trade Management Training from Soft Online Training?</strong></h4>
-<p>Choosing to learn Oracle Global Trade Management (GTM) from Soft Online Training can be a game-changer for your career and your organization. Here's why:</p>
+    <p class="about-description">
+      Oracle Global Trade Management (GTM) is a cloud-based solution designed to manage international trade compliance and regulatory requirements across global supply chains. It helps organizations ensure that import and export activities comply with customs regulations, trade agreements, and government controls.
+    </p>
 
-<h5><strong>Expert Instructors:</strong></h5>
-<p>Soft Online Training provides access to seasoned professionals with deep expertise in Oracle GTM. Their real-world experience ensures that you gain practical insights and hands-on skills that go beyond theoretical knowledge.</p>
+    <p class="about-description">
+      Oracle GTM Cloud supports key functions such as trade compliance screening, customs documentation, license management, trade agreements, and tariff classification. By integrating with upstream supply chain systems, the platform enables organizations to automate compliance checks, reduce manual effort, and maintain audit-ready trade operations across regions.
+    </p>
+    <p class="about-description">Oracle Global Trade Management training prepares professionals to handle the complexities of international trade within a cloud-based enterprise environment. As global businesses face increasing regulatory requirements and compliance challenges, Oracle GTM plays a critical role in ensuring smooth and compliant cross-border transactions.
+</p>
+    <p class="about-description">This training focuses on how global trade processes are configured and managed within Oracle GTM Cloud. Learners gain practical understanding of trade compliance rules, import and export controls, and trade documentation workflows, enabling them to support global supply chain operations while minimizing compliance risks.
+</p>
+    </div>
 
-<h5><strong>Comprehensive Curriculum:</strong></h5>
-<p>The training program covers all aspects of Oracle GTM, from basic concepts to advanced functionalities. You'll learn about trade compliance, customs management, trade documentation, and integration capabilities, ensuring a well-rounded understanding of the software.</p>
+  <h3 class="who-label" style="margin-top:20px;">Key Modules</h3>
+<div class="tag-container">
+  <div class="tag">Jurisdiction Management</div>
+  <div class="tag">Trade Master Data</div>
+  <div class="tag">Trade Compliance</div>
+  <div class="tag">Trade Transactions</div>
+  <div class="tag">Trade Agreements</div>
+  <div class="tag">Landed Cost</div>
+  <div class="tag">License Management</div>
+  <div class="tag">Customs Management</div>
+  <div class="tag">Declaration Management</div>
+  <div class="tag">GTI</div>
+</div>
 
-<h5><strong>Practical Learning:</strong></h5>
-<p>Soft Online Training emphasizes practical learning through real-world scenarios and hands-on exercises. This approach ensures that you can apply what you learn directly to your job, enhancing your proficiency and confidence in using Oracle GTM.</p>
 
-<h5><strong>Flexible Learning Options:</strong></h5>
-<p>Understanding the diverse needs of learners, Soft Online Training offers flexible learning options, including self-paced courses, live online classes, and recorded sessions. This flexibility allows you to learn at your own pace and convenience without disrupting your professional commitments.</p>
+  <div class="who-header">
+    <span class="who-label">Who It's For</span>
+    <h2 class="who-heading">
+      Who Should <span class="gradient-text">Enroll </span>in This Oracle Fusion GTM Course?
+    </h2>
+    <p>This Oracle Global Trade Management training is ideal for professionals involved in global trade, compliance, and international supply chain operations.</p>
+  </div>
 
-<h5><strong>Certification Preparation:</strong></h5>
-<p>The training program is designed to prepare you for Oracle GTM certification exams. Achieving certification not only validates your skills but also enhances your credibility and marketability in the competitive job market.</p>
+  <div class="who-grid">
 
-<h5><strong>Access to Resources:</strong></h5>
-<p>Enrolling in Soft Online Training provides you with access to a wealth of resources, including study materials, tutorials, and a community of learners and experts. This network can be invaluable for continuous learning and professional growth.</p>
+    <!-- Card 1 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Graduation Cap -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+          <path d="M22 10v6"/>
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+        </svg>
+      </div>
+      <h3>Graduates & Career Starters</h3>
+      <p>Candidates interested in building careers in global trade management and compliance systems.</p>
+    </div>
 
-<h5><strong>Career Advancement:</strong></h5>
-<p>Mastering Oracle GTM can open doors to new career opportunities and advancements. Whether you're looking to specialize in global trade management or seeking to enhance your supply chain management skills, this training equips you with the knowledge and credentials to achieve your goals.</p>
+    <!-- Card 2 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Building -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+          <path d="M10 6h4"/>
+          <path d="M10 10h4"/>
+          <path d="M10 14h4"/>
+          <path d="M10 18h4"/>
+        </svg>
+      </div>
+      <h3>Global Trade & Compliance Professionals</h3>
+      <p>Trade compliance officers, customs specialists, and export–import executives seeking system-level expertise.</p>
+    </div>
 
-<h5><strong>Support and Guidance:</strong></h5>
-<p>Soft Online Training offers dedicated support throughout your learning journey. From technical assistance to career guidance, their team is committed to ensuring your success.</p>
+    <!-- Card 3 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Chart -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+          <path d="M18 17V9"/>
+          <path d="M13 17V5"/>
+          <path d="M8 17v-3"/>
+        </svg>
+      </div>
+      <h3>Supply Chain & Logistics Professionals</h3>
+      <p>Professionals managing cross-border logistics who want deeper visibility into trade compliance workflows.</p>
+    </div>
 
-<p>Investing in Oracle GTM training from Soft Online Training is an investment in your future. It equips you with the skills and knowledge needed to excel in the dynamic field of global trade management, positioning you as a valuable asset to any organization.</p>                                     
-                       <!-- Overview End -->
-                            </div>
-                            <div class="rbt-show-more-btn">Show More</div>
+    <!-- Card 4 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Monitor -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="3" rx="2"/>
+          <line x1="8" x2="16" y1="21" y2="21"/>
+          <line x1="12" x2="12" y1="17" y2="21"/>
+        </svg>
+      </div>
+      <h3>ERP & SCM Consultants</h3>
+      <p> Consultants looking to specialize in Oracle GTM Cloud implementation and support projects.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <rect width="20" height="14" x="2" y="6" rx="2"/>
+        </svg>
+      </div>
+      <h3>Operations & Risk Management Teams</h3>
+      <p>Professionals responsible for regulatory compliance, documentation, and audit readiness.</p>
+    </div>
+
+        <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 17l6-6 4 4 7-7"></path>
+  <path d="M14 8h6v6"></path>
+</svg>
+</div>
+      <h3>Career Transition Program</h3>
+      <p>Supports professionals moving from domain roles into Oracle ERP and Cloud careers through structured training.</p>
+    </div>
+
+  </div>
+
+   <div class="highlights-header">
+    <span class="highlights-label">What You Get</span>
+    <h2 class="highlights-heading">
+      Oracle Fusion GTM Course <span class="gradient-text">Highlights</span>
+    </h2>
+    <p>This Oracle Global Trade Management training is designed to help learners understand global trade compliance and logistics automation using Oracle Cloud GTM.</p>
+  </div>
+
+  <div class="highlights-grid">
+
+    <!-- Card 1 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+          <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+        </svg>
+      </div>
+      <h3>Live Classes with 2-year Recording Access</h3>
+      <p>Attend live instructor-led sessions and revisit recorded classes for one year to review trade flows, compliance rules, and GTM configurations.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polygon points="6 3 20 12 6 21 6 3"></polygon>
+        </svg>
+      </div>
+      <h3>Hands-On GTM Use Cases</h3>
+      <p>Learn through real-world scenarios such as import/export compliance checks, denied party screening, and trade transaction processing.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <rect width="20" height="8" x="2" y="2" rx="2"></rect>
+          <rect width="20" height="8" x="2" y="14" rx="2"></rect>
+          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+        </svg>
+      </div>
+      <h3>6 Months Oracle Cloud Lab Access</h3>
+      <p>Practice Oracle Global Trade Management Cloud features including trade compliance, trade agreements, and customs-related setups in a cloud environment.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+          <circle cx="12" cy="8" r="6"></circle>
+        </svg>
+      </div>
+      <h3>Structured Learning Path</h3>
+      <p>Start with GTM fundamentals and gradually move toward advanced topics like trade controls, customs management, and global logistics integration.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+          <polyline points="16 7 22 7 22 13"></polyline>
+        </svg>
+      </div>
+      <h3>Interview & Career Support</h3>
+      <p>Receive interview-oriented guidance and role-specific preparation for Oracle GTM and global trade compliance positions.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="M6 3h12"></path>
+          <path d="M6 8h12"></path>
+          <path d="m6 13 8.5 8"></path>
+          <path d="M6 13h3"></path>
+          <path d="M9 13c6.667 0 6.667-10 0-10"></path>
+        </svg>
+      </div>
+      <h3>Course Completion Certificate</h3>
+      <p>Earn a course completion certificate that validates your Oracle GTM functional knowledge and readiness for enterprise roles.</p>
+    </div>
+
+  </div>
+</div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -209,11 +374,12 @@ ol li {
 
                         <!-- Start Course Feature Box  -->
                         <div class="rbt-course-feature-box rbt-border-with-box details-wrapper mt--30" id="details">
+                            <h2 class="rbt-title-style-3">Course Details</h2>
                             <div class="row g-5">
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Requirements</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">Requirements</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($requirements[$current_slug] as $requirement): ?>
@@ -226,7 +392,7 @@ ol li {
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">What Will You Learn</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">What Will You Learn</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($learnings[$current_slug] as $learn): ?>
@@ -236,6 +402,180 @@ ol li {
                                 </div>
                                 <!-- End Feture Box  -->
                             </div>
+                            <div class="why-header">
+    <span class="why-label">Why Us</span>
+    <h2 class="why-heading">
+      Why Choose <span class="gradient-text">Soft Online Training?</span>
+    </h2>
+    <p>This Oracle Global Trade Management training focuses on practical trade compliance processes used in real multinational organizations.</p>
+  </div>
+
+  <div class="why-container">
+
+    <!-- LEFT TRAINER CARD -->
+    <div class="trainer-card">
+      <div class="trainer-header">
+        <div class="trainer-avatar">K</div>
+        <div>
+          <h2>Mr. Abhiram</h2>
+          <p>Oracle GTM Expert</p>
+        </div>
+      </div>
+
+      <ul class="trainer-points">
+        <li><h3>Domain expert with 14+ years in global trade and compliance</h3></li>
+        <li><h3>Strong experience in trade regulations, documentation, and compliance</h3></li>
+        <li><h3>Ideal for professionals from logistics and EXIM backgrounds</h3></li>
+        <li><h3>Covers real-world trade and customs scenarios</h3></li>
+      </ul>
+
+    </div>
+
+    <!-- RIGHT FEATURES LIST -->
+    <div class="why-features">
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Shield SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Trade Compliance–Focused Training</h3>
+          <p>Learn how Oracle GTM supports import/export regulations, trade agreements, and customs processes followed by global enterprises.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- User SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Trainer with GTM Implementation Exposure</h3>
+          <p>Training is delivered by professionals experienced in Oracle Global Trade Management implementations and support environments.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Brain SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+            <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+          </svg>
+        </div>
+        <div>
+          <h3>End-to-End GTM Coverage</h3>
+          <p>Covers trade compliance, logistics visibility, customs documentation, screening processes, and integration with SCM modules.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Layers SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+            <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Aligned with Current Oracle Cloud GTM Practices</h3>
+          <p>Course content reflects current Oracle GTM Cloud features and standard global trade workflows.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Award SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+            <circle cx="12" cy="8" r="6"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Structured Learning & Ongoing Support</h3>
+          <p>Soft Online Training is known for clear explanations, practical guidance, and continuous learner support throughout the course.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+                               <div class="career-header">
+    <span class="career-label">Career Impact</span>
+    <h2 class="career-heading">
+      Career Outcomes & <span class="gradient-text">Salary Data</span>
+    </h2>
+  </div>
+
+  <div class="career-table-wrapper">
+    <div class="table-scroll">
+<table class="career-table">
+
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>India</th>
+      <th>USA</th>
+      <th>UK</th>
+    </tr>
+  </thead>
+
+  <tbody class="Career-Outcomes">
+    <tr class="career-Outcome">
+      <td><h3>GTM Functional Consultant</h3></td>
+      <td>₹8-18 LPA</td>
+      <td>$85-130K</td>
+      <td>£50-80K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Procurement Lead</h3></td>
+      <td>₹12-25 LPA</td>
+      <td>$95-145K</td>
+      <td>£60-95K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>GTM Technical Consultant</h3></td>
+      <td>₹10-22 LPA</td>
+      <td>$90-140K</td>
+      <td>£55-90K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Inventory/WMS Analyst</h3></td>
+      <td>₹7-15 LPA</td>
+      <td>$75-115K</td>
+      <td>£45-75K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Supply Chain Manager</h3></td>
+      <td>₹15-35 LPA</td>
+      <td>$110-170K</td>
+      <td>£70-110K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Cloud Architect</h3></td>
+      <td>₹20-45 LPA</td>
+      <td>$130-200K</td>
+      <td>£85-140K</td>
+    </tr>
+
+  </tbody>
+
+</table>
+    </div>
+  </div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -248,6 +588,8 @@ ol li {
                         <!-- End Edu Review List  -->
 
                         <?php include_once "reviews.php"; ?>
+
+                        <?php include_once "faq.php";  ?>
 
 
 

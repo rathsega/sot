@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -36,12 +37,12 @@ hr {
     <!-- Start Banner Area -->
     <div class="rbt-banner-area rbt-banner-1 variation-2  pb-5">
         <div class="container terms-o-s">
-           <h1 class="title text-center pt-5">Privacy <span class="text-success"> Policy</span></h1>
-             <h6 class="pb-5">
-             Welcome to Soft Online Training. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you use our online training platform. By using our services, you agree to the terms of this policy.</h6>
+           <h1 class="title text-center pt-5">Privacy Policy –<span class="text-success"> Soft Online Training</span></h1>
+             <h2 class="pb-5 h2M">
+             Welcome to Soft Online Training. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you use our online training platform. By using our services, you agree to the terms of this policy.</h2>
        
-          <h4 class="fw-bold text-dark text-center">Information We Collect</h4>
-          <h5 class="fw-bold text-success">Personal Information</h5>
+          <h3 class="fw-bold text-dark text-center">Information We Collect</h3>
+          <h2 class="fw-bold text-success">Personal Information</h2>
           <ul>
             <li><span class="fw-bold text-dark">Contact Information: </span> We collect your name, email address, phone number, and address when you register for courses or contact us.</li>
             <li><span class="fw-bold text-dark">Payment Information:</span> We process billing details for course enrollments. We do not store payment information on our servers.
@@ -49,7 +50,7 @@ hr {
           </ul>
           
 
-          <h5 class="fw-bold text-success">Usage Information</h5>
+          <h2 class="fw-bold text-success">Usage Information</h2>
           <ul>
             <li><span class="fw-bold text-dark">Website Usage: </span> We collect data on your interactions with our website, such as pages visited and time spent on each page.</li>
             <li><span class="fw-bold text-dark">Device and Browser Information:</span> Information about your device and browser used to access our platform is collected.
@@ -58,7 +59,7 @@ hr {
 
 
          
-          <h5 class="fw-bold text-success">How We Use Your Information</h5>
+          <h2 class="fw-bold text-success">How We Use Your Information</h2>
          <p>We use your information for the following purposes:</p>
          <ul>
             <li><span class="fw-bold text-dark">Providing Services:</span>  To deliver our courses, process enrollments, and provide support.</li>
@@ -71,15 +72,15 @@ hr {
           </ul>
 
 
-          <h5 class="fw-bold text-success">Information Sharing</h5>
+          <h2 class="fw-bold text-success">Information Sharing</h2>
          <p>Your personal information is never traded, sold, or rented to any parties. We may share data with trusted service providers who assist us in delivering our services, such as payment processors or technical support.</p>
          
 
-         <h5 class="fw-bold text-success">Data Security</h5>
+         <h2 class="fw-bold text-success">Data Security</h2>
         <p>To secure your information, we employ industry-standard security methods. However, electronic storage or communication over the Internet is only somewhat secure.</p>
 
 
-        <h5 class="fw-bold text-success">Your Choices</h5>
+        <h2 class="fw-bold text-success">Your Choices</h2>
          <p>You have the right to:</p>
          <ul>
             <li><span class="fw-bold text-dark">Access and Update:</span> View and modify your data through your account settings.</li>

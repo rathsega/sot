@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -67,10 +68,10 @@
                                 </li>
                                 <li class="rbt-breadcrumb-item active">Oracle Fusion</li>
                             </ul>
-                            <h2 class="title">Master Oracle Fusion HCM Online Training with Redwood AI Features</h2>
+                            <h1 class="title">Oracle Fusion HCM Online Training</h1>
                             <p class="description"><?php echo $short_descriptions[$current_slug]; ?> </p>
 
-                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature">
+                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature mt--10">
 
                                 <div class="feature-sin best-seller-badge">
                                     <span class="rbt-badge-2">
@@ -101,7 +102,7 @@
                                 
                                 <?php include_once "demo_video_modal.php"; ?>
                             </div>
-
+              <?php include_once "claim_instant_offer.php"; ?>
                         </div>
                     </div>
                 </div>
@@ -142,152 +143,232 @@
                         </div>
 
                         <!-- Start Course Feature Box  -->
-                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30 has-show-more" id="overview">
-                            <div class="rbt-course-feature-inner has-show-more-inner-content">
+                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30 " id="overview">
+                            <div class="rbt-course-feature-inner">
                                 <div class="section-title">
-                                    <h4 class="rbt-title-style-3">About
-                                        <?php echo $course_details[$current_slug]['title'] ?></h4>
+                                    <h2 class="rbt-title-style-3">Master Oracle Fusion HCM Online Training and Understand Why Oracle Fusion HCM is Important</h2>
                                 </div>
                                 <!-- Overview Start -->
-                                <h6><strong>Master Oracle Fusion HCM Online Training and Understand Why Oracle Fusion HCM is Important</strong></h6>
-                                <p>Master Oracle Fusion HCM online training to gain expertise in Oracle's comprehensive cloud-based Human Capital Management system. Oracle Fusion HCM integrates core HR functions such as recruitment, payroll, performance management, and talent development into one seamless platform. This training empowers professionals to optimize employee lifecycle management, improve decision-making with real-time analytics, and enhance workforce productivity. Oracle Fusion HCM is important because it streamlines HR processes, boosts employee engagement, ensures compliance with global standards, and facilitates strategic talent management for business growth. Led by experienced trainers, this course is ideal for advancing your HR career and mastering digital transformation in human resources.</p>
-                                <h4><strong>What is Oracle Fusion HCM?</strong></h4>
-                                <p>Oracle Fusion Human Capital Management (HCM) is an integrated suite of cloud-based applications designed to manage and optimize an organization's human resources functions. As part of the Oracle Fusion Applications suite, it combines the best features from Oracle's various HR solutions into a unified platform, offering a comprehensive approach to managing a global workforce.</p>
+                                <p>Human Resources is no longer an administrative function—it is a strategic pillar for modern enterprises. Oracle Fusion HCM Training enables professionals to understand how cloud-based HR systems support workforce planning, payroll accuracy, employee experience, and regulatory compliance across global organizations.</p>
+                                <p>This Oracle HCM training online is built around real HR scenarios such as employee lifecycle management, payroll processing, approvals, reporting structures, and statutory requirements. Instead of focusing only on features, the training emphasizes how HR teams actually work inside Oracle Fusion HCM, making learners job-ready for functional, implementation, and support roles aligned with Oracle HCM certification paths.</p>
+                                
+                                <div class="about-content">
+    <span class="about-label">About the Course</span>
 
-                                <h5><strong>Key Features of Oracle Fusion HCM</strong></h5>
-                                <ol>
-                                    <li><strong>Comprehensive HR Management:</strong>
-                                        <ul>
-                                            <li><strong>Core HR:</strong> Manage employee data, organizational structures, and workforce administration.</li>
-                                            <li><strong>Workforce Directory:</strong> A comprehensive directory with rich employee profiles.</li>
-                                            <li><strong>Global HR:</strong> Support for complex global HR requirements, including multiple languages, currencies, and regulatory compliance.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Talent Management:</strong>
-                                        <ul>
-                                            <li><strong>Recruiting:</strong> Streamlined processes for attracting and hiring top talent.</li>
-                                            <li><strong>Onboarding:</strong> Efficient onboarding processes to integrate new hires quickly.</li>
-                                            <li><strong>Performance Management:</strong> Tools for managing employee performance and development.</li>
-                                            <li><strong>Learning and Development:</strong> Programs and courses to enhance employee skills and knowledge.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Payroll and Compensation:</strong>
-                                        <ul>
-                                            <li><strong>Payroll Processing:</strong> Efficient and accurate payroll processing.</li>
-                                            <li><strong>Compensation Management:</strong> Comprehensive tools for managing employee compensation and rewards.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Benefits Administration:</strong>
-                                        <ul>
-                                            <li><strong>Benefits Enrollment:</strong> Self-service options for employees to enroll in benefits.</li>
-                                            <li><strong>Benefits Management:</strong> Tools for managing and administering employee benefits programs.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Workforce Analytics:</strong>
-                                        <ul>
-                                            <li><strong>Reporting:</strong> Robust reporting capabilities to analyze HR data.</li>
-                                            <li><strong>Analytics:</strong> Advanced analytics to gain insights into workforce trends and metrics.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>User Experience:</strong>
-                                        <ul>
-                                            <li><strong>Intuitive Interface:</strong> Easy-to-use interface designed for HR professionals and employees.</li>
-                                            <li><strong>Mobile Access:</strong> Access HR functions on the go with mobile compatibility.</li>
-                                        </ul>
-                                    </li>
-                                </ol>
+    <h2 class="about-heading">
+      What is <span class="gradient-text">Oracle Fusion HCM?</span>
+    </h2>
 
-                                <h5><strong>Benefits of Oracle Fusion HCM</strong></h5>
-                                <ul>
-                                    <li><strong>Unified Platform:</strong> A single system that integrates all HR functions, reducing complexity and improving efficiency.</li>
-                                    <li><strong>Scalability:</strong> Scalability to meet the needs of organizations of all sizes, from small businesses to large enterprises.</li>
-                                    <li><strong>Global Reach:</strong> Support for global operations with multi-currency, multi-language, and multi-country capabilities.</li>
-                                    <li><strong>Compliance:</strong> Tools to help organizations stay compliant with local, regional, and global regulations.</li>
-                                    <li><strong>Enhanced Decision-Making:</strong> Advanced analytics and reporting provide valuable insights for strategic HR decision-making.</li>
-                                    <li><strong>Employee Engagement:</strong> Self-service features and a user-friendly interface enhance employee engagement and satisfaction.</li>
-                                </ul>
-                                <h3><strong>Why Should You Learn Oracle Fusion HCM Course from Soft Online Training?</strong></h3>
-                                <p>Oracle Fusion Human Capital Management (HCM) is a leading cloud-based HR solution that helps organizations manage their human resources more effectively. Learning how to use Oracle Fusion HCM can significantly enhance your career prospects in HR and IT. Softonlinetraining offers a comprehensive oracle fusion hcm course designed to equip you with the necessary skills and knowledge to excel in this field. Enrolling in an oracle fusion hcm course provides hands-on training in core HR, payroll, talent management, and real-world HR projects to boost your professional growth.</p>
+    <p class="about-description"><b>Oracle Fusion Human Capital Management (HCM) Cloud </b> is an integrated HR platform that centralizes employee data, payroll, talent, and workforce processes into a single cloud system. It is designed to eliminate fragmented HR tools and manual processes by providing one source of truth for workforce information.
+    </p>
 
-                                <ol>
-                                    <li><strong>Expert Instructors</strong>
-                                        <ul>
-                                            <li><strong>Industry Experience:</strong> Our trainers are seasoned professionals with extensive experience in implementing and managing Oracle Fusion HCM in various organizations.</li>
-                                            <li><strong>Certified Experts:</strong> All instructors are certified by Oracle, ensuring that they provide the most accurate and up-to-date information.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Comprehensive Curriculum</strong>
-                                        <ul>
-                                            <li><strong>In-Depth Coverage:</strong> The training program covers all aspects of Oracle Fusion HCM, including Core HR, Payroll, Benefits, Talent Management, and Workforce Analytics.</li>
-                                            <li><strong>Hands-On Training:</strong> Practical exercises and real-world scenarios are incorporated to ensure you gain hands-on experience.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Flexible Learning Options</strong>
-                                        <ul>
-                                            <li><strong>Online Classes:</strong> Attend live online classes from the comfort of your home or office.</li>
-                                            <li><strong>Self-Paced Learning:</strong> Access pre-recorded sessions and course materials at your convenience, allowing you to learn at your own pace.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Interactive Learning Experience</strong>
-                                        <ul>
-                                            <li><strong>Live Projects:</strong> Work on live projects to apply your learning in real-world situations.</li>
-                                            <li><strong>Q&amp;A Sessions:</strong> Regular Q&amp;A sessions with instructors to clarify doubts and gain deeper insights.</li>
-                                            <li><strong>Discussion Forums:</strong> Participate in discussion forums to interact with fellow learners and share knowledge.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Support and Resources</strong>
-                                        <ul>
-                                            <li><strong>24/7 Support:</strong> Our support team is available around the clock to assist you with any technical or course-related issues.</li>
-                                            <li><strong>Extensive Resources:</strong> Access a wealth of resources, including eBooks, video tutorials, and case studies.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Certification Assistance</strong>
-                                        <ul>
-                                            <li><strong>Exam Preparation:</strong> Comprehensive preparation for Oracle Fusion HCM certification exams.</li>
-                                            <li><strong>Practice Tests:</strong> Multiple practice tests will help you assess your knowledge and readiness for the certification exams.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Career Support</strong>
-                                        <ul>
-                                            <li><strong>Resume Building:</strong> Assistance with creating a professional resume that highlights your new skills and expertise.</li>
-                                            <li><strong>Job Placement:</strong> Our job placement assistance program connects you with potential employers looking for Oracle Fusion HCM experts.</li>
-                                            <li><strong>Interview Preparation:</strong> Mock interviews and tips to help you succeed in job interviews.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Affordable Pricing</strong>
-                                        <ul>
-                                            <li><strong>Competitive Fees:</strong> Our training programs are competitively priced to offer the best value for your investment.</li>
-                                            <li><strong>Payment Plans:</strong> Flexible payment plans and discounts are available to make the training accessible to everyone.</li>
-                                        </ul>
-                                    </li>
-                                </ol>
-                                <h5><strong>Benefits of Oracle Fusion HCM Training Online</strong></h5>
-                                <p>Oracle Fusion HCM training online enables learners to master advanced cloud-based HR skills from anywhere, helping boost career growth, efficiency, and industry relevance. An oracle fusion hcm course offers hands-on experience in optimizing HR processes, improving analytics, and ensuring compliance—all in a flexible, remote learning format. Completing oracle fusion hcm training online significantly enhances salary prospects, job security, and opens up global career opportunities in HR and IT.</p>
-                                <h5><strong>Enhanced Career Growth</strong></h5>
-                                <p>Oracle fusion hcm training opens the door to high-demand HR and IT roles, allowing professionals to earn higher salaries and unlock global career potential. Completing an oracle fusion hcm course demonstrates advanced skills to employers and enhances job security in competitive industries. By choosing oracle fusion hcm online training, candidates can continually upskill and future-proof their careers as digital HR leaders.</p>
-                                <h5><strong>Hands-On Practical Experience</strong></h5>
-                                <p>Oracle fusion hcm training provides real-world projects and interactive labs, ensuring strong practical knowledge for every learner. An oracle fusion hcm course covers the full HR lifecycle, teaching how to implement cloud processes and manage workforce effectively. Through oracle fusion hcm online training, students apply concepts directly, gaining confidence and expertise for organizational impact.</p>
-                                <h5><strong>Flexibility and Remote Access</strong></h5>
-                                <p>With oracle fusion hcm online training, professionals enjoy flexible schedules and remote learning from any location, fitting education around work and life. Oracle fusion hcm course platforms offer self-paced options and one-to-one sessions to match different learning styles. This flexibility makes oracle fusion hcm training online accessible for anyone seeking to grow without interrupting their career</p>
-                                <h5><strong>Real-Time Analytics and Reporting</strong></h5>
-                                <p>Oracle fusion hcm training gives participants hands-on experience in dashboards, analytics, and strategic HR reporting for data-driven decisions. The oracle fusion hcm course teaches how to generate actionable insights for workforce planning, performance tracking, and payroll management. Learners of oracle fusion hcm training online master advanced analytics tools to optimize processes and improve efficiency​</p>
-                                <h5><strong>Better Compliance and Risk Management</strong></h5>
-                                <p>Mastering compliance modules is a core part of oracle fusion hcm training, helping professionals reduce errors and meet global regulations. An oracle fusion hcm course covers automated compliance tracking, legal frameworks, and risk assessment for HR teams. Oracle fusion hcm training online ensures expertise in minimizing legal risks and maintaining organizational integrity in every region.</p>
-                                <h5><strong>Global Job Opportunities</strong></h5>
-                                <p>Professionals who complete oracle fusion hcm training online qualify for HR, consulting, and IT roles in multinational companies worldwide. Oracle fusion hcm course certification is recognized across industries, boosting credentials and employability in global markets. The practical skills from oracle fusion hcm training online open pathways to lucrative job offers and career advancement internationally.</p>
-                                <!-- Overview End -->
+    <p class="about-description">Powered by Oracle Cloud Infrastructure and the Redwood user experience, Oracle Fusion HCM Cloud supports automation, approvals, compliance tracking, and workforce analytics. It enables HR teams to manage hiring, employee records, payroll, performance, and compliance with accuracy, scalability, and audit readiness.
+    </p>
+    <p class="about-description">Through Fusion HCM Cloud training, professionals learn how HR policies, structures, and processes are configured and maintained inside Oracle HCM—skills that are critical for enterprise HR operations and implementations.</p>
+  </div>
 
-                                <h5><strong>Key Features of Oracle Fusion HCM Course:</strong></h5>
-                                <p>Oracle Fusion HCM courses cover core HR, payroll, and talent management with real-world scenarios and hands-on labs. Learners gain practical skills in workflow, approvals, analytics, and global compliance essential for HR transformation.</p>
-                                <ol>
-                                    <li><strong>Core HR and Payroll Processes</strong>: Oracle Fusion HCM covers essential HR and payroll processes, enabling efficient employee data and payroll management across global organizations.</li>
-                                    <li><strong>Talent Management and Development</strong>: Learn to handle talent acquisition, performance tracking, and succession planning for driving workforce growth and retention.</li>
-                                    <li><strong>Workflow, Approvals, and Analytics</strong>: Gain practical skills in managing workflows, approvals, and real-time analytics to enhance HR decision-making and operational efficiency.</li>
-                                    <li><strong>Global Compliance and Payroll Integration</strong>: Oracle Fusion HCM ensures adherence to global regulatory requirements and seamless payroll integration for accurate processing.</li>
-                                    <li><strong>Hands-On Labs and Real-World Scenarios</strong>: The course offers practical exposure through hands-on labs and real-life scenarios to build job-ready skills for HR transformation.</li>
-                                </ol>
+<h3 class="who-label" style="margin-top:20px;">Key Modules</h3>
+<div class="tag-container">
+  <div class="tag">Core HR</div>
+  <div class="tag">Absence Management</div>
+  <div class="tag">Compensation</div>
+  <div class="tag">Payroll</div>
+  <div class="tag">Talent Management</div>
+  <div class="tag">Goal Management</div>
+  <div class="tag">Profile Management</div>
+  <div class="tag">HCM Communicate</div>
+  <div class="tag">Succession Planning</div>
+  <div class="tag">Oracle ME</div>
+</div>
+
+
+  <div class="who-header">
+    <span class="who-label">Who It's For</span>
+    <h2 class="who-heading">
+      Who Should <span class="gradient-text">Enroll </span>in This Oracle Fusion HCM Course?
+    </h2>
+    <p>This Oracle Fusion HCM course is ideal for professionals working with people, payroll, and HR systems.</p>
+  </div>
+
+  <div class="who-grid">
+
+    <!-- Card 1 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Graduation Cap -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+          <path d="M22 10v6"/>
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+        </svg>
+      </div>
+      <h3>HR Graduates & Freshers</h3>
+      <p> MBA HR and management graduates seeking practical exposure to enterprise HR systems beyond theory.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Building -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+          <path d="M10 6h4"/>
+          <path d="M10 10h4"/>
+          <path d="M10 14h4"/>
+          <path d="M10 18h4"/>
+        </svg>
+      </div>
+      <h3>HR Operations & Payroll Executives</h3>
+      <p> Professionals responsible for employee data, payroll processing, statutory compliance, and HR reporting.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Chart -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+          <path d="M18 17V9"/>
+          <path d="M13 17V5"/>
+          <path d="M8 17v-3"/>
+        </svg>
+      </div>
+      <h3>Oracle HRMS / EBS HCM Users</h3>
+      <p> Legacy Oracle HRMS professionals planning to transition into Oracle Fusion HCM Cloud roles.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Monitor -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="3" rx="2"/>
+          <line x1="8" x2="16" y1="21" y2="21"/>
+          <line x1="12" x2="12" y1="17" y2="21"/>
+        </svg>
+      </div>
+      <h3>Recruiters & Talent Acquisition Professionals</h3>
+      <p>Recruiters, HR executives, and hiring coordinators seeking system-level expertise in cloud-based recruitment processes.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <rect width="20" height="14" x="2" y="6" rx="2"/>
+        </svg>
+      </div>
+      <h3>HR Managers & Business Stakeholders</h3>
+      <p> Leaders who want a working understanding of Oracle HCM to manage HR digital transformation initiatives.</p>
+    </div>
+
+        <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 17l6-6 4 4 7-7"></path>
+  <path d="M14 8h6v6"></path>
+</svg>
+</div>
+      <h3>IT Career Transition Track</h3>
+      <p>Helps professionals from non-technical backgrounds build confidence in Oracle ERP and Cloud systems.</p>
+    </div>
+
+  </div>
+
+   <div class="highlights-header">
+    <span class="highlights-label">What You Get</span>
+    <h2 class="highlights-heading">
+      Oracle Fusion HCM Course <span class="gradient-text">Highlights</span>
+    </h2>
+    <p style="margin-bottom:20px;">This Oracle Fusion HCM training program focuses on practical HR system knowledge with long-term career value.</p>
+  </div>
+
+  <div class="highlights-grid">
+
+    <!-- Card 1 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+          <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+        </svg>
+      </div>
+      <h3>Live Classes with 2-year Recording Access</h3>
+      <p>  Live instructor-led sessions with 2-year LMS recording access, allowing learners to revise concepts anytime at their own pace.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polygon points="6 3 20 12 6 21 6 3"></polygon>
+        </svg>
+      </div>
+      <h3>6 Months Oracle Cloud Lab Access</h3>
+      <p> Practice HR configurations, employee data management, payroll flows, and approvals in a real Oracle HCM Cloud environment.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <rect width="20" height="8" x="2" y="2" rx="2"></rect>
+          <rect width="20" height="8" x="2" y="14" rx="2"></rect>
+          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+        </svg>
+      </div>
+      <h3>Real-Time HCM Use Cases</h3>
+      <p>Learn through HR scenarios such as employee lifecycle management, payroll processing, and workforce administration used in real organizations.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+          <circle cx="12" cy="8" r="6"></circle>
+        </svg>
+      </div>
+      <h3>Mobile App Learning</h3>
+      <p>Learn Oracle Fusion HCM through a mobile app with recorded sessions and LMS access.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+          <polyline points="16 7 22 7 22 13"></polyline>
+        </svg>
+      </div>
+      <h3>Interview & Career Support</h3>
+      <p>Get support with HR-focused interview questions, resume preparation, and role-based career guidance for Oracle HCM positions.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="M6 3h12"></path>
+          <path d="M6 8h12"></path>
+          <path d="m6 13 8.5 8"></path>
+          <path d="M6 13h3"></path>
+          <path d="M9 13c6.667 0 6.667-10 0-10"></path>
+        </svg>
+      </div>
+      <h3>Course Completion Certificate</h3>
+      <p>Receive a course completion certificate that confirms your Oracle Fusion HCM functional knowledge and job readiness.</p>
+    </div>
+
+  </div>
                             </div>
-                            <div class="rbt-show-more-btn">Show More</div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -298,11 +379,12 @@
 
                         <!-- Start Course Feature Box  -->
                         <div class="rbt-course-feature-box rbt-border-with-box details-wrapper mt--30" id="details">
+                            <h2 class="rbt-title-style-3">Course Details</h2>
                             <div class="row g-5">
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Requirements</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">Requirements</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($requirements[$current_slug] as $requirement) : ?>
@@ -315,7 +397,7 @@
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">What Will You Learn</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">What Will You Learn</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($learnings[$current_slug] as $learn) : ?>
@@ -323,8 +405,198 @@
                                         <?php endforeach; ?>
                                     </ul>
                                 </div>
+
                                 <!-- End Feture Box  -->
                             </div>
+                            <div class="why-header">
+    <span class="why-label">Why Us</span>
+    <h2 class="why-heading">
+      Why Choose <span class="gradient-text">Soft Online Training?</span>
+    </h2>
+    <p>This Oracle Fusion HCM training is designed with real HR implementation and industry expectations in mind.
+</p>
+  </div>
+
+  <div class="why-container">
+
+    <!-- LEFT TRAINER CARD -->
+    <div class="trainer-card">
+      <div class="trainer-header">
+        <div class="trainer-avatar">K</div>
+        <div>
+          <h2>Raj Sumesh</h2>
+          <p>Lead Trainer & HCM Industry Expert</p>
+        </div>
+      </div>
+
+      <ul class="trainer-points">
+        <li><h3>Senior Oracle HCM professional with 20+ years of ERP and Cloud experience</h3></li>
+        <li><h3>Specialized in Core HR, Payroll, Talent, and Workforce Management</h3></li>
+        <li><h3>Trained HR and non-IT professionals with real-time system exposure</h3></li>
+        <li><h3>Focuses on functional clarity and implementation-driven learning</h3></li>
+      </ul>
+
+    </div>
+
+    <!-- RIGHT FEATURES LIST -->
+    <div class="why-features">
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Shield SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Real-Time Project Experience</h3>
+          <p>Training is delivered by professionals who have worked on live Oracle HCM implementation and support projects.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- User SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Job-Focused Curriculum</h3>
+          <p> Course content is aligned with current Oracle Fusion HCM job roles, helping learners build relevant and in-demand HR system skills.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Brain SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+            <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Training with Career Support</h3>
+          <p> A balanced approach combining functional training, real-world examples, and interview preparation for confident career transitions.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Layers SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+            <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Updated with Latest Oracle Cloud Features</h3>
+          <p>The curriculum reflects recent Oracle HCM Cloud updates, including modern HR workflows and system enhancements.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Award SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+            <circle cx="12" cy="8" r="6"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Flexible Learning Schedules</h3>
+          <p>Multiple batch options allow working professionals and students to learn without disrupting their daily commitments.</p>
+        </div>
+      </div>
+
+            <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Award SVG -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z"></path>
+  <path d="M9 12l2 2 4-4"></path>
+</svg>
+        </div>
+        <div>
+          <h3>Trusted Oracle Fusion Training Institute</h3>
+          <p> Soft Online Training is known for consistent delivery, practical teaching methods, and ongoing learner support across Oracle Fusion courses.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+                               <div class="career-header">
+    <span class="career-label">Career Impact</span>
+    <h2 class="career-heading">
+      Career Outcomes & <span class="gradient-text">Salary Data</span>
+    </h2>
+  </div>
+
+  <div class="career-table-wrapper">
+    <div class="table-scroll">
+<table class="career-table">
+
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>India</th>
+      <th>USA</th>
+      <th>UK</th>
+    </tr>
+  </thead>
+
+  <tbody class="Career-Outcomes">
+    <tr class="career-Outcome">
+      <td><h3>SCM Functional Consultant</h3></td>
+      <td>₹8-18 LPA</td>
+      <td>$85-130K</td>
+      <td>£50-80K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Procurement Lead</h3></td>
+      <td>₹12-25 LPA</td>
+      <td>$95-145K</td>
+      <td>£60-95K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>SCM Technical Consultant</h3></td>
+      <td>₹10-22 LPA</td>
+      <td>$90-140K</td>
+      <td>£55-90K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Inventory/WMS Analyst</h3></td>
+      <td>₹7-15 LPA</td>
+      <td>$75-115K</td>
+      <td>£45-75K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Supply Chain Manager</h3></td>
+      <td>₹15-35 LPA</td>
+      <td>$110-170K</td>
+      <td>£70-110K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Cloud Architect</h3></td>
+      <td>₹20-45 LPA</td>
+      <td>$130-200K</td>
+      <td>£85-140K</td>
+    </tr>
+
+  </tbody>
+
+</table>
+    </div>
+  </div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -337,6 +609,8 @@
                         <!-- End Edu Review List  -->
 
                         <?php include_once "reviews.php"; ?>
+
+                        <?php include_once "faq.php";  ?>
 
                         <!-- Start Faq Area  -->
                         <?php include_once "faq.php"; ?>

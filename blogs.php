@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -133,14 +134,14 @@
                             </ul>
                             <!-- End Breadcrumb Area  -->
 
-                            <div class="title-wrapper">
-                                <h1 class="title mb--0">All Blogs</h1>
-                                <a href="#" class="rbt-badge-2">
+                            <div class="title-wrapper mb--0" style="flex-wrap: wrap;">
+                                <h1 class="about-us-h1 mb--0">Oracle Fusion Training Blogs & ERP Career Insights</h1>
+                                <a href="#" class="rbt-badge-2 mt--10">
                                     <div class="image">🎉</div> <?php echo $total_records; ?> Blogs
                                 </a>
                             </div>
 
-                            <p class="description">Explore Insights: Dive into Our Latest Blogs on Oracle Fusion and ERP! </p>
+                            <h2 class="description blog-content mt--20">Explore Insights: Dive into Our Latest Blogs on Oracle Fusion and ERP! </h2>
                         </div>
                     </div>
                 </div>
@@ -168,7 +169,7 @@
                                             <img src="<?php echo 'https://admin.softonlinetraining.com/uploads/blog/thumbnail/' . $blog['thumbnail']; ?>" alt="<?php echo $blog['title']; ?>"> </a>
                                     </div>
                                     <div class="rbt-card-body">
-                                        <h5 class="rbt-card-title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a></h5>
+                                        <h3 class="rbt-card-title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a></h3>
 
                                         <ul class="blog-meta">
                                             <li><i class="feather-user"></i> <?php echo $blog['first_name'] . ' ' . $blog['last_name']; ?></li>
@@ -242,7 +243,7 @@
                         <!-- Start Widget Area  -->
                         <div class="rbt-single-widget rbt-widget-recent">
                             <div class="inner">
-                                <h4 class="rbt-widget-title">Recent Post</h4>
+                                <h2 class="rbt-widget-title">Recent Post</h2>
                                 <ul class="rbt-sidebar-list-wrapper recent-post-list">
                                     <?php foreach ($recent_blogs as $blog) : ?>
                                         <li>
@@ -252,7 +253,7 @@
                                                 </a>
                                             </div>
                                             <div class="content">
-                                                <h6 class="title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a></h6>
+                                                <h3 class="title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a></h3>
                                                 <ul class="rbt-meta">
                                                     <li><i class="feather-clock"></i><?php echo date('F j, Y', $blog['added_date']); ?></li>
                                                 </ul>
@@ -267,7 +268,7 @@
                         <!-- Start Widget Area  -->
                         <div class="rbt-single-widget rbt-widget-recent">
                             <div class="inner">
-                                <h4 class="rbt-widget-title">Popular Post</h4>
+                                <h2 class="rbt-widget-title">Popular Post</h2>
                                 <ul class="rbt-sidebar-list-wrapper recent-post-list">
                                     <?php foreach ($popular_blogs as $blog) : ?>
                                         <li>
@@ -277,7 +278,7 @@
                                                 </a>
                                             </div>
                                             <div class="content">
-                                                <h6 class="title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a></h6>
+                                                <h3 class="title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a></h3>
                                                 <ul class="rbt-meta">
                                                     <li><i class="feather-clock"></i><?php echo date('F j, Y', $blog['added_date']); ?></li>
                                                 </ul>

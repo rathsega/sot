@@ -121,7 +121,7 @@ $review_schema = [
 
 ?>
 
-<?php if ($current_slug == 'oracle-fusion-scm-training' || $current_slug == 'oracle-fusion-hcm-online-training' || $current_slug == 'oracle-fusion-cloud-financials'): ?>
+<?php if ($current_slug == 'oracle-fusion-scm-training' || $current_slug == 'oracle-fusion-hcm-online-training' || $current_slug == 'oracle-fusion-cloud-financials' || $current_slug == 'oracle-fusion-technical-online-training'): ?>
 <script type="application/ld+json">
     <?php
 
@@ -134,11 +134,5 @@ $review_schema = [
 
 <?php 
 
-    if($current_slug == 'oracle-fusion-scm-training'){
-        require_once 'schema_scm.php';
-    } else if($current_slug == 'oracle-fusion-hcm-online-training'){
-        require_once 'schema_hcm.php';
-    } else if($current_slug == 'oracle-fusion-cloud-financials'){
-        require_once 'schema_financials.php';
-    }
+    if($current_slug == 'oracle-fusion-scm-training'){ require_once 'schema_scm.php'; } else if($current_slug == 'oracle-fusion-hcm-online-training'){ require_once 'schema_hcm.php'; } else if($current_slug == 'oracle-fusion-cloud-financials'){ require_once 'schema_financials.php'; } else if($current_slug == 'oracle-fusion-technical-online-training'){ require_once 'schema_technical.php'; }
 ?>

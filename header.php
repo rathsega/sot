@@ -13,13 +13,48 @@
         "logo": "https://softonlinetraining.com/assets/images/logo/logo.png",
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+91 812-118-3312",
+            "telephone": "+91 799-588-3556",
             "contactType": "Customer Service"
         }
     }
 </script>
-<!-- Google reCAPTCHA v3 -->
-<script src="https://www.google.com/recaptcha/api.js?render=6Le5H8IrAAAAAH970v1U2rLbvwx_N9tGX3m3M3sI"></script>
+<!-- Google reCAPTCHA v3 (lazy loaded on form interaction) -->
+<script>
+var recaptchaLoaded = false;
+function loadRecaptcha() {
+  if (recaptchaLoaded) return;
+  recaptchaLoaded = true;
+  var s = document.createElement('script');
+  s.src = 'https://www.google.com/recaptcha/api.js?render=6Le5H8IrAAAAAH970v1U2rLbvwx_N9tGX3m3M3sI';
+  s.async = true;
+  document.head.appendChild(s);
+}
+// Load on first interaction (with passive listener for performance)
+window.addEventListener('touchstart', loadRecaptcha, {once: true, passive: true});
+window.addEventListener('mousemove', loadRecaptcha, {once: true, passive: true});
+document.addEventListener('DOMContentLoaded', function() {
+  var triggers = document.querySelectorAll('form input, form select, form textarea, [data-bs-toggle="modal"]');
+  triggers.forEach(function(el) {
+    el.addEventListener('focus', loadRecaptcha, {once: true, passive: true});
+    el.addEventListener('click', loadRecaptcha, {once: true, passive: true});
+  });
+}, {passive: true});
+</script>
+<style>
+.rbt-contact-lead .form-group input:focus + label,
+.rbt-contact-lead .form-group input:not(:placeholder-shown) + label {
+    opacity: 0;
+    pointer-events: none;
+}
+</style>
+<?php
+$_sot_subpath = rtrim(str_replace(
+    str_replace('\\', '/', realpath($_SERVER['DOCUMENT_ROOT'])),
+    '',
+    str_replace('\\', '/', realpath(__DIR__))
+), '/');
+?>
+<script>var SOT_BASE = '<?php echo $_sot_subpath; ?>';</script>
 <header class="rbt-header rbt-header-9">
     <div class="rbt-sticky-placeholder"></div>
 
@@ -36,7 +71,7 @@
                     <div class="header-info">
                         <div class="logo">
                             <a href="/">
-                                <img src="assets/images/logo/logo.png" alt="Logo Image">
+                                <img src="assets/images/logo/logo.png" alt="Soft Online Training Logo" width="200" height="50" fetchpriority="high">
                             </a>
                         </div>
                     </div>
@@ -118,9 +153,9 @@
                 <div class="rbt-main-navigation d-none d-xl-block">
                     <nav class="mainmenu-nav">
                         <ul class="mainmenu">
-                            <li class="with-megamenu has-menu-child-item position-static">
+                            <!-- <li class="with-megamenu has-menu-child-item position-static">
                                 <a href="courses.php">Courses</a>
-                            </li>
+                            </li> -->
                             <li class="with-megamenu has-menu-child-item position-static">
                                 <a href="aboutus.php">About</a>
                             </li>
@@ -194,7 +229,7 @@
                                             <div>
 
                                                 <div class="rbt-contact-form contact-form-style-1 rbt-contact-lead max-width-auto">
-                                                    <h4 class="title">Contact Us</h4>
+                                                    <span class="title" style="font-size: 1.5rem; font-weight: 600; display: block;">Contact Us</span>
                                                     <form id="contact_form" method="POST" class="rainbow-dynamic-form max-width-auto">
                                                         <div>
                                                             <select name="contact_course" required id="contact_course">
@@ -214,17 +249,17 @@
                                                             </select>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="contact_name" required id="contact_name" type="text">
+                                                            <input name="contact_name" required id="contact_name" type="text" placeholder=" ">
                                                             <label>Name</label>
                                                             <span class="focus-border"></span>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="contact_email" required id="contact_email" type="email">
+                                                            <input name="contact_email" required id="contact_email" type="email" placeholder=" ">
                                                             <label>Email</label>
                                                             <span class="focus-border"></span>
                                                         </div>
                                                         <div class="form-group focused">
-                                                            <input type="text" required id="contact_phone" name="contact_phone">
+                                                            <input type="text" required id="contact_phone" name="contact_phone" placeholder=" ">
                                                             <label>Phone</label>
                                                             <span class="focus-border"></span>
                                                         </div>
@@ -271,7 +306,7 @@
         <div class="inner-wrapper">
             <div class="inner-top">
                 <div class="inner-title">
-                    <h4 class="title">Course Category</h4>
+                    <span class="title" style="font-size: 1.5rem; font-weight: 600; display: block;">Course Category</span>
                 </div>
                 <div class="rbt-btn-close">
                     <button class="rbt-close-offcanvas rbt-round-btn"><i class="feather-x"></i></button>
@@ -331,16 +366,28 @@
     const detectDeviceType = () =>
         /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent) ? 'Mobile' : 'Desktop';
 
-    const phoneInputContact = document.querySelector("#contact_phone");
-    const phoneInput = window.intlTelInput(phoneInputContact, {
-        preferredCountries: ["in"],
-        hiddenInput: "full",
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    // Initialize all jQuery-dependent code after DOMContentLoaded (when scripts are loaded)
+    var phoneInput;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize intl-tel-input
+        const phoneInputContact = document.querySelector("#contact_phone");
+        if (phoneInputContact && window.intlTelInput) {
+            phoneInput = window.intlTelInput(phoneInputContact, {
+                preferredCountries: ["in"],
+                hiddenInput: "full",
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+            phoneInputContact.setAttribute("placeholder", "1234");
+        }
+        
+        // jQuery-dependent code
+        if (typeof $ !== 'undefined') {
+            initializeContactForm();
+        }
     });
-    phoneInputContact.setAttribute("placeholder", "1234")
-    $(document).ready(function() {
-
-
+    
+    function initializeContactForm() {
         // Check submission status when modal opens
         $('#exampleModal').on('show.bs.modal', function() {
             let submission = JSON.parse(localStorage.getItem('contact_form_submission') || '{}');
@@ -355,7 +402,7 @@
 
                 // Hide submit button and show message
                 $('#contact_form button[type="submit"]').hide();
-                $('#message').html('<span style="color:green;">You have already submitted your details today.</span>');
+                $('#message').html('<span style="color:#92ff92;">You have already submitted your details today.</span>');
             } else {
                 // Show submit button and clear message
                 $('#contact_form button[type="submit"]').show();
@@ -433,7 +480,7 @@
                 alert(message);
             }
         });
-    });
+    }
 
     function postFormSubmission() {
         localStorage.setItem('data_submitted', true);
@@ -463,6 +510,7 @@
                 hideShowDemoVideoLink();
             }
             hideShowDownloadBroucherLink();
+            window.location.href = SOT_BASE + '/thank-you.php';
         }
     }
 

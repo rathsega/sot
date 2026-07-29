@@ -128,7 +128,7 @@
                     </div>
 
 
-                    <h4><?php echo $blog['title']; ?></h4>
+                    
 
                     <p class=""><?php echo htmlspecialchars_decode($blog['description']); ?></p>
 
@@ -147,8 +147,8 @@
                 </div>
                 <div class="related-post pt--60">
                     <div class="section-title text-start mb--40">
-                        <span class="subtitle bg-primary-opacity">Related Post</span>
-                        <h4 class="title">Similar Post</h4>
+                        <span class="subtitle bg-primary-opacity">Similar Post</span>
+                        <h2>Related Articles</h2>
                     </div>
 
                     <!-- Start Single Card  -->
@@ -159,8 +159,8 @@
                                     <img src="<?php echo 'https://admin.softonlinetraining.com/uploads/blog/thumbnail/' . $blog['thumbnail']; ?>" alt="<?php echo $blog['title']; ?>"> </a>
                             </div>
                             <div class="rbt-card-body">
-                                <h5 class="rbt-card-title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a>
-                                </h5>
+                                <h3 class="rbt-card-title"><a href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>"><?php echo $blog['title']; ?></a>
+                                </h3>
                                 <div class="rbt-card-bottom">
                                     <a class="transparent-button" href="blog/<?php echo convertTitleToURL($blog['title']); ?>/<?php echo $blog['blog_id']; ?>">Read
                                         Article<i><svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">

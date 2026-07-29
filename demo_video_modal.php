@@ -24,7 +24,7 @@
     <div class="modal-dialog demo_video_modal_dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="videoModalLabel"><?php echo $course_details[$current_slug]['title'] ?></h5>
+                <p class="modal-title" id="videoModalLabel"><?php echo $course_details[$current_slug]['title'] ?></p>
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                 </button>
             </div>
@@ -35,21 +35,19 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    //$(document).ready(function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof $ === 'undefined') return;
         $('#videoModal').on('show.bs.modal', function(event) {
             var button = $(event.relatedTarget);
-            var videoSrc = "<?php echo $course_details[$current_slug]['mobile_demo_video'] ?>"; // Replace VIDEO_ID with your YouTube video ID
+            var videoSrc = "<?php echo $course_details[$current_slug]['mobile_demo_video'] ?>";
             var modal = $(this);
             modal.find('#videoFrame').attr('src', videoSrc);
-            console.log(videoSrc);
         });
 
         $('#videoModal').on('hide.bs.modal', function(event) {
             var modal = $(this);
             modal.find('#videoFrame').attr('src', '');
         });
-    //});
+    });
 </script>

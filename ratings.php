@@ -1,7 +1,7 @@
 <div class="rbt-review-wrapper rbt-border-with-box review-wrapper mt--30" id="review">
                             <div class="course-content">
                                 <div class="section-title">
-                                    <h4 class="rbt-title-style-3">Reviews</h4>
+                                    <h2 class="rbt-title-style-3">Reviews</h2>
                                 </div>
                                 <div class="row g-5 align-items-center">
                                     <div class="col-lg-3">

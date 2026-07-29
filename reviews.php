@@ -4,9 +4,9 @@
 //var_dump($data[0]);
 ?>
 
-<div class="about-author-list rbt-border-with-box featured-wrapper mt--30 has-show-more">
+<div class="about-author-list rbt-border-with-box featured-wrapper mt--30 has-show-more" id="review">
     <div class="section-title">
-        <h4 class="rbt-title-style-3">Featured Reviews</h4>
+        <h2 class="rbt-title-style-3">Featured Reviews</h2>
     </div>
     <div class="has-show-more-inner-content rbt-featured-review-list-wrapper">
         <?php foreach ($course_reviews[$current_slug] as $reviewer) : ?>
@@ -14,11 +14,11 @@
                 <div class="media">
                     <div class="media-body">
                         <div class="author-info">
-                            <h5 class="title">
+                            <h3 class="title">
                                 <a class="hover-flip-item-wrapper" href="javascript:void(0);">
                                     <?php echo $reviewer; ?>
                                 </a>
-                            </h5>
+                            </h3>
                             <div class="rating">
                                 <a href="javascript:void(0);"><i class="fa fa-star"></i></a>
                                 <a href="javascript:void(0);"><i class="fa fa-star"></i></a>
@@ -37,3 +37,17 @@
     </div>
     <div class="rbt-show-more-btn">Show More</div>
 </div>
+
+<script>
+(function() {
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('rbt-show-more-btn')) return;
+        var btn = e.target;
+        var wrapper = btn.closest('.has-show-more');
+        if (!wrapper) return;
+        var isActive = wrapper.classList.toggle('active');
+        btn.classList.toggle('active', isActive);
+        btn.textContent = isActive ? 'Show Less' : 'Show More';
+    });
+})();
+</script>

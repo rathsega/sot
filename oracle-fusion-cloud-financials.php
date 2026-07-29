@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     
     <?php include_once "all_courses_details.php"; ?>
     <?php include_once "meta-data.php"; ?>
     <?php include_once "common_css.php"; ?>
@@ -68,10 +69,10 @@
                                 </li>
                                 <li class="rbt-breadcrumb-item active">Oracle Fusion</li>
                             </ul>
-                            <h2 class="title">Oracle Fusion Financials Training – Learn from Certified Industry Experts</h2>
+                            <h1 class="title">Oracle Fusion Financials Training</h1>
                             <p class="description"><?php echo $short_descriptions[$current_slug]; ?> </p>
 
-                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature">
+                            <div class="d-flex align-items-center flex-wrap rbt-course-details-feature mt--10">
 
                                 <div class="feature-sin best-seller-badge">
                                     <span class="rbt-badge-2">
@@ -101,7 +102,7 @@
                                 
                                 <?php include_once "demo_video_modal.php"; ?>
                             </div>
-
+              <?php include_once "claim_instant_offer.php"; ?>
                         </div>
                     </div>
                 </div>
@@ -142,131 +143,234 @@
                         </div>
 
                         <!-- Start Course Feature Box  -->
-                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30 has-show-more" id="overview">
-                            <div class="rbt-course-feature-inner has-show-more-inner-content">
-                                <div class="section-title">
-                                    <h4 class="rbt-title-style-3">About
-                                        <?php echo $course_details[$current_slug]['title'] ?></h4>
-                                </div>
+                        <div class="rbt-course-feature-box overview-wrapper rbt-border-with-box mt--30" id="overview">
+                            <div class="rbt-course-feature-inner">
                                 <!-- Overview Start -->
-                                <h4><strong>What is Oracle Fusion </strong><strong>Financials</strong><strong>?</strong></h4>
-                                <p><b>Oracle Fusion Financials</b> is a comprehensive cloud-based financial management solution by Oracle that automates and streamlines core financial processes such as general ledger, accounts payable, and accounts receivable. It provides real-time insights, advanced analytics, and automation to improve accuracy, compliance, and decision-making. This platform helps organizations increase efficiency, reduce manual effort, and gain better control over their financial operations.</p>
-                                <h4>Why Oracle Fusion Financials Training is Important?</h4>
-                                <p><b>Oracle Fusion Financials training</b> is designed to equip professionals with the skills to use Oracle Fusion Financials, a modern cloud-based financial management solution that streamlines essential financial processes for organizations of all sizes. This platform is part of the Oracle Fusion Applications suite and is built to deliver powerful automation, real-time insights, and robust compliance for all financial operations.</p>
-                                <h5><strong>Key Features:</strong></h5>
-                                <ol>
-                                    <li><strong>General Ledger</strong>
-                                        <ul>
-                                            <li><strong>Comprehensive Financial Management:</strong> Manages all financial transactions and consolidates data across multiple ledgers and entities.</li>
-                                            <li><strong>Real-Time Reporting:</strong> Provides real-time financial insights and analytics, enabling informed decision-making.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Accounts Payable</strong>
-                                        <ul>
-                                            <li><strong>Streamlined Invoice Processing:</strong> This system automates invoice capture, approval workflows, and payment processes, reducing manual effort and errors.</li>
-                                            <li><strong>Supplier Management:</strong> Enhances supplier collaboration and ensures timely payments, improving supplier relationships.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Accounts Receivable</strong>
-                                        <ul>
-                                            <li><strong>Efficient Billing and Collections:</strong> Manages customer invoicing, credit memos, and collections, ensuring accurate and timely revenue recognition.</li>
-                                            <li><strong>Customer Relationship Management:</strong> Integrates with CRM systems to provide a holistic view of customer transactions and balances.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Cash Management</strong>
-                                        <ul>
-                                            <li><strong>Optimized Cash Flow:</strong> Tracks and manages cash positions, forecasts, and reconciliations to ensure effective liquidity management.</li>
-                                            <li><strong>Bank Account Reconciliation:</strong> Automates the reconciliation process, reducing discrepancies and manual effort.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Fixed Assets</strong>
-                                        <ul>
-                                            <li><strong>Asset Tracking and Management:</strong> Manages the lifecycle of fixed assets from acquisition to disposal, ensuring accurate depreciation and asset accounting.</li>
-                                            <li><strong>Compliance and Reporting:</strong> Ensures compliance with financial regulations and generates comprehensive asset reports.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Expense Management</strong>
-                                        <ul>
-                                            <li><strong>Automated Expense Reporting:</strong> Streamlines the capture, approval, and reimbursement of employee expenses, enhancing policy compliance and reducing processing time.</li>
-                                            <li><strong>Mobile Accessibility:</strong> Allows employees to submit expenses on the go via mobile devices, improving user convenience and efficiency.</li>
-                                        </ul>
-                                    </li>
-                                </ol>
-                                <h5><strong>Benefits of Oracle Fusion Financials:</strong></h5>
-                                <ul>
-                                    <li><strong>Integrated Data Model:</strong> This model ensures consistency and accuracy of financial data across different modules, facilitating better reporting and analysis.</li>
-                                    <li><strong>Advanced Analytics:</strong> Leverages embedded business intelligence and analytics tools to provide actionable insights and enhance strategic planning.</li>
-                                    <li><strong>Automation and Efficiency:</strong> Automates routine financial processes, reducing manual workload and increasing operational efficiency.</li>
-                                    <li><strong>Scalability and Flexibility:</strong> Scales with business growth and adapts to changing financial management needs, offering a future-proof solution.</li>
-                                    <li><strong>Enhanced Security and Compliance:</strong> Incorporates robust security measures and compliance tools to protect financial data and meet regulatory requirements.</li>
-                                </ul>
-                                <h5><strong>Use Cases:</strong></h5>
-                                <ol>
-                                    <li><strong>Financial Consolidation</strong>
-                                        <ul>
-                                            <li><strong>Scenario:</strong> A multinational corporation needs to consolidate financial data from various subsidiaries.</li>
-                                            <li><strong>Solution:</strong> Oracle Fusion Financials provides a unified platform for consolidating and reporting financial information, ensuring consistency and accuracy.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Procurement Optimization</strong>
-                                        <ul>
-                                            <li><strong>Scenario:</strong> An organization wants to streamline its procurement and accounts payable processes.</li>
-                                            <li><strong>Solution:</strong> Oracle Fusion Financials automates invoice processing and supplier management, improving efficiency and reducing procurement costs.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Expense Management</strong>
-                                        <ul>
-                                            <li><strong>Scenario:</strong> A company aims to enhance its employee expense reporting and reimbursement process.</li>
-                                            <li><strong>Solution:</strong> Oracle Fusion Financials offers automated expense management tools, enabling quick expense submission, approval, and reimbursement.</li>
-                                        </ul>
-                                    </li>
-                                </ol>
-                                <h3><strong>Why Choose Soft Online Training for Your Oracle Fusion Financials Course?</strong></h3>
-                                <p>Choosing <b>Soft Online Training</b> for your <b>Oracle Fusion Financials course</b> means learning from highly experienced instructors who bring real-world insights to help you master the platform effectively. Their comprehensive course covers all essential Oracle Fusion modules, combining theory with hands-on practice to ensure you gain practical skills. Flexible online training allows you to learn at your own pace, while the platform’s trusted reputation and supportive environment make it ideal for career growth in cloud-based financial management. This training equips you with the knowledge and certification needed to excel in today’s competitive finance roles.</p>
+                                <div class="about-content">
+    <span class="about-label">About the Course</span>
 
-                                <h5><strong>Learn from Industry Experts</strong></h5>
-                                <p>Our oracle fusion financials course is delivered by seasoned professionals with deep domain expertise and real-world experience. They offer valuable insights and practical knowledge that make the training relevant and actionable for learners aiming to excel in financial management using Oracle Fusion applications.</p>
-                                <h5><strong>Hands-On Experience with Real Projects</strong></h5>
-                                <p>We emphasize practical learning by incorporating live project simulations and real-time business scenarios. This hands-on approach builds your confidence and equips you with essential skills for the job market in Oracle fusion financials online training environments.</p>
-                                
-                                <h5><strong>Comprehensive Curriculum Aligned with Oracle</strong></h5>
-                                <p>Our curriculum covers all critical Oracle Fusion Financials modules, including General Ledger, Accounts Payable, and Financial Reporting. The oracle fusion financials course content is regularly updated to reflect the latest Oracle Fusion Applications training standards and certifications.</p>
-                                
-                                <h5><strong>Strong Reputation and Proven Results</strong></h5>
-                                <p>Thousands of students have trusted our oracle fusion financials course to advance their careers. We have a track record of positive reviews, success stories, and graduates who have secured positions in top companies specializing in Oracle-based financial management systems.</p>
-                                
-                                <h5><strong>Transparent, Reliable Learning Environment</strong></h5>
-                                <p>We provide detailed course outlines, secure payment options, and dedicated student support. This transparency and reliability foster trust and create a smooth learning journey, making our oracle fusion financials online training platform a preferred choice.</p>
-                                
-                                <h5><strong>Flexible Online Training for Busy Professionals</strong></h5>
-                                <p>Our oracle fusion financials course is offered entirely online, allowing you to learn at your own pace and from any location. This flexibility suits working professionals who want to upgrade their skills without disrupting their current job commitments.</p>
+    <h2 class="about-heading">
+      What is <span class="gradient-text">Oracle Fusion Financials?</span>
+    </h2>
 
-                                <h5><strong>Continuous Support and Resources</strong></h5>
-                                <p>Soft Online Training is dedicated to your success beyond the training sessions. We provide continuous support through dedicated mentors, discussion forums, and a wealth of learning resources. Whether you need assistance with specific topics or career guidance, our support team is always available to help you. This ongoing support ensures that you can effectively implement what you've learned and continue to grow professionally.</p>
+    <p class="about-description">
+      Oracle Fusion Financials is a cloud-based financial management solution that helps organizations manage accounting, reporting, compliance, and financial controls within a single integrated platform. It supports core finance operations including general ledger, accounts payable, accounts receivable, fixed assets, cash management, expense management, and period close activities.
+    </p>
 
-                                <h5><strong>Certification and Career Advancement</strong></h5>
-                                <p>Completing the Oracle Fusion Financials training from Soft Online Training earns you a prestigious certification that is highly recognized in the industry. This certification validates your expertise and knowledge, enhancing your resume and making you a more competitive candidate in the job market. With the increasing demand for skilled professionals in Oracle Fusion Financials, this training can significantly boost your career prospects and open up new opportunities.</p>
+    <p class="about-description">
+      Built on Oracle Cloud Infrastructure and enhanced with modern user experience capabilities, Oracle Fusion Financials provides real-time financial visibility, automation, and strong audit controls. The platform enables organizations to streamline financial processes, reduce manual effort, ensure regulatory compliance, and support faster, data-driven decision-making across global operations.
+    </p>
 
-                                <h5><strong>Proven Track Record</strong></h5>
-                                <p>Soft Online Training has a strong track record of success, with numerous testimonials from satisfied learners who have benefited from our training programs. Our alums have successfully implemented Oracle Fusion Financials solutions in their organizations and achieved significant career advancements. This proven track record underscores the quality and effectiveness of our training programs.</p>
-                                
-                                
-                                <h5><strong>Key Features Of Oracle Fusion Applications training:</strong></h5>
-                                <p><b>Oracle Fusion Applications training</b> equips you with the skills to configure, manage, and optimize Oracle's comprehensive cloud suite. This training covers essential features such as integrated financial management, automated business processes, real-time reporting, and seamless cloud integration, enabling organizations to enhance efficiency and drive smarter business decisions.</p>
+    <p class="about-description">
+      Oracle Fusion Financials training enables finance and accounting professionals to transition from traditional systems to a unified, cloud-driven financial platform. As organizations increasingly adopt Oracle Cloud Financials to improve accuracy, compliance, and financial visibility, there is a growing demand for professionals who understand both finance processes and system execution.
+</p>
 
-                                <h5><strong>Integrated Financial Management</strong></h5>
-                                <p>Oracle Fusion Financials training teaches managing financial processes seamlessly within a unified cloud platform, enhancing accuracy and control through Oracle Fusion Financials online training.</p>
-                                <h5><strong>Automated Business Processes</strong></h5>
-                                <p>Learn how to automate workflows to improve operational efficiency and reduce manual intervention across various business functions.</p>
-                                <h5><strong>Real-Time Reporting and Analytics</strong></h5>
-                                <p>Gain skills in leveraging embedded analytics and real-time reporting tools for informed decision-making and performance tracking.</p>
-                                <h5><strong>Seamless Cloud Integration</strong></h5>
-                                <p>The training covers integration with other cloud services and enterprise systems, ensuring smooth data flow and process coordination.</p>
-                                <h5><strong>Configurable and Scalable Solutions</strong></h5>
-                                <p>Master configuring Oracle Fusion Applications to adapt to specific business needs, enabling scalable and flexible enterprise solutions.</p>
-                                <!-- Overview End -->
-                            </div>
-                            <div class="rbt-show-more-btn">Show More</div>
+<p class="about-description">This training emphasizes practical understanding of core financial workflows such as general ledger, payables, receivables, assets, cash management, and financial reporting. Learners gain hands-on exposure aligned with real business scenarios, helping them build job-ready skills and progress toward Oracle Fusion Financials certification with confidence.</p>
+  </div>
+  
+<h3 class="who-label" style="margin-top:20px;">Key Modules</h3>
+<div class="tag-container">
+  <div class="tag">General Ledger</div>
+  <div class="tag">Accounts Payable</div>
+  <div class="tag">Accounts Receivable</div>
+  <div class="tag">Cash Management</div>
+  <div class="tag">Fusion Tax</div>
+  <div class="tag">Fixed Assets</div>
+  <div class="tag">Fusion Expenses</div>
+  <div class="tag">Budgeting</div>
+  <div class="tag">Intercompany</div>
+</div>
+
+  <div class="who-header">
+    <span class="who-label">Who It's For</span>
+    <h2 class="who-heading">
+      Who Should <span class="gradient-text">Enroll </span>in This Oracle Fusion Financials Course?
+    </h2>
+    <p>This Oracle Fusion Financials training is suitable for individuals aiming to build or advance a career in finance, accounting, or ERP consulting.</p>
+  </div>
+
+  <div class="who-grid">
+
+    <!-- Card 1 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Graduation Cap -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+          <path d="M22 10v6"/>
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+        </svg>
+      </div>
+      <h3> Fresh Graduates & Career Starters</h3>
+      <p>  B.Com, BBA, and commerce graduates aiming for finance + IT hybrid careers.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Building -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+          <path d="M10 6h4"/>
+          <path d="M10 10h4"/>
+          <path d="M10 14h4"/>
+          <path d="M10 18h4"/>
+        </svg>
+      </div>
+      <h3>CA / CMA / MBA (Finance) / M.Com Graduates</h3>
+      <p>Finance and commerce graduates looking to add practical ERP exposure to their academic knowledge.
+</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Chart -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+          <path d="M18 17V9"/>
+          <path d="M13 17V5"/>
+          <path d="M8 17v-3"/>
+        </svg>
+      </div>
+      <h3>Tally & Manual Accounting Professionals</h3>
+      <p> Tally users and accounting professionals handling GST, billing, and reconciliations transitioning to corporate ERP systems.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Monitor -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="14" x="2" y="3" rx="2"/>
+          <line x1="8" x2="16" y1="21" y2="21"/>
+          <line x1="12" x2="12" y1="17" y2="21"/>
+        </svg>
+      </div>
+      <h3>ERP & IT Professionals</h3>
+      <p> Oracle EBS and functional consultants upgrading to Oracle Fusion Cloud Financials.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <rect width="20" height="14" x="2" y="6" rx="2"/>
+        </svg>
+      </div>
+      <h3>Finance & Accounting Professionals</h3>
+      <p>Accountants, finance executives, analysts, and managers working in <strong> AP, AR, GL, Assets, and CM </strong>seeking ERP & cloud finance roles.</p>
+    </div>
+
+        <!-- Card 5 -->
+    <div class="who-card">
+      <div class="icon-box">
+        <!-- Briefcase -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 17l6-6 4 4 7-7"></path>
+  <path d="M14 8h6v6"></path>
+</svg>
+</div>
+      <h3>Career Switchers</h3>
+      <p>Non-IT or non-finance professionals seeking a stable, high-demand ERP finance career.
+</p>
+    </div>
+
+  </div>
+
+   <div class="highlights-header">
+    <span class="highlights-label">What You Get</span>
+    <h2 class="highlights-heading">
+      Oracle Fusion Financials Course <span class="gradient-text">Highlights</span>
+    </h2>
+    <p>This Oracle Fusion Financials course focuses on practical finance system configuration and real accounting process understanding.</p>
+  </div>
+
+  <div class="highlights-grid">
+
+    <!-- Card 1 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+          <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+        </svg>
+      </div>
+      <h3>Live Classes with 2-year Recording Access</h3>
+      <p>Participate in real-time live classes and gain 12 months of LMS access to recorded sessions for flexible learning.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polygon points="6 3 20 12 6 21 6 3"></polygon>
+        </svg>
+      </div>
+      <h3>6 Months Oracle Cloud Lab Access</h3>
+      <p>Hands-on practice in Oracle Financials Cloud covering General Ledger, Payables, Receivables, Assets, and financial control setups.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <rect width="20" height="8" x="2" y="2" rx="2"></rect>
+          <rect width="20" height="8" x="2" y="14" rx="2"></rect>
+          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+        </svg>
+      </div>
+      <h3>Real-Time Financials Use Cases</h3>
+      <p> Training includes finance-driven scenarios such as month-end close, invoice lifecycle, accounting entries, and reconciliation processes.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+          <circle cx="12" cy="8" r="6"></circle>
+        </svg>
+      </div>
+      <h3>Mobile App Learning</h3>
+      <p>Learn Oracle Fusion Financials using a mobile app with recorded classes and LMS access.
+</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+          <polyline points="16 7 22 7 22 13"></polyline>
+        </svg>
+      </div>
+      <h3>Interview & Career Support</h3>
+      <p> Preparation focused on finance-functional interviews, accounting concepts, and implementation-based discussion areas.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="highlight-card">
+      <div class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+          <path d="M6 3h12"></path>
+          <path d="M6 8h12"></path>
+          <path d="m6 13 8.5 8"></path>
+          <path d="M6 13h3"></path>
+          <path d="M9 13c6.667 0 6.667-10 0-10"></path>
+        </svg>
+      </div>
+      <h3>Course Completion Certificate</h3>
+      <p> Certification confirms practical exposure to Oracle Fusion Financials processes and system configurations.</p>
+    </div>
+
+  </div>
+</div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -277,11 +381,12 @@
 
                         <!-- Start Course Feature Box  -->
                         <div class="rbt-course-feature-box rbt-border-with-box details-wrapper mt--30" id="details">
+                            <h2 class="rbt-title-style-3">Course Details</h2>
                             <div class="row g-5">
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Requirements</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">Requirements</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($requirements[$current_slug] as $requirement) : ?>
@@ -294,7 +399,7 @@
                                 <!-- Start Feture Box  -->
                                 <div class="col-lg-6">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">What Will You Learn</h4>
+                                        <h3 class="rbt-title-style-3 mb--20">What Will You Learn</h3>
                                     </div>
                                     <ul class="rbt-list-style-1">
                                         <?php foreach ($learnings[$current_slug] as $learn) : ?>
@@ -304,6 +409,180 @@
                                 </div>
                                 <!-- End Feture Box  -->
                             </div>
+                            <div class="why-header">
+    <span class="why-label">Why Us</span>
+    <h2 class="why-heading">
+      Why Choose <span class="gradient-text">Soft Online Training?</span>
+    </h2>
+    <p>This Oracle Fusion Financials training is designed around real accounting operations and enterprise finance system usage.</p>
+  </div>
+
+  <div class="why-container">
+
+    <!-- LEFT TRAINER CARD -->
+    <div class="trainer-card">
+      <div class="trainer-header">
+        <div class="trainer-avatar">K</div>
+        <div>
+          <h2>Mr. Kaleem Basha</h2>
+          <p>Leading Oracle Expert</p>
+        </div>
+      </div>
+
+      <ul class="trainer-points">
+        <li><h3>Finance domain expert with 20+ years of Oracle Financials experience</h3></li>
+        <li><h3>Strong knowledge of GL, AP, AR, FA, and financial reporting</h3></li>
+        <li><h3>Trained commerce and accounting professionals for ERP careers</h3></li>
+        <li><h3>Emphasizes real-time accounting cycles and business use cases</h3></li>
+      </ul>
+
+    </div>
+
+    <!-- RIGHT FEATURES LIST -->
+    <div class="why-features">
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Shield SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Real-Time Project Experience</h3>
+          <p>Training is guided by professionals who have worked on Oracle Financials implementations involving GL, AP, AR, and compliance-driven setups.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- User SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Job-Focused Curriculum</h3>
+          <p>Course topics are aligned with real finance ERP roles rather than generic software navigation.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Brain SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+            <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Training with Career Support</h3>
+          <p> Learners receive guidance on finance-role interviews, accounting explanations, and role-specific preparation.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Layers SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
+            <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Updated with Latest Oracle Cloud Features</h3>
+          <p> Financials content reflects Oracle Cloud updates related to reporting, compliance, and accounting enhancements.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Award SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
+            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+            <circle cx="12" cy="8" r="6"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Flexible Learning Schedules</h3>
+          <p>Batch options are designed to support working finance professionals and career switchers.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+                               <div class="career-header">
+    <span class="career-label">Career Impact</span>
+    <h2 class="career-heading">
+      Career Outcomes & <span class="gradient-text">Salary Data</span>
+    </h2>
+  </div>
+
+  <div class="career-table-wrapper">
+    <div class="table-scroll">
+<table class="career-table">
+
+  <thead>
+    <tr>
+      <th>Job Role</th>
+      <th>India</th>
+      <th>USA</th>
+      <th>UK</th>
+    </tr>
+  </thead>
+
+  <tbody class="Career-Outcomes">
+    <tr class="career-Outcome">
+      <td><h3>Financials Functional Consultant</h3></td>
+      <td>₹8-18 LPA</td>
+      <td>$85-130K</td>
+      <td>£50-80K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Procurement Lead</h3></td>
+      <td>₹12-25 LPA</td>
+      <td>$95-145K</td>
+      <td>£60-95K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Financials Technical Consultant</h3></td>
+      <td>₹10-22 LPA</td>
+      <td>$90-140K</td>
+      <td>£55-90K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Inventory/WMS Analyst</h3></td>
+      <td>₹7-15 LPA</td>
+      <td>$75-115K</td>
+      <td>£45-75K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Supply Chain Manager</h3></td>
+      <td>₹15-35 LPA</td>
+      <td>$110-170K</td>
+      <td>£70-110K</td>
+    </tr>
+
+    <tr class="career-Outcome">
+      <td><h3>Oracle Cloud Architect</h3></td>
+      <td>₹20-45 LPA</td>
+      <td>$130-200K</td>
+      <td>£85-140K</td>
+    </tr>
+
+  </tbody>
+
+</table>
+    </div>
+  </div>
                         </div>
                         <!-- End Course Feature Box  -->
 
@@ -316,6 +595,8 @@
                         <!-- End Edu Review List  -->
 
                         <?php include_once "reviews.php"; ?>
+
+                        <?php include_once "faq.php";  ?>
 
                         <!-- Start Faq Area  -->
                         <?php include_once "faq.php"; ?>
@@ -425,7 +706,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
                     <div class="section-title text-center text-md-start">
-                        <h5 class="title mb--0"><?php echo $course_details[$current_slug]['title'] ?></h5>
+                        <h3 class="title mb--0"><?php echo $course_details[$current_slug]['title'] ?></h3>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mt_sm--15">

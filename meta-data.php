@@ -7,17 +7,16 @@
 	<meta property="og:image" content="<?php echo "https://".$_SERVER["HTTP_HOST"] .'/'; ?>assets/images/course/custom/<?php echo $course_details[$current_slug]["thumbnail"]; ?>" />
     <?php endif; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Dynamic Canonical Tag -->
+    
+    <!-- Dynamic Canonical Tag -->
     <?php
+    // var_dump($_SERVER);
     $canonical_url = "https://" . $_SERVER["HTTP_HOST"];
     if ($current_slug == "index") {
         $canonical_url .= "/";
     } else {
-        $canonical_url .= $_SERVER['REQUEST_URI'];
+        $canonical_url .=  $_SERVER['REQUEST_URI'];
     }
     ?>
     <link rel="canonical" href="<?php echo $canonical_url; ?>" />
-    <meta name="msvalidate.01" content="6A1D18E56093E85D07492C412248BAE4" />
 
-    

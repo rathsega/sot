@@ -32,12 +32,12 @@
 </script> -->
 
 <script>
-    
+// Defer execution until DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
     const safelyGetLocalStorageItem = (key) => {
         try {
             return localStorage.getItem(key);
         } catch (e) {
-            alert('Error accessing localStorage');
             return null;
         }
     };
@@ -75,4 +75,5 @@
             toggleElementVisibility('demo_video_link', false);
         }
     }
+});
 </script>
