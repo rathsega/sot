@@ -153,7 +153,7 @@
     </h2>
 
     <p class="about-description">
-      Oracle Fusion Procurement is a cloud-based procurement solution designed to manage the complete purchasing lifecycle within Oracle ERP Cloud. It supports key procurement functions such as requisitions, purchasing, sourcing, supplier management, procurement contracts, and spend control.
+      Looking to break into Oracle Fusion ERP Procurement Consultant? This Oracle fusion Procurement training is built for you, whether you're a fresher, an existing ERP consultant, or a procurement operations professional ready to go functional. We cover the entire Fusion Procurement Suite Modules Responsive Self-Service Procurement, Purchasing, Sourcing, Supplier Portal, Procurement Contracts, and Supplier Qualification Management.
     </p>
 
     <p class="about-description">
