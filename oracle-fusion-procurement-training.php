@@ -459,8 +459,8 @@
           </svg>
         </div>
         <div>
-          <h3>End-to-End Procurement Coverage</h3>
-          <p>Learners gain exposure to full Procurement Suite covering the advance topics in each module from basic to pro level.</p>
+          <h3>Career Switchers</h3>
+          <p>Professionals from other domains looking to transition into the high-demand Oracle Fusion ecosystem, with structured, job-focused training.</p>
         </div>
       </div>
 
@@ -488,7 +488,7 @@
         </div>
         <div>
           <h3>End-to-End Procurement Coverage</h3>
-          <p>Learners gain exposure to supplier management, purchasing, sourcing basics, receiving, and integration with inventory and finance modules.</p>
+          <p>Learners gain exposure to full Procurement Suite covering the advance topics in each module from basic to pro level.</p>
         </div>
       </div>
 
