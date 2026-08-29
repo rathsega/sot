@@ -153,18 +153,18 @@
     </h2>
 
     <p class="about-description">
-      Looking to break into Oracle Fusion ERP Procurement Consultant? This Oracle fusion Procurement training is built for you, whether you're a fresher, an existing ERP consultant, or a procurement operations professional ready to go functional. We cover the entire Fusion Procurement Suite Modules Responsive Self-Service Procurement, Purchasing, Sourcing, Supplier Portal, Procurement Contracts, and Supplier Qualification Management.
+      Oracle Fusion Procurement is used by companies that want to run their entire procurement operations end to end, within one connected system. 
     </p>
 
     <p class="about-description">
-      The platform helps organizations improve purchasing efficiency, enforce compliance, strengthen supplier relationships, and gain visibility into procurement spend. With configurable workflows, approval controls, and real-time reporting, Oracle Fusion Procurement enables enterprises to streamline procurement operations while maintaining governance and audit readiness.
+      From requesting material and identifying the right supplier, through the bidding process, to creating agreements, contracts, and purchase orders with that supplier, and finally receiving the material, this entire procurement lifecycle is managed within Oracle Fusion Procurement. 
     </p>
 
     <p class="about-description">
       Oracle Fusion Procurement training equips professionals with the skills required to manage cloud-based procurement operations efficiently and accurately. As organizations move toward centralized and compliant procurement systems, Oracle Fusion Procurement has become a key platform for managing suppliers, purchases, contracts, and sourcing activities.
     </p>
     <p class="about-description">
-      This training focuses on real procurement workflows, enabling learners to understand how procurement functions operate within Oracle Cloud. By combining functional concepts with system execution, the course prepares participants to handle procurement processes in live environments and supports career growth aligned with certification and industry expectations.
+      Organizations across industries, Retail, Pharma, Manufacturing, Banking, and virtually any sector, rely on this application to capture and manage their procurement operations with greater visibility, control, and efficiency. 
     </p>
   </div>
 
@@ -180,13 +180,23 @@
   <div class="tag">Cost Management</div>
 </div>
 
+  <div class="who-header">
+    <span class="who-label">WHY TRAIN WITH US </span>
+    <h2 class="who-heading">
+      Real-Time <span class="gradient-text">Project Simulation </span> Training
+    </h2>
+    <p>In this training, students build real, working knowledge of Oracle Fusion Procurement, not just the theory, but the actual functionalities and features they'll need to translate a client's business requirements into the system. </p>
+    <p>The goal here is simple. We're not teaching concepts for the sake of it. Students should walk into an interview and answer confidently. They should be able to take on an implementation project without needing hand-holding. So we've built one complete end-to-end implementation into the training itself, where students actually work through a project the way it plays out in real life, start to finish. 
+    <p>We spend real time on application capability. Not just what a button does, but how it's used on a live project, along with the practical tips and real-time insights that usually only come from having sat through an actual implementation. </p>
+    <p>By the end of it, this training feels less like a course and more like a project simulation. Students aren't just familiar with Oracle Fusion Procurement, they've actually worked with it. </p>
+  </div>
 
   <div class="who-header">
     <span class="who-label">Who It's For</span>
     <h2 class="who-heading">
       Who Should <span class="gradient-text">Enroll </span>in This Oracle Fusion Procurement Course?
     </h2>
-    <p>This Oracle Fusion Procurement training is ideal for professionals aiming to build or enhance a career in procurement and purchasing operations.</p>
+    <p>This Oracle Fusion Procurement training is ideal for students aiming to build or enhance a career Towards Oracle Fusion Procurement Consultant Roles </p>
   </div>
 
   <div class="who-grid">
@@ -202,7 +212,7 @@
         </svg>
       </div>
       <h3>Graduates & Career Starters</h3>
-      <p>Candidates interested in entering procurement and supply chain roles with strong functional foundations.</p>
+      <p>Graduates & Career Starters: Any graduate who is interested to pursue their career in  fusion ERP is eligible for this course. Freshers like MBA, MCA, B Tech, BBA, BE, any graduate eligible for this course. </p>
     </div>
 
     <!-- Card 2 -->
@@ -221,7 +231,7 @@
       </div>
       <h3>Procurement & Purchasing Professionals
 </h3>
-      <p>Buyers, procurement executives, and sourcing specialists seeking system-level understanding of cloud procurement processes.</p>
+      <p>Buyers, procurement executives, and sourcing specialists currently working in Excel or smaller ERP systems, ready to move onto a global cloud procurement platform and take their career into IT. </p>
     </div>
 
     <!-- Card 3 -->
@@ -235,8 +245,8 @@
           <path d="M8 17v-3"/>
         </svg>
       </div>
-      <h3>Supply Chain & Operations Professionals</h3>
-      <p>Professionals who want deeper exposure to procurement workflows within Oracle Cloud environments.</p>
+      <h3>Career Switchers </h3>
+      <p>Professionals from other domains looking to transition into the high-demand Oracle Fusion ecosystem, with structured, job-focused training. </p>
     </div>
 
     <!-- Card 4 -->
@@ -250,7 +260,7 @@
         </svg>
       </div>
       <h3>ERP & Functional Consultants</h3>
-      <p>Consultants looking to specialize in Oracle Fusion Procurement implementation and support projects.</p>
+      <p>Already consulting, and want to add Oracle Fusion Procurement to your specialization? This is built for that. </p>
     </div>
 
     <!-- Card 5 -->
@@ -263,7 +273,7 @@
         </svg>
       </div>
       <h3>Oracle EBS Professionals</h3>
-      <p>Users of legacy Oracle Purchasing modules planning to transition into Oracle Fusion Procurement Cloud.
+      <p>Currently working on legacy Oracle Purchasing? This is your path into Fusion Procurement Cloud.
 </p>
     </div>
 
@@ -277,7 +287,7 @@
 </svg>
 </div>
       <h3>Entry Path for Non-IT Professionals</h3>
-      <p>A clear and guided pathway for non-IT backgrounds to begin careers in Oracle ERP and Cloud technologies</p>
+      <p>Coming from a non-IT background? This gives you a structured way in, straight into Oracle ERP and Cloud. </p>
     </div>
 
   </div>
@@ -429,8 +439,8 @@
       </div>
 
       <ul class="trainer-points">
-        <li><h3>19+ years of real-world Oracle SCM and Procurement experience</h3></li>
-        <li><h3>Trained 5,000+ students across 75+ batches globally</h3></li>
+        <li><h3>20+ years of real-world Oracle SCM and Procurement experience</h3></li>
+        <li><h3>Trained 30,000+ students across 150+ batches globally</h3></li>
         <li><h3>Known for end-to-end SCM + Procurement specialization (rare combination)</h3></li>
         <li><h3>Provides project-based, hands-on training with practical business scenarios</h3></li>
       </ul>
@@ -449,8 +459,8 @@
           </svg>
         </div>
         <div>
-          <h3>Procurement-Centric Training Approach</h3>
-          <p>The course emphasizes real purchasing operations such as supplier lifecycle management, requisitions, purchase orders, and approvals used in live organizations.</p>
+          <h3>End-to-End Procurement Coverage</h3>
+          <p>Learners gain exposure to full Procurement Suite covering the advance topics in each module from basic to pro level.</p>
         </div>
       </div>
 
@@ -557,19 +567,19 @@
       <td>£55-90K</td>
     </tr>
 
-    <tr class="career-Outcome">
+    <!-- <tr class="career-Outcome">
       <td><h3>Inventory/WMS Analyst</h3></td>
       <td>₹7-15 LPA</td>
       <td>$75-115K</td>
       <td>£45-75K</td>
-    </tr>
+    </tr> -->
 
-    <tr class="career-Outcome">
+    <!-- <tr class="career-Outcome">
       <td><h3>Supply Chain Manager</h3></td>
       <td>₹15-35 LPA</td>
       <td>$110-170K</td>
       <td>£70-110K</td>
-    </tr>
+    </tr> -->
 
     <tr class="career-Outcome">
       <td><h3>Oracle Cloud Architect</h3></td>
